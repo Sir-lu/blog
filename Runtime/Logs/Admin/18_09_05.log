@@ -1,0 +1,899 @@
+[ 2018-09-05T08:28:49+08:00 ] 106.112.8.247 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_oauth_user` WHERE `is_admin` = 1 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-09-05T08:28:50+08:00 ] 106.112.8.247 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_oauth_user` WHERE `is_admin` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: ADMIN_PASSWORD /www/wwwroot/blog/Runtime/Cache/Admin/b891abcc3bb76636e2a96a245e9568d6.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003659s ]
+
+[ 2018-09-05T08:28:51+08:00 ] 106.112.8.247 /Admin/Login/showVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-09-05T08:29:02+08:00 ] 106.112.8.247 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_oauth_user` WHERE `is_admin` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_config` [ RunTime:0.0044s ]
+SQL: SELECT `value` FROM `lxp_config` WHERE `name` = 'ADMIN_PASSWORD' LIMIT 1   [ RunTime:0.0116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003597s ]
+
+[ 2018-09-05T08:29:03+08:00 ] 106.112.8.247 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-09-05T08:29:04+08:00 ] 106.112.8.247 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002220s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2018-09-05T08:29:09+08:00 ] 106.112.8.247 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-09-05T08:29:16+08:00 ] 106.112.8.247 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0354s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '21'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0006s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 21 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '20'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 20 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '19'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 19 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '18'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 18 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002176s ]
+
+[ 2018-09-05T08:29:25+08:00 ] 106.112.8.247 /Admin/Tag/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2018-09-05T08:29:27+08:00 ] 106.112.8.247 /Admin/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2018-09-05T08:29:29+08:00 ] 106.112.8.247 /Admin/Tag/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2018-09-05T08:29:34+08:00 ] 106.112.8.247 /Admin/Tag/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: INSERT INTO `lxp_tag` (`tname`) VALUES ('php') [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002446s ]
+
+[ 2018-09-05T08:29:35+08:00 ] 106.112.8.247 /Admin/Tag/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2018-09-05T08:29:37+08:00 ] 106.112.8.247 /Admin/Category/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-09-05T08:29:38+08:00 ] 106.112.8.247 /Admin/Category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-09-05T08:29:41+08:00 ] 106.112.8.247 /Admin/Category/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2018-09-05T08:29:50+08:00 ] 106.112.8.247 /Admin/Category/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+
+[ 2018-09-05T08:29:54+08:00 ] 106.112.8.247 /Admin/Category/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2018-09-05T08:29:58+08:00 ] 106.112.8.247 /Admin/Category/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+SQL: INSERT INTO `lxp_category` (`cname`,`pid`,`sort`,`keywords`,`description`) VALUES ('php','0','9','php','php') [ RunTime:0.0072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002954s ]
+
+[ 2018-09-05T08:30:00+08:00 ] 106.112.8.247 /Admin/Category/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000642s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+NOTIC: [8] Undefined variable: cid /www/wwwroot/blog/Runtime/Cache/Admin/8a25fd7a872c6677dccd5d28490b6ff3.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2018-09-05T08:30:01+08:00 ] 106.112.8.247 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-09-05T08:39:38+08:00 ] 106.112.8.247 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('32','php结合redis实现高并发下的抢购、秒杀功能','鹿晓鹏','php结合redis实现高并发下的抢购,秒杀功能','php结合redis实现高并发下的抢购、秒杀功能','0','1','1','&lt;p&gt;&lt;span style=&quot;caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;抢购、秒杀是如今很常见的一个应用场景，主要需要解决的问题有两个：&lt;/span&gt;&lt;br style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; word-break: break-all; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px;&quot;/&gt;&lt;span style=&quot;caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;1 高并发对数据库产生的压力&lt;/span&gt;&lt;br style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; word-break: break-all; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px;&quot;/&gt;&lt;span style=&quot;caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;2 竞争状态下如何解决库存的正确减少（&amp;quot;超卖&amp;quot;问题）&lt;/span&gt;&lt;br style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; word-break: break-all; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px;&quot;/&gt;&lt;span style=&quot;caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;对于第一个问题，已经很容易想到用缓存来处理抢购，避免直接操作数据库，例如使用Redis。&lt;/span&gt;&lt;br style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; word-break: break-all; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px;&quot;/&gt;&lt;span style=&quot;caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;重点在于第二个问题&lt;/span&gt;&lt;br style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; word-break: break-all; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px;&quot;/&gt;&lt;br style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; word-break: break-all; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun; font-size: 14px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;常规写法：&lt;/p&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;查询出对应商品的库存，看是否大于0，然后执行生成订单等操作，但是在判断库存是否大于0处，如果在高并发下就会有问题，导致库存量出现负数&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+$conn=mysql_connect(&amp;quot;localhost&amp;quot;,&amp;quot;big&amp;quot;,&amp;quot;123456&amp;quot;);
+if(!$conn){
+	echo&amp;nbsp;&amp;quot;connect&amp;nbsp;failed&amp;quot;;
+	exit;
+}
+mysql_select_db(&amp;quot;big&amp;quot;,$conn);
+mysql_query(&amp;quot;set&amp;nbsp;names&amp;nbsp;utf8&amp;quot;);
+$price=10;
+$user_id=1;
+$goods_id=1;
+$sku_id=11;
+$number=1;
+//生成唯一订单
+function&amp;nbsp;build_order_no(){
+return&amp;nbsp;date(&amp;#39;ymd&amp;#39;).substr(implode(NULL,&amp;nbsp;array_map(&amp;#39;ord&amp;#39;,&amp;nbsp;str_split(substr(uniqid(),&amp;nbsp;7,&amp;nbsp;13),&amp;nbsp;1))),&amp;nbsp;0,&amp;nbsp;8);
+}
+//记录日志
+function&amp;nbsp;insertLog($event,$type=0){
+	global&amp;nbsp;$conn;
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_log(event,type)&amp;nbsp;
+	values(&amp;#39;$event&amp;#39;,&amp;#39;$type&amp;#39;)&amp;quot;;
+	mysql_query($sql,$conn);
+}
+//模拟下单操作
+//库存是否大于0
+$sql=&amp;quot;select&amp;nbsp;number&amp;nbsp;from&amp;nbsp;ih_store&amp;nbsp;where&amp;nbsp;goods_id=&amp;#39;$goods_id&amp;#39;&amp;nbsp;and&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;quot;;//解锁&amp;nbsp;此时ih_store数据中goods_id=&amp;#39;$goods_id&amp;#39;&amp;nbsp;and&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;nbsp;的数据被锁住(注3)，其它事务必须等待此次事务&amp;nbsp;提交后才能执行
+$rs=mysql_query($sql,$conn);
+$row=mysql_fetch_assoc($rs);
+if($row[&amp;#39;number&amp;#39;]&amp;gt;0){//高并发下会导致超卖
+	$order_sn=build_order_no();
+	//生成订单&amp;nbsp;&amp;nbsp;
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_order(order_sn,user_id,goods_id,sku_id,price)&amp;nbsp;
+	values(&amp;#39;$order_sn&amp;#39;,&amp;#39;$user_id&amp;#39;,&amp;#39;$goods_id&amp;#39;,&amp;#39;$sku_id&amp;#39;,&amp;#39;$price&amp;#39;)&amp;quot;;
+	$order_rs=mysql_query($sql,$conn);
+	
+	//库存减少
+	$sql=&amp;quot;update&amp;nbsp;ih_store&amp;nbsp;set&amp;nbsp;number=number-{$number}&amp;nbsp;where&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;quot;;
+	$store_rs=mysql_query($sql,$conn);
+	if(mysql_affected_rows()){
+		insertLog(&amp;#39;库存减少成功&amp;#39;);
+	}else{
+		insertLog(&amp;#39;库存减少失败&amp;#39;);
+	}
+}else{
+	insertLog(&amp;#39;库存不够&amp;#39;);
+}&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; outline: 0px; font-weight: 700; word-break: break-all;&quot;&gt;优化方案1：将库存字段number字段设为unsigned，当库存为0时，因为字段不能为负数，将会返回false&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;//库存减少
+$sql=&amp;quot;update&amp;nbsp;ih_store&amp;nbsp;set&amp;nbsp;number=number-{$number}&amp;nbsp;where&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;nbsp;and&amp;nbsp;number&amp;gt;0&amp;quot;;
+$store_rs=mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+if(mysql_affected_rows()){&amp;nbsp;&amp;nbsp;
+	insertLog(&amp;#39;库存减少成功&amp;#39;);
+}&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; outline: 0px; font-weight: 700; word-break: break-all;&quot;&gt;&lt;/span&gt;优化方案2：使用mysql的事务，锁住操作的行&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+$conn=mysql_connect(&amp;quot;localhost&amp;quot;,&amp;quot;big&amp;quot;,&amp;quot;123456&amp;quot;);&amp;nbsp;&amp;nbsp;
+if(!$conn){&amp;nbsp;&amp;nbsp;
+	echo&amp;nbsp;&amp;quot;connect&amp;nbsp;failed&amp;quot;;&amp;nbsp;&amp;nbsp;
+	exit;&amp;nbsp;&amp;nbsp;
+}&amp;nbsp;
+mysql_select_db(&amp;quot;big&amp;quot;,$conn);&amp;nbsp;
+mysql_query(&amp;quot;set&amp;nbsp;names&amp;nbsp;utf8&amp;quot;);
+&amp;nbsp;
+$price=10;
+$user_id=1;
+$goods_id=1;
+$sku_id=11;
+$number=1;
+&amp;nbsp;
+//生成唯一订单号
+function&amp;nbsp;build_order_no(){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;date(&amp;#39;ymd&amp;#39;).substr(implode(NULL,&amp;nbsp;array_map(&amp;#39;ord&amp;#39;,&amp;nbsp;str_split(substr(uniqid(),&amp;nbsp;7,&amp;nbsp;13),&amp;nbsp;1))),&amp;nbsp;0,&amp;nbsp;8);
+}
+//记录日志
+function&amp;nbsp;insertLog($event,$type=0){
+	global&amp;nbsp;$conn;
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_log(event,type)&amp;nbsp;
+	values(&amp;#39;$event&amp;#39;,&amp;#39;$type&amp;#39;)&amp;quot;;&amp;nbsp;&amp;nbsp;
+	mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+}
+&amp;nbsp;
+//模拟下单操作
+//库存是否大于0
+mysql_query(&amp;quot;BEGIN&amp;quot;);	//开始事务
+$sql=&amp;quot;select&amp;nbsp;number&amp;nbsp;from&amp;nbsp;ih_store&amp;nbsp;where&amp;nbsp;goods_id=&amp;#39;$goods_id&amp;#39;&amp;nbsp;and&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;nbsp;FOR&amp;nbsp;UPDATE&amp;quot;;//此时这条记录被锁住,其它事务必须等待此次事务提交后才能执行
+$rs=mysql_query($sql,$conn);
+$row=mysql_fetch_assoc($rs);
+if($row[&amp;#39;number&amp;#39;]&amp;gt;0){
+	//生成订单&amp;nbsp;
+	$order_sn=build_order_no();	
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_order(order_sn,user_id,goods_id,sku_id,price)&amp;nbsp;
+	values(&amp;#39;$order_sn&amp;#39;,&amp;#39;$user_id&amp;#39;,&amp;#39;$goods_id&amp;#39;,&amp;#39;$sku_id&amp;#39;,&amp;#39;$price&amp;#39;)&amp;quot;;&amp;nbsp;&amp;nbsp;
+	$order_rs=mysql_query($sql,$conn);&amp;nbsp;
+	
+	//库存减少
+	$sql=&amp;quot;update&amp;nbsp;ih_store&amp;nbsp;set&amp;nbsp;number=number-{$number}&amp;nbsp;where&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;quot;;
+	$store_rs=mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+	if(mysql_affected_rows()){&amp;nbsp;&amp;nbsp;
+		insertLog(&amp;#39;库存减少成功&amp;#39;);
+		mysql_query(&amp;quot;COMMIT&amp;quot;);//事务提交即解锁
+	}else{&amp;nbsp;&amp;nbsp;
+		insertLog(&amp;#39;库存减少失败&amp;#39;);
+	}
+}else{
+	insertLog(&amp;#39;库存不够&amp;#39;);
+	mysql_query(&amp;quot;ROLLBACK&amp;quot;);
+}
+?&amp;gt;&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;优化方案3：使用非阻塞的文件排他锁&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+$conn=mysql_connect(&amp;quot;localhost&amp;quot;,&amp;quot;root&amp;quot;,&amp;quot;123456&amp;quot;);&amp;nbsp;&amp;nbsp;
+if(!$conn){&amp;nbsp;&amp;nbsp;
+	echo&amp;nbsp;&amp;quot;connect&amp;nbsp;failed&amp;quot;;&amp;nbsp;&amp;nbsp;
+	exit;&amp;nbsp;&amp;nbsp;
+}&amp;nbsp;
+mysql_select_db(&amp;quot;big-bak&amp;quot;,$conn);&amp;nbsp;
+mysql_query(&amp;quot;set&amp;nbsp;names&amp;nbsp;utf8&amp;quot;);
+&amp;nbsp;
+$price=10;
+$user_id=1;
+$goods_id=1;
+$sku_id=11;
+$number=1;
+&amp;nbsp;
+//生成唯一订单号
+function&amp;nbsp;build_order_no(){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;date(&amp;#39;ymd&amp;#39;).substr(implode(NULL,&amp;nbsp;array_map(&amp;#39;ord&amp;#39;,&amp;nbsp;str_split(substr(uniqid(),&amp;nbsp;7,&amp;nbsp;13),&amp;nbsp;1))),&amp;nbsp;0,&amp;nbsp;8);
+}
+//记录日志
+function&amp;nbsp;insertLog($event,$type=0){
+	global&amp;nbsp;$conn;
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_log(event,type)&amp;nbsp;
+	values(&amp;#39;$event&amp;#39;,&amp;#39;$type&amp;#39;)&amp;quot;;&amp;nbsp;&amp;nbsp;
+	mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+}
+&amp;nbsp;
+$fp&amp;nbsp;=&amp;nbsp;fopen(&amp;quot;lock.txt&amp;quot;,&amp;nbsp;&amp;quot;w+&amp;quot;);
+if(!flock($fp,LOCK_EX&amp;nbsp;|&amp;nbsp;LOCK_NB)){
+	echo&amp;nbsp;&amp;quot;系统繁忙，请稍后再试&amp;quot;;
+	return;
+}
+//下单
+$sql=&amp;quot;select&amp;nbsp;number&amp;nbsp;from&amp;nbsp;ih_store&amp;nbsp;where&amp;nbsp;goods_id=&amp;#39;$goods_id&amp;#39;&amp;nbsp;and&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;quot;;
+$rs=mysql_query($sql,$conn);
+$row=mysql_fetch_assoc($rs);
+if($row[&amp;#39;number&amp;#39;]&amp;gt;0){//库存是否大于0
+	//模拟下单操作&amp;nbsp;
+	$order_sn=build_order_no();	
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_order(order_sn,user_id,goods_id,sku_id,price)&amp;nbsp;
+	values(&amp;#39;$order_sn&amp;#39;,&amp;#39;$user_id&amp;#39;,&amp;#39;$goods_id&amp;#39;,&amp;#39;$sku_id&amp;#39;,&amp;#39;$price&amp;#39;)&amp;quot;;&amp;nbsp;&amp;nbsp;
+	$order_rs=mysql_query($sql,$conn);&amp;nbsp;
+	
+	//库存减少
+	$sql=&amp;quot;update&amp;nbsp;ih_store&amp;nbsp;set&amp;nbsp;number=number-{$number}&amp;nbsp;where&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;quot;;
+	$store_rs=mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+	if(mysql_affected_rows()){&amp;nbsp;&amp;nbsp;
+		insertLog(&amp;#39;库存减少成功&amp;#39;);
+		flock($fp,LOCK_UN);//释放锁
+	}else{&amp;nbsp;&amp;nbsp;
+		insertLog(&amp;#39;库存减少失败&amp;#39;);
+	}&amp;nbsp;
+}else{
+	insertLog(&amp;#39;库存不够&amp;#39;);
+}
+fclose($fp);&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;优化方案4：使用redis队列，因为pop操作是原子的，即使有很多用户同时到达，也是依次执行，推荐使用（mysql事务在高并发下性能下降很厉害，文件锁的方式也是）&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;先将商品库存如队列&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+$store=1000;
+$redis=new&amp;nbsp;Redis();
+$result=$redis-&amp;gt;connect(&amp;#39;127.0.0.1&amp;#39;,6379);
+$res=$redis-&amp;gt;llen(&amp;#39;goods_store&amp;#39;);
+echo&amp;nbsp;$res;
+$count=$store-$res;
+for($i=0;$i&amp;lt;$count;$i++){
+	$redis-&amp;gt;lpush(&amp;#39;goods_store&amp;#39;,1);
+}
+echo&amp;nbsp;$redis-&amp;gt;llen(&amp;#39;goods_store&amp;#39;);
+?&amp;gt;&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;抢购、描述逻辑&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+$conn=mysql_connect(&amp;quot;localhost&amp;quot;,&amp;quot;big&amp;quot;,&amp;quot;123456&amp;quot;);&amp;nbsp;&amp;nbsp;
+if(!$conn){&amp;nbsp;&amp;nbsp;
+	echo&amp;nbsp;&amp;quot;connect&amp;nbsp;failed&amp;quot;;&amp;nbsp;&amp;nbsp;
+	exit;&amp;nbsp;&amp;nbsp;
+}&amp;nbsp;
+mysql_select_db(&amp;quot;big&amp;quot;,$conn);&amp;nbsp;
+mysql_query(&amp;quot;set&amp;nbsp;names&amp;nbsp;utf8&amp;quot;);
+&amp;nbsp;
+$price=10;
+$user_id=1;
+$goods_id=1;
+$sku_id=11;
+$number=1;
+&amp;nbsp;
+//生成唯一订单号
+function&amp;nbsp;build_order_no(){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;date(&amp;#39;ymd&amp;#39;).substr(implode(NULL,&amp;nbsp;array_map(&amp;#39;ord&amp;#39;,&amp;nbsp;str_split(substr(uniqid(),&amp;nbsp;7,&amp;nbsp;13),&amp;nbsp;1))),&amp;nbsp;0,&amp;nbsp;8);
+}
+//记录日志
+function&amp;nbsp;insertLog($event,$type=0){
+	global&amp;nbsp;$conn;
+	$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_log(event,type)&amp;nbsp;
+	values(&amp;#39;$event&amp;#39;,&amp;#39;$type&amp;#39;)&amp;quot;;&amp;nbsp;&amp;nbsp;
+	mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+}
+&amp;nbsp;
+//模拟下单操作
+//下单前判断redis队列库存量
+$redis=new&amp;nbsp;Redis();
+$result=$redis-&amp;gt;connect(&amp;#39;127.0.0.1&amp;#39;,6379);
+$count=$redis-&amp;gt;lpop(&amp;#39;goods_store&amp;#39;);
+if(!$count){
+	insertLog(&amp;#39;error:no&amp;nbsp;store&amp;nbsp;redis&amp;#39;);
+	return;
+}
+&amp;nbsp;
+//生成订单&amp;nbsp;&amp;nbsp;
+$order_sn=build_order_no();
+$sql=&amp;quot;insert&amp;nbsp;into&amp;nbsp;ih_order(order_sn,user_id,goods_id,sku_id,price)&amp;nbsp;
+values(&amp;#39;$order_sn&amp;#39;,&amp;#39;$user_id&amp;#39;,&amp;#39;$goods_id&amp;#39;,&amp;#39;$sku_id&amp;#39;,&amp;#39;$price&amp;#39;)&amp;quot;;&amp;nbsp;&amp;nbsp;
+$order_rs=mysql_query($sql,$conn);&amp;nbsp;
+&amp;nbsp;
+//库存减少
+$sql=&amp;quot;update&amp;nbsp;ih_store&amp;nbsp;set&amp;nbsp;number=number-{$number}&amp;nbsp;where&amp;nbsp;sku_id=&amp;#39;$sku_id&amp;#39;&amp;quot;;
+$store_rs=mysql_query($sql,$conn);&amp;nbsp;&amp;nbsp;
+if(mysql_affected_rows()){&amp;nbsp;&amp;nbsp;
+	insertLog(&amp;#39;库存减少成功&amp;#39;);
+}else{&amp;nbsp;&amp;nbsp;
+	insertLog(&amp;#39;库存减少失败&amp;#39;);
+}&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;模拟5000高并发测试&lt;br/&gt;webbench -c 5000 -t 60 http://192.168.1.198/big/index.php&lt;br/&gt;ab -r -n 6000 -c 5000 &amp;nbsp;http://192.168.1.198/big/index.php&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;上述只是简单模拟高并发下的抢购，真实场景要比这复杂很多，很多注意的地方&lt;br/&gt;如抢购页面做成静态的，通过ajax调用接口&lt;br/&gt;再如上面的会导致一个用户抢多个，思路：&lt;br/&gt;需要一个排队队列和抢购结果队列及库存队列。高并发情况，先将用户进入排队队列，用一个线程循环处理从排队队列取出一个用户，判断用户是否已在抢购结果队列，如果在，则已抢购，否则未抢购，库存减1，写数据库，将用户入结果队列。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;测试数据表&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;--
+--&amp;nbsp;数据库:&amp;nbsp;`big`
+--
+&amp;nbsp;
+--&amp;nbsp;--------------------------------------------------------
+&amp;nbsp;
+--
+--&amp;nbsp;表的结构&amp;nbsp;`ih_goods`
+--
+&amp;nbsp;
+&amp;nbsp;
+CREATE&amp;nbsp;TABLE&amp;nbsp;IF&amp;nbsp;NOT&amp;nbsp;EXISTS&amp;nbsp;`ih_goods`&amp;nbsp;(
+&amp;nbsp;&amp;nbsp;`goods_id`&amp;nbsp;int(10)&amp;nbsp;unsigned&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;AUTO_INCREMENT,
+&amp;nbsp;&amp;nbsp;`cat_id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;`goods_name`&amp;nbsp;varchar(255)&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;PRIMARY&amp;nbsp;KEY&amp;nbsp;(`goods_id`)
+)&amp;nbsp;ENGINE=MyISAM&amp;nbsp;&amp;nbsp;DEFAULT&amp;nbsp;CHARSET=utf8&amp;nbsp;AUTO_INCREMENT=2&amp;nbsp;;
+&amp;nbsp;
+&amp;nbsp;
+--
+--&amp;nbsp;转存表中的数据&amp;nbsp;`ih_goods`
+--
+&amp;nbsp;
+&amp;nbsp;
+INSERT&amp;nbsp;INTO&amp;nbsp;`ih_goods`&amp;nbsp;(`goods_id`,&amp;nbsp;`cat_id`,&amp;nbsp;`goods_name`)&amp;nbsp;VALUES
+(1,&amp;nbsp;0,&amp;nbsp;&amp;#39;小米手机&amp;#39;);
+&amp;nbsp;
+--&amp;nbsp;--------------------------------------------------------
+&amp;nbsp;
+--
+--&amp;nbsp;表的结构&amp;nbsp;`ih_log`
+--
+&amp;nbsp;
+CREATE&amp;nbsp;TABLE&amp;nbsp;IF&amp;nbsp;NOT&amp;nbsp;EXISTS&amp;nbsp;`ih_log`&amp;nbsp;(
+&amp;nbsp;&amp;nbsp;`id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;AUTO_INCREMENT,
+&amp;nbsp;&amp;nbsp;`event`&amp;nbsp;varchar(255)&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;`type`&amp;nbsp;tinyint(4)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,
+&amp;nbsp;&amp;nbsp;`addtime`&amp;nbsp;timestamp&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;CURRENT_TIMESTAMP,
+&amp;nbsp;&amp;nbsp;PRIMARY&amp;nbsp;KEY&amp;nbsp;(`id`)
+)&amp;nbsp;ENGINE=MyISAM&amp;nbsp;DEFAULT&amp;nbsp;CHARSET=utf8&amp;nbsp;AUTO_INCREMENT=1&amp;nbsp;;
+&amp;nbsp;
+--
+--&amp;nbsp;转存表中的数据&amp;nbsp;`ih_log`
+--
+&amp;nbsp;
+&amp;nbsp;
+--&amp;nbsp;--------------------------------------------------------
+&amp;nbsp;
+--
+--&amp;nbsp;表的结构&amp;nbsp;`ih_order`
+--
+&amp;nbsp;
+CREATE&amp;nbsp;TABLE&amp;nbsp;IF&amp;nbsp;NOT&amp;nbsp;EXISTS&amp;nbsp;`ih_order`&amp;nbsp;(
+&amp;nbsp;&amp;nbsp;`id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;AUTO_INCREMENT,
+&amp;nbsp;&amp;nbsp;`order_sn`&amp;nbsp;char(32)&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;`user_id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;`status`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,
+&amp;nbsp;&amp;nbsp;`goods_id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,
+&amp;nbsp;&amp;nbsp;`sku_id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,
+&amp;nbsp;&amp;nbsp;`price`&amp;nbsp;float&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;`addtime`&amp;nbsp;timestamp&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;CURRENT_TIMESTAMP,
+&amp;nbsp;&amp;nbsp;PRIMARY&amp;nbsp;KEY&amp;nbsp;(`id`)
+)&amp;nbsp;ENGINE=InnoDB&amp;nbsp;DEFAULT&amp;nbsp;CHARSET=utf8&amp;nbsp;COMMENT=&amp;#39;订单表&amp;#39;&amp;nbsp;AUTO_INCREMENT=1&amp;nbsp;;
+&amp;nbsp;
+--
+--&amp;nbsp;转存表中的数据&amp;nbsp;`ih_order`
+--
+&amp;nbsp;
+&amp;nbsp;
+--&amp;nbsp;--------------------------------------------------------
+&amp;nbsp;
+--
+--&amp;nbsp;表的结构&amp;nbsp;`ih_store`
+--
+&amp;nbsp;
+CREATE&amp;nbsp;TABLE&amp;nbsp;IF&amp;nbsp;NOT&amp;nbsp;EXISTS&amp;nbsp;`ih_store`&amp;nbsp;(
+&amp;nbsp;&amp;nbsp;`id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;AUTO_INCREMENT,
+&amp;nbsp;&amp;nbsp;`goods_id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL,
+&amp;nbsp;&amp;nbsp;`sku_id`&amp;nbsp;int(10)&amp;nbsp;unsigned&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,
+&amp;nbsp;&amp;nbsp;`number`&amp;nbsp;int(10)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,
+&amp;nbsp;&amp;nbsp;`freez`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;&amp;nbsp;COMMENT&amp;nbsp;&amp;#39;虚拟库存&amp;#39;,
+&amp;nbsp;&amp;nbsp;PRIMARY&amp;nbsp;KEY&amp;nbsp;(`id`)
+)&amp;nbsp;ENGINE=InnoDB&amp;nbsp;&amp;nbsp;DEFAULT&amp;nbsp;CHARSET=utf8&amp;nbsp;COMMENT=&amp;#39;库存&amp;#39;&amp;nbsp;AUTO_INCREMENT=2&amp;nbsp;;
+&amp;nbsp;
+--
+--&amp;nbsp;转存表中的数据&amp;nbsp;`ih_store`
+--
+&amp;nbsp;
+INSERT&amp;nbsp;INTO&amp;nbsp;`ih_store`&amp;nbsp;(`id`,&amp;nbsp;`goods_id`,&amp;nbsp;`sku_id`,&amp;nbsp;`number`,&amp;nbsp;`freez`)&amp;nbsp;VALUES
+(1,&amp;nbsp;1,&amp;nbsp;11,&amp;nbsp;500,&amp;nbsp;0);&lt;/pre&gt;&lt;p style=&quot;white-space: normal; box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(79, 79, 79); line-height: 26px; text-align: justify; word-break: break-all; font-family: -apple-system, &amp;quot;SF UI Text&amp;quot;, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif, SimHei, SimSun;&quot;&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1536107978') [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0028s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('22','24') [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0021s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001731s ]
+
+[ 2018-09-05T08:39:39+08:00 ] 106.112.8.247 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '22'  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0008s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 22 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '21'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 21 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '20'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 20 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '19'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 19 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '18'  [ RunTime:0.0011s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 18 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+

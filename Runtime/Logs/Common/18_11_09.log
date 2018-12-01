@@ -1,0 +1,12 @@
+[ 2018-11-09T18:06:45+08:00 ] 120.131.2.28 /index.php?m=vod-search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Vod-search
+
+[ 2018-11-09T18:06:45+08:00 ] 120.131.2.28 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Member
+
