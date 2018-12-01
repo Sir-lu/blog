@@ -1,0 +1,19 @@
+{
+    "name": "lxpblog",
+    "description": "the lxpblog blog",
+    "type": "blog",
+    "keywords": ["lxpblog","thinkphp","blog"],
+    "homepage": "http://blog.lxpgj.com",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "luxiaopeng",
+            "email": "sir.lu@live.cn
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "minimum-stability": "dev"
+}
+
