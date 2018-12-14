@@ -165,6 +165,9 @@ class ArticleModel extends BaseModel{
                 case 29:
                     $image_path[] = '/Upload/image/ueditor/vue.jpeg';
                     break;
+                case 34:
+                    $image_path[] = '/Upload/image/ueditor/mysql.jpg';
+                    break;
             }
             if(!empty($image_path)){
                 if(C('WATER_TYPE')!=0){
