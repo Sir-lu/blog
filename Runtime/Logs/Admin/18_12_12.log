@@ -1,0 +1,176 @@
+[ 2018-12-12T18:16:19+08:00 ] 120.244.120.231 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-12-12T18:16:21+08:00 ] 120.244.120.231 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-12-12T18:16:25+08:00 ] 120.244.120.231 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-12T18:17:51+08:00 ] 120.244.120.231 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0020s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('32','TCP/IP协议与Http协议的区别','鹿晓鹏','','TCP/IP协议与Http协议的区别','1','1','1','&lt;p&gt;&amp;nbsp;&lt;a id=&quot;cb_post_title_url&quot; class=&quot;postTitle2&quot; href=&quot;https://www.cnblogs.com/xianlei/p/tcpip_http.html&quot; style=&quot;font-size: 14px; margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration-line: none;&quot;&gt;TCP/IP协议与Http协议的区别&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;margin: 10px auto; padding: 0px; line-height: 1.5;&quot;&gt;　&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;TPC/IP协议是传输层协议，主要解决数据如何在网络中传输，而HTTP是应用层协议，主要解决如何包装数据。&lt;/strong&gt;关于TCP/IP和HTTP协议的关系，网络有一段比较容易理解的介绍：“我们在传输数据时，可以只使用（传输层）TCP/IP协议，但是那样的话，如果没有应用层，便无法识别数据内容，如果想要使传输的数据有意义，则必须使用到应用层协议，应用层协议有很多，比如HTTP、FTP、TELNET等，也可以自己定义应用层协议。WEB使用HTTP协议作应用层协议，以封装HTTP 文本信息，然后使用TCP/IP做传输层协议将它发到网络上。”&lt;/p&gt;&lt;p&gt;　　术语TCP/IP代表传输控制协议/网际协议，指的是一系列协议。“IP”代表网际协议，TCP和UDP使用该协议从一个网络传送数据包到另一个网络。把&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;IP想像成一种高速公路&lt;/strong&gt;，它允许其它协议在上面行驶并找到到其它电脑的出口。&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;TCP和UDP是高速公路上的“卡车”，它们携带的货物就是像HTTP&lt;/strong&gt;，文件传输协议FTP这样的协议等。&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;你应该能理解，TCP和UDP是FTP，HTTP和SMTP之类使用的传输层协议。虽然TCP和UDP都是用来传输其他协议的，它们却有一个显著的不同：TCP提供有保证的数据传输，而UDP不提供。这意味着TCP有一个特殊的机制来确保数据安全的不出错的从一个端点传到另一个端点，而UDP不提供任何这样的保证。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HTTP(超文本传输协议)是利用TCP在两台电脑(通常是Web服务器和客户端)之间传输信息的协议。客户端使用Web浏览器发起HTTP请求给Web服务器，Web服务器发送被请求的信息给客户端。&lt;/p&gt;&lt;p style=&quot;margin: 10px auto; padding: 0px; line-height: 1.5;&quot;&gt;　　下面的图表试图显示不同的TCP/IP和其他的协议在最初OSI模型中的位置：&lt;/p&gt;&lt;table cellspacing=&quot;1&quot; cellpadding=&quot;5&quot;&gt;&lt;tbody style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot; class=&quot;firstRow&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;7&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;应用层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/HTTP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;HTTP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/SMTP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SMTP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/SNMP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SNMP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/FTP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;FTP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/Telnet&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;Telnet&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/SIP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SIP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/SSH&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SSH&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/NFS&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;NFS&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/RTSP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;RTSP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/XMPP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;XMPP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/Whois&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;Whois&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=ENRP&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ENRP&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;6&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;表示层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=External_Data_Representation&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;XDR&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Abstract_Syntax_Notation_1&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ASN.1&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Server_message_block&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SMB&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Apple_Filing_Protocol&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;AFP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=NetWare_Core_Protocol&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;NCP&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;5&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;会话层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Aggregate_Server_Access_Protocol&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ASAP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/Transport_Layer_Security&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;TLS&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/SSH&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SSH&lt;/a&gt;、ISO 8327 / CCITT X.225、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Remote_procedure_call&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;RPC&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=NetBIOS&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;NetBIOS&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=AppleTalk&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ASP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Winsock&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;Winsock&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/Berkeley_sockets&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;BSD sockets&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;4&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;传输层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/TCP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;TCP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/User_Datagram_Protocol&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;UDP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Real-time_Transport_Protocol&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;RTP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Stream_Control_Transmission_Protocol&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SCTP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=Sequenced_packet_exchange&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;SPX&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=AppleTalk&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ATP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=IL_Protocol&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;IL&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;3&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;网络层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;IP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/ICMP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ICMP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/IGMP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;IGMP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/IPX&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;IPX&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/BGP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;BGP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/OSPF&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;OSPF&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/RIP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;RIP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/IGRP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;IGRP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/EIGRP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;EIGRP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/ARP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ARP&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/RARP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;RARP&lt;/a&gt;、&amp;nbsp;&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/X.25&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;X.25&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;2&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;数据链路层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E7%BD%91&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;以太网&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E4%BB%A4%E7%89%8C%E7%8E%AF&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;令牌环&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/HDLC&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;HDLC&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E5%B8%A7%E4%B8%AD%E7%BB%A7&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;帧中继&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/ISDN&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ISDN&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E5%BC%82%E6%AD%A5%E4%BC%A0%E8%BE%93%E6%A8%A1%E5%BC%8F&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;ATM&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/IEEE_802.11&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;IEEE 802.11&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/FDDI&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;FDDI&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/PPP&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;PPP&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;1&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;物理层&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;margin: 0px; padding: 8px 14px; border-color: silver; border-collapse: collapse;&quot;&gt;例如&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/w/index.php?title=%E7%BA%BF%E8%B7%AF&amp;action=edit&amp;redlink=1&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;线路&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E6%97%A0%E7%BA%BF%E7%94%B5&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;无线电&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E5%85%89%E7%BA%A4&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;光纤&lt;/a&gt;、&lt;a title=&quot;鹿晓鹏博客&quot; href=&quot;http://zh.wikipedia.org/wiki/%E4%BF%A1%E9%B8%BD&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;信鸽&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style=&quot;margin: 10px auto; padding: 0px; line-height: 1.5;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 10px auto; padding: 0px; line-height: 1.5;&quot;&gt;1、HTTP协议的几个重要概念&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;1.连接(Connection)：一个传输层的实际环流，它是建立在两个相互通讯的应用程序之间。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;2.消息(Message)：HTTP通讯的基本单位，包括一个结构化的八元组序列并通过连接传输。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;3.请求(Request)：一个从客户端到服务器的请求信息包括应用于资源的方法、资源的标识符和协议的版本号&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;4.响应(Response)：一个从服务器返回的信息包括HTTP协议的版本号、请求的状态(例如“成功”或“没找到”)和文档的MIME类型。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;5.资源(Resource)：由URI标识的网络数据对象或服务。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;6.实体(Entity)：数据资源或来自服务资源的回映的一种特殊表示方法，它可能被包围在一个请求或响应信息中。一个实体包括实体头信息和实体的本身内容。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;7.客户机(Client)：一个为发送请求目的而建立连接的应用程序。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;8.用户&lt;a href=&quot;http://search.china.alibaba.com/wiki/k-%B4%FA%C0%ED_n-y.html&quot; target=&quot;_blank&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;代理&lt;/a&gt;(Useragent)：初始化一个请求的客户机。它们是浏览器、编辑器或其它用户工具。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;9.服务器(Server)：一个接受连接并对请求返回信息的应用程序。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;10.源服务器(Originserver)：是一个给定资源可以在其上驻留或被创建的服务器。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;11.代理(Proxy)：一个中间程序，它可以充当一个服务器，也可以充当一个客户机，为其它客户机建立请求。请求是通过可能的翻译在内部或经过传递到其它的服务器中。一个代理在发送请求信息之前，必须解释并且如果可能重写它。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;代理经常作为通过防火墙的客户机端的门户，代理还可以作为一个帮助应用来通过协议处理没有被用户代理完成的请求。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;12.网关(Gateway)：一个作为其它服务器中间媒介的服务器。与代理不同的是，网关接受请求就好象对被请求的资源来说它就是源服务器；发出请求的客户机并没有意识到它在同网关打交道。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;网关经常作为通过防火墙的服务器端的门户，网关还可以作为一个协议翻译器以便存取那些存储在非HTTP系统中的资源。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;13.通道(Tunnel)：是作为两个连接中继的中介程序。一旦激活，通道便被认为不属于HTTP通讯，尽管通道可能是被一个HTTP请求初始化的。当被中继的连接两端关闭时，通道便消失。当一个门户(Portal)必须存在或中介(Intermediary)不能解释中继的通讯时通道被经常使用。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;14.缓存(Cache)：反应信息的局域存储。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin: 10px auto; padding: 0px; line-height: 1.5;&quot;&gt;&amp;nbsp;2.发送请求&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;打开一个连接后，客户机把请求消息送到服务器的停留端口上，完成提出请求动作。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;HTTP/1.0&amp;nbsp;请求消息的格式为：&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;请求消息=请求行(通用信息|请求头|实体头)CRLF[实体内容]&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;请求&amp;nbsp;行=方法&amp;nbsp;请求URL&amp;nbsp;HTTP版本号&amp;nbsp;CRLF&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;方&amp;nbsp;法=GET|HEAD|POST|扩展方法&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;U&amp;nbsp;R&amp;nbsp;L=协议名称+宿主名+目录与文件名&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;请求行中的方法描述指定资源中应该执行的动作，常用的方法有GET、HEAD和POST。不同的请求对象对应GET的结果是不同的，对应关系如下：&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;对象&amp;nbsp;GET的结果&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;文件&amp;nbsp;文件的内容&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;程序&amp;nbsp;该程序的执行结果&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;数据库查询&amp;nbsp;查询结果&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;HEAD??要求服务器查找某对象的元信息，而不是对象本身。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;POST??从客户机向服务器传送数据，在要求服务器和CGI做进一步处理时会用到POST方法。POST主要用于发送HTML文本中FORM的内容，让CGI程序处理。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;一个请求的例子为：&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;GEThttp://networking.zju.edu.cn/zju/index.htmHTTP/1.0&amp;nbsp;networking.zju.edu.cn/zju/index.htmHTTP/1.0&amp;nbsp;头信息又称为元信息，即信息的信息，利用元信息可以实现有条件的请求或应答。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;请求头??告诉服务器怎样解释本次请求，主要包括用户可以接受的数据类型、压缩方法和语言等。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;实体头??实体信息类型、长度、压缩方法、最后一次修改时间、数据有效期等。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;实体??请求或应答对象本身。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;3.发送响应&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;服务器在处理完客户的请求之后，要向客户机发送响应消息。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;HTTP/1.0的响应消息格式如下：&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;响应消息=状态行(通用信息头|响应头|实体头)&amp;nbsp;CRLF&amp;nbsp;〔实体内容〕&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;状态行=HTTP版本号&amp;nbsp;状态码&amp;nbsp;原因叙述&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;状态码表示响应类型&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;1××&amp;nbsp;保留&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;2××&amp;nbsp;表示请求成功地接收&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;3××&amp;nbsp;为完成请求客户需进一步细化请求&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;4××&amp;nbsp;客户错误&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;5××&amp;nbsp;服务器错误&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;响应头的信息包括：服务程序名，通知客户请求的URL需要&lt;a href=&quot;http://search.china.alibaba.com/wiki/k-%C8%CF%D6%A4_n-y.html&quot; target=&quot;_blank&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(7, 93, 179);&quot;&gt;认证&lt;/a&gt;，请求的资源何时能使用。&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;4.关闭连接&lt;br style=&quot;margin: 0px; padding: 0px;&quot;/&gt;&amp;nbsp;客户和服务器双方都可以通过关闭套接字来结束TCP/IP对话&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1544609871') [ RunTime:0.0356s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0015s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('32','24') [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0031s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('32','/Upload/image/ueditor/php.jpeg') [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0033s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003926s ]
+
+[ 2018-12-12T18:17:53+08:00 ] 120.244.120.231 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0618s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0327s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '32'  [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0008s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 32 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0413s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '31'  [ RunTime:0.0005s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 31 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '30'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 30 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '27'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 27 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '26'  [ RunTime:0.0006s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 26 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '25'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 25 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '23'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 23 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '24'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 24 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '22'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 22 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '21'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 21 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '20'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 20 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '19'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 19 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '18'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 18 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+

@@ -84,6 +84,9 @@ class ArticleModel extends BaseModel{
                     case 34:
                         $image_path[] = '/Upload/image/ueditor/mysql.jpg';
                         break;
+                    case 35:
+                        $image_path[] = '/Upload/image/ueditor/redis.jpg';
+                        break;
                 }
                 if(!empty($image_path)){
                     // 添加水印
@@ -167,6 +170,9 @@ class ArticleModel extends BaseModel{
                     break;
                 case 34:
                     $image_path[] = '/Upload/image/ueditor/mysql.jpg';
+                    break;
+                case 35:
+                    $image_path[] = '/Upload/image/ueditor/redis.jpg';
                     break;
             }
             if(!empty($image_path)){

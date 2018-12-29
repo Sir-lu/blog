@@ -1,0 +1,9 @@
+[ 2018-12-18T04:16:36+08:00 ] 120.92.117.198 /index.php?s=api&c=api&m=save_form_data&name=/../../../result.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载控制器:Api
+
