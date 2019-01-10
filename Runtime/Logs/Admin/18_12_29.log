@@ -468,3 +468,443 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
 
+[ 2018-12-29T15:35:24+08:00 ] 223.72.49.116 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-12-29T15:38:06+08:00 ] 223.72.49.116 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('35','Redis的AOF深入解析','鹿晓鹏','Redis的AOF深入解析,AOF,RDB','Redis的AOF深入解析,RDB,AOF','1','1','1','&lt;p&gt;1、AOF持久化的配置&lt;/p&gt;&lt;p&gt;2、AOF持久化的数据恢复实验&lt;/p&gt;&lt;p&gt;3、AOF rewrite&lt;/p&gt;&lt;p&gt;4、AOF破损文件的修复&lt;/p&gt;&lt;p&gt;5、AOF和RDB同时工作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;1、AOF持久化的配置&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;AOF持久化，默认是关闭的，默认是打开RDB持久化&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;appendonly yes，可以打开AOF持久化机制，在生产环境里面，一般来说AOF都是要打开的，除非你说随便丢个几分钟的数据也无所谓&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;打开AOF持久化机制之后，redis每次接收到一条写命令，就会写入日志文件中，当然是先写入os cache的，然后每隔一定时间再fsync一下&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;而且即使AOF和RDB都开启了，redis重启的时候，也是优先通过AOF进行数据恢复的，因为aof数据比较完整&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;可以配置AOF的fsync策略，有三种策略可以选择，一种是每次写入一条数据就执行一次fsync; 一种是每隔一秒执行一次fsync; 一种是不主动执行fsync&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;always: 每次写入一条数据，立即将这个数据对应的写日志fsync到磁盘上去，性能非常非常差，吞吐量很低; 确保说redis里的数据一条都不丢，那就只能这样了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;mysql -&amp;gt; 内存策略，大量磁盘，QPS到多少，一两k。QPS，每秒钟的请求数量&lt;/p&gt;&lt;p&gt;redis -&amp;gt; 内存，磁盘持久化，QPS到多少，单机，一般来说，上万QPS没问题&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;everysec: 每秒将os cache中的数据fsync到磁盘，这个最常用的，生产环境一般都这么配置，性能很高，QPS还是可以上万的&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;no: 仅仅redis负责将数据写入os cache就撒手不管了，然后后面os自己会时不时有自己的策略将数据刷入磁盘，不可控了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2、AOF持久化的数据恢复实验&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）先仅仅打开RDB，写入一些数据，然后kill -9杀掉redis进程，接着重启redis，发现数据没了，因为RDB快照还没生成&lt;/p&gt;&lt;p&gt;（2）打开AOF的开关，启用AOF持久化&lt;/p&gt;&lt;p&gt;（3）写入一些数据，观察AOF文件中的日志内容&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;其实你在appendonly.aof文件中，可以看到刚写的日志，它们其实就是先写入os cache的，然后1秒后才fsync到磁盘中，只有fsync到磁盘中了，才是安全的，要不然光是在os cache中，机器只要重启，就什么都没了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（4）kill -9杀掉redis进程，重新启动redis进程，发现数据被恢复回来了，就是从AOF文件中恢复回来的&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis进程启动的时候，直接就会从appendonly.aof中加载所有的日志，把内存中的数据恢复回来&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;3、AOF rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis中的数据其实有限的，很多数据可能会自动过期，可能会被用户删除，可能会被redis用缓存清除的算法清理掉&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis中的数据会不断淘汰掉旧的，就一部分常用的数据会被自动保留在redis内存中&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以可能很多之前的已经被清理掉的数据，对应的写日志还停留在AOF中，AOF日志文件就一个，会不断的膨胀，到很大很大&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以AOF会自动在后台每隔一定时间做rewrite操作，比如日志里已经存放了针对100w数据的写日志了; redis内存只剩下10万; 基于内存中当前的10万数据构建一套最新的日志，到AOF中; 覆盖之前的老日志; 确保AOF日志文件不会过大，保持跟redis内存数据量一致&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis 2.4之前，还需要手动，开发一些脚本，crontab，通过BGREWRITEAOF命令去执行AOF rewrite，但是redis 2.4之后，会自动进行rewrite操作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在redis.conf中，可以配置rewrite策略&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;auto-aof-rewrite-percentage 100&lt;/p&gt;&lt;p&gt;auto-aof-rewrite-min-size 64mb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;比如说上一次AOF rewrite之后，是128mb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;然后就会接着128mb继续写AOF的日志，如果发现增长的比例，超过了之前的100%，256mb，就可能会去触发一次rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;但是此时还要去跟min-size，64mb去比较，256mb &amp;gt; 64mb，才会去触发rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）redis fork一个子进程&lt;/p&gt;&lt;p&gt;（2）子进程基于当前内存中的数据，构建日志，开始往一个新的临时的AOF文件中写入日志&lt;/p&gt;&lt;p&gt;（3）redis主进程，接收到client新的写操作之后，在内存中写入日志，同时新的日志也继续写入旧的AOF文件&lt;/p&gt;&lt;p&gt;（4）子进程写完新的日志文件之后，redis主进程将内存中的新日志再次追加到新的AOF文件中&lt;/p&gt;&lt;p&gt;（5）用新的日志文件替换掉旧的日志文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;4、AOF破损文件的修复&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;如果redis在append数据到AOF文件时，机器宕机了，可能会导致AOF文件破损&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;用redis-check-aof --fix命令来修复破损的AOF文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;5、AOF和RDB同时工作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）如果RDB在执行snapshotting操作，那么redis不会执行AOF rewrite; 如果redis再执行AOF rewrite，那么就不会执行RDB snapshotting&lt;/p&gt;&lt;p&gt;（2）如果RDB在执行snapshotting，此时用户执行BGREWRITEAOF命令，那么等RDB快照生成之后，才会去执行AOF rewrite&lt;/p&gt;&lt;p&gt;（3）同时有RDB snapshot文件和AOF日志文件，那么redis重启的时候，会优先使用AOF进行数据恢复，因为其中的日志更完整&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;6、最后一个小实验，让大家对redis的数据恢复有更加深刻的体会&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）在有rdb的dump和aof的appendonly的同时，rdb里也有部分数据，aof里也有部分数据，这个时候其实会发现，rdb的数据不会恢复到内存中&lt;/p&gt;&lt;p&gt;（2）我们模拟让aof破损，然后fix，有一条数据会被fix删除&lt;/p&gt;&lt;p&gt;（3）再次用fix得aof文件去重启redis，发现数据只剩下一条了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;数据恢复完全是依赖于底层的磁盘的持久化的，主要rdb和aof上都没有数据，那就没了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1546069085') [ RunTime:0.0288s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0014s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('36','27') [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('36','/Upload/image/ueditor/redis.jpg') [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2018-12-29T15:38:08+08:00 ] 223.72.49.116 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '36'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0005s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 36 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '35'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 35 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '34'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 34 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '33'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 33 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '32'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 32 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '31'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 31 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '30'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 30 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '27'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 27 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '26'  [ RunTime:0.0005s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 26 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '25'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 25 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '23'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 23 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '24'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 24 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '22'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 22 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '21'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 21 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '20'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 20 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2018-12-29T15:38:24+08:00 ] 223.72.49.116 /Admin/Article/edit/aid/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 36 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0017s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 36  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '36'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-12-29T15:39:01+08:00 ] 223.72.49.116 /Admin/Article/edit/aid/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: UPDATE `lxp_article` SET `aid`='36',`cid`='35',`title`='Redis持久化数据之AOF深入解析',`author`='鹿晓鹏',`keywords`='Redis的AOF深入解析,AOF,RDB',`description`='Redis持久化数据之RDB/AOF深入解析',`is_original`='1',`is_top`='1',`is_show`='1',`content`='&lt;p&gt;1、AOF持久化的配置&lt;/p&gt;&lt;p&gt;2、AOF持久化的数据恢复实验&lt;/p&gt;&lt;p&gt;3、AOF rewrite&lt;/p&gt;&lt;p&gt;4、AOF破损文件的修复&lt;/p&gt;&lt;p&gt;5、AOF和RDB同时工作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;1、AOF持久化的配置&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;AOF持久化，默认是关闭的，默认是打开RDB持久化&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;appendonly yes，可以打开AOF持久化机制，在生产环境里面，一般来说AOF都是要打开的，除非你说随便丢个几分钟的数据也无所谓&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;打开AOF持久化机制之后，redis每次接收到一条写命令，就会写入日志文件中，当然是先写入os cache的，然后每隔一定时间再fsync一下&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;而且即使AOF和RDB都开启了，redis重启的时候，也是优先通过AOF进行数据恢复的，因为aof数据比较完整&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;可以配置AOF的fsync策略，有三种策略可以选择，一种是每次写入一条数据就执行一次fsync; 一种是每隔一秒执行一次fsync; 一种是不主动执行fsync&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;always: 每次写入一条数据，立即将这个数据对应的写日志fsync到磁盘上去，性能非常非常差，吞吐量很低; 确保说redis里的数据一条都不丢，那就只能这样了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;mysql -&amp;gt; 内存策略，大量磁盘，QPS到多少，一两k。QPS，每秒钟的请求数量&lt;/p&gt;&lt;p&gt;redis -&amp;gt; 内存，磁盘持久化，QPS到多少，单机，一般来说，上万QPS没问题&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;everysec: 每秒将os cache中的数据fsync到磁盘，这个最常用的，生产环境一般都这么配置，性能很高，QPS还是可以上万的&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;no: 仅仅redis负责将数据写入os cache就撒手不管了，然后后面os自己会时不时有自己的策略将数据刷入磁盘，不可控了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2、AOF持久化的数据恢复实验&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）先仅仅打开RDB，写入一些数据，然后kill -9杀掉redis进程，接着重启redis，发现数据没了，因为RDB快照还没生成&lt;/p&gt;&lt;p&gt;（2）打开AOF的开关，启用AOF持久化&lt;/p&gt;&lt;p&gt;（3）写入一些数据，观察AOF文件中的日志内容&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;其实你在appendonly.aof文件中，可以看到刚写的日志，它们其实就是先写入os cache的，然后1秒后才fsync到磁盘中，只有fsync到磁盘中了，才是安全的，要不然光是在os cache中，机器只要重启，就什么都没了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（4）kill -9杀掉redis进程，重新启动redis进程，发现数据被恢复回来了，就是从AOF文件中恢复回来的&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis进程启动的时候，直接就会从appendonly.aof中加载所有的日志，把内存中的数据恢复回来&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;3、AOF rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis中的数据其实有限的，很多数据可能会自动过期，可能会被用户删除，可能会被redis用缓存清除的算法清理掉&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis中的数据会不断淘汰掉旧的，就一部分常用的数据会被自动保留在redis内存中&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以可能很多之前的已经被清理掉的数据，对应的写日志还停留在AOF中，AOF日志文件就一个，会不断的膨胀，到很大很大&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以AOF会自动在后台每隔一定时间做rewrite操作，比如日志里已经存放了针对100w数据的写日志了; redis内存只剩下10万; 基于内存中当前的10万数据构建一套最新的日志，到AOF中; 覆盖之前的老日志; 确保AOF日志文件不会过大，保持跟redis内存数据量一致&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis 2.4之前，还需要手动，开发一些脚本，crontab，通过BGREWRITEAOF命令去执行AOF rewrite，但是redis 2.4之后，会自动进行rewrite操作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在redis.conf中，可以配置rewrite策略&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;auto-aof-rewrite-percentage 100&lt;/p&gt;&lt;p&gt;auto-aof-rewrite-min-size 64mb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;比如说上一次AOF rewrite之后，是128mb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;然后就会接着128mb继续写AOF的日志，如果发现增长的比例，超过了之前的100%，256mb，就可能会去触发一次rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;但是此时还要去跟min-size，64mb去比较，256mb &amp;gt; 64mb，才会去触发rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）redis fork一个子进程&lt;/p&gt;&lt;p&gt;（2）子进程基于当前内存中的数据，构建日志，开始往一个新的临时的AOF文件中写入日志&lt;/p&gt;&lt;p&gt;（3）redis主进程，接收到client新的写操作之后，在内存中写入日志，同时新的日志也继续写入旧的AOF文件&lt;/p&gt;&lt;p&gt;（4）子进程写完新的日志文件之后，redis主进程将内存中的新日志再次追加到新的AOF文件中&lt;/p&gt;&lt;p&gt;（5）用新的日志文件替换掉旧的日志文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;4、AOF破损文件的修复&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;如果redis在append数据到AOF文件时，机器宕机了，可能会导致AOF文件破损&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;用redis-check-aof --fix命令来修复破损的AOF文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;5、AOF和RDB同时工作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）如果RDB在执行snapshotting操作，那么redis不会执行AOF rewrite; 如果redis再执行AOF rewrite，那么就不会执行RDB snapshotting&lt;/p&gt;&lt;p&gt;（2）如果RDB在执行snapshotting，此时用户执行BGREWRITEAOF命令，那么等RDB快照生成之后，才会去执行AOF rewrite&lt;/p&gt;&lt;p&gt;（3）同时有RDB snapshot文件和AOF日志文件，那么redis重启的时候，会优先使用AOF进行数据恢复，因为其中的日志更完整&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;6、最后一个小实验，让大家对redis的数据恢复有更加深刻的体会&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）在有rdb的dump和aof的appendonly的同时，rdb里也有部分数据，aof里也有部分数据，这个时候其实会发现，rdb的数据不会恢复到内存中&lt;/p&gt;&lt;p&gt;（2）我们模拟让aof破损，然后fix，有一条数据会被fix删除&lt;/p&gt;&lt;p&gt;（3）再次用fix得aof文件去重启redis，发现数据只剩下一条了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;数据恢复完全是依赖于底层的磁盘的持久化的，主要rdb和aof上都没有数据，那就没了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;' WHERE `aid` = 36 [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: DELETE FROM `lxp_article_tag` WHERE `aid` = 36 [ RunTime:0.0040s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('36','27') [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0007s ]
+SQL: DELETE FROM `lxp_article_pic` WHERE `aid` = 36 [ RunTime:0.0028s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('36','/Upload/image/ueditor/redis.jpg') [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-12-29T15:39:04+08:00 ] 223.72.49.116 /Admin/Article/edit/aid/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 36  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '36'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0017s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2018-12-29T15:40:17+08:00 ] 223.72.49.116 /Admin/Article/edit/aid/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0015s ]
+SQL: UPDATE `lxp_article` SET `aid`='36',`cid`='35',`title`='Redis持久化数据之RDB深入解析',`author`='鹿晓鹏',`keywords`='Redis的AOF深入解析,AOF,RDB',`description`='Redis持久化数据之RDB/AOF深入解析',`is_original`='1',`is_top`='1',`is_show`='1',`content`='&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;1、如何配置RDB持久化机制&lt;/p&gt;&lt;p&gt;2、RDB持久化机制的工作流程&lt;/p&gt;&lt;p&gt;3、基于RDB持久化机制的数据恢复实验&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;1、如何配置RDB持久化机制&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis.conf文件，也就是/etc/redis/6379.conf，去配置持久化&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;save 60 1000&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;每隔60s，如果有超过1000个key发生了变更，那么就生成一个新的dump.rdb文件，就是当前redis内存中完整的数据快照，这个操作也被称之为snapshotting，快照&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;也可以手动调用save或者bgsave命令，同步或异步执行rdb快照生成&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;save可以设置多个，就是多个snapshotting检查点，每到一个检查点，就会去check一下，是否有指定的key数量发生了变更，如果有，就生成一个新的dump.rdb文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2、RDB持久化机制的工作流程&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）redis根据配置自己尝试去生成rdb快照文件&lt;/p&gt;&lt;p&gt;（2）fork一个子进程出来&lt;/p&gt;&lt;p&gt;（3）子进程尝试将数据dump到临时的rdb快照文件中&lt;/p&gt;&lt;p&gt;（4）完成rdb快照文件的生成之后，就替换之前的旧的快照文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;dump.rdb，每次生成一个新的快照，都会覆盖之前的老快照&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;3、基于RDB持久化机制的数据恢复实验&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）在redis中保存几条数据，立即停掉redis进程，然后重启redis，看看刚才插入的数据还在不在&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;数据还在，为什么？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;带出来一个知识点，通过redis-cli SHUTDOWN这种方式去停掉redis，其实是一种安全退出的模式，redis在退出的时候会将内存中的数据立即生成一份完整的rdb快照&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;/var/redis/6379/dump.rdb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（2）在redis中再保存几条新的数据，用kill -9粗暴杀死redis进程，模拟redis故障异常退出，导致内存数据丢失的场景&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;这次就发现，redis进程异常被杀掉，数据没有进dump文件，几条最新的数据就丢失了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（3）手动设置一个save检查点，save 5 1&lt;/p&gt;&lt;p&gt;（4）写入几条数据，等待5秒钟，会发现自动进行了一次dump rdb快照，在dump.rdb中发现了数据&lt;/p&gt;&lt;p&gt;（5）异常停掉redis进程，再重新启动redis，看刚才插入的数据还在&lt;/p&gt;' WHERE `aid` = 36 [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0009s ]
+SQL: DELETE FROM `lxp_article_tag` WHERE `aid` = 36 [ RunTime:0.0041s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('36','27') [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lxp_article_pic` WHERE `aid` = 36 [ RunTime:0.0034s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('36','/Upload/image/ueditor/redis.jpg') [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-12-29T15:40:19+08:00 ] 223.72.49.116 /Admin/Article/edit/aid/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 36  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '36'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-12-29T15:40:36+08:00 ] 223.72.49.116 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-29T15:42:05+08:00 ] 223.72.49.116 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('35','Redis的持久化数据之AOF深入解析','鹿晓鹏','Redis的持久化数据之RDB深入解析,AOF,REDIS,RDB','Redis的持久化数据之AOF深入解析
+','1','1','1','&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;1、AOF持久化的配置&lt;/p&gt;&lt;p&gt;2、AOF持久化的数据恢复实验&lt;/p&gt;&lt;p&gt;3、AOF rewrite&lt;/p&gt;&lt;p&gt;4、AOF破损文件的修复&lt;/p&gt;&lt;p&gt;5、AOF和RDB同时工作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;1、AOF持久化的配置&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;AOF持久化，默认是关闭的，默认是打开RDB持久化&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;appendonly yes，可以打开AOF持久化机制，在生产环境里面，一般来说AOF都是要打开的，除非你说随便丢个几分钟的数据也无所谓&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;打开AOF持久化机制之后，redis每次接收到一条写命令，就会写入日志文件中，当然是先写入os cache的，然后每隔一定时间再fsync一下&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;而且即使AOF和RDB都开启了，redis重启的时候，也是优先通过AOF进行数据恢复的，因为aof数据比较完整&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;可以配置AOF的fsync策略，有三种策略可以选择，一种是每次写入一条数据就执行一次fsync; 一种是每隔一秒执行一次fsync; 一种是不主动执行fsync&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;always: 每次写入一条数据，立即将这个数据对应的写日志fsync到磁盘上去，性能非常非常差，吞吐量很低; 确保说redis里的数据一条都不丢，那就只能这样了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;mysql -&amp;gt; 内存策略，大量磁盘，QPS到多少，一两k。QPS，每秒钟的请求数量&lt;/p&gt;&lt;p&gt;redis -&amp;gt; 内存，磁盘持久化，QPS到多少，单机，一般来说，上万QPS没问题&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;everysec: 每秒将os cache中的数据fsync到磁盘，这个最常用的，生产环境一般都这么配置，性能很高，QPS还是可以上万的&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;no: 仅仅redis负责将数据写入os cache就撒手不管了，然后后面os自己会时不时有自己的策略将数据刷入磁盘，不可控了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2、AOF持久化的数据恢复实验&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）先仅仅打开RDB，写入一些数据，然后kill -9杀掉redis进程，接着重启redis，发现数据没了，因为RDB快照还没生成&lt;/p&gt;&lt;p&gt;（2）打开AOF的开关，启用AOF持久化&lt;/p&gt;&lt;p&gt;（3）写入一些数据，观察AOF文件中的日志内容&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;其实你在appendonly.aof文件中，可以看到刚写的日志，它们其实就是先写入os cache的，然后1秒后才fsync到磁盘中，只有fsync到磁盘中了，才是安全的，要不然光是在os cache中，机器只要重启，就什么都没了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（4）kill -9杀掉redis进程，重新启动redis进程，发现数据被恢复回来了，就是从AOF文件中恢复回来的&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis进程启动的时候，直接就会从appendonly.aof中加载所有的日志，把内存中的数据恢复回来&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;3、AOF rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis中的数据其实有限的，很多数据可能会自动过期，可能会被用户删除，可能会被redis用缓存清除的算法清理掉&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis中的数据会不断淘汰掉旧的，就一部分常用的数据会被自动保留在redis内存中&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以可能很多之前的已经被清理掉的数据，对应的写日志还停留在AOF中，AOF日志文件就一个，会不断的膨胀，到很大很大&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以AOF会自动在后台每隔一定时间做rewrite操作，比如日志里已经存放了针对100w数据的写日志了; redis内存只剩下10万; 基于内存中当前的10万数据构建一套最新的日志，到AOF中; 覆盖之前的老日志; 确保AOF日志文件不会过大，保持跟redis内存数据量一致&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;redis 2.4之前，还需要手动，开发一些脚本，crontab，通过BGREWRITEAOF命令去执行AOF rewrite，但是redis 2.4之后，会自动进行rewrite操作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在redis.conf中，可以配置rewrite策略&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;auto-aof-rewrite-percentage 100&lt;/p&gt;&lt;p&gt;auto-aof-rewrite-min-size 64mb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;比如说上一次AOF rewrite之后，是128mb&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;然后就会接着128mb继续写AOF的日志，如果发现增长的比例，超过了之前的100%，256mb，就可能会去触发一次rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;但是此时还要去跟min-size，64mb去比较，256mb &amp;gt; 64mb，才会去触发rewrite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）redis fork一个子进程&lt;/p&gt;&lt;p&gt;（2）子进程基于当前内存中的数据，构建日志，开始往一个新的临时的AOF文件中写入日志&lt;/p&gt;&lt;p&gt;（3）redis主进程，接收到client新的写操作之后，在内存中写入日志，同时新的日志也继续写入旧的AOF文件&lt;/p&gt;&lt;p&gt;（4）子进程写完新的日志文件之后，redis主进程将内存中的新日志再次追加到新的AOF文件中&lt;/p&gt;&lt;p&gt;（5）用新的日志文件替换掉旧的日志文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;4、AOF破损文件的修复&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;如果redis在append数据到AOF文件时，机器宕机了，可能会导致AOF文件破损&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;用redis-check-aof --fix命令来修复破损的AOF文件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;5、AOF和RDB同时工作&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）如果RDB在执行snapshotting操作，那么redis不会执行AOF rewrite; 如果redis再执行AOF rewrite，那么就不会执行RDB snapshotting&lt;/p&gt;&lt;p&gt;（2）如果RDB在执行snapshotting，此时用户执行BGREWRITEAOF命令，那么等RDB快照生成之后，才会去执行AOF rewrite&lt;/p&gt;&lt;p&gt;（3）同时有RDB snapshot文件和AOF日志文件，那么redis重启的时候，会优先使用AOF进行数据恢复，因为其中的日志更完整&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------------------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;6、最后一个小实验，让大家对redis的数据恢复有更加深刻的体会&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;（1）在有rdb的dump和aof的appendonly的同时，rdb里也有部分数据，aof里也有部分数据，这个时候其实会发现，rdb的数据不会恢复到内存中&lt;/p&gt;&lt;p&gt;（2）我们模拟让aof破损，然后fix，有一条数据会被fix删除&lt;/p&gt;&lt;p&gt;（3）再次用fix得aof文件去重启redis，发现数据只剩下一条了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;数据恢复完全是依赖于底层的磁盘的持久化的，主要rdb和aof上都没有数据，那就没了&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1546069325') [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('37','27') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('37','/Upload/image/ueditor/redis.jpg') [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0018s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-12-29T15:42:07+08:00 ] 223.72.49.116 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '37'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0005s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 37 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '36'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 36 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '35'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 35 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '34'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 34 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '33'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 33 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '32'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 32 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '31'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 31 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '30'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 30 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '27'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 27 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '26'  [ RunTime:0.0005s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 26 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '25'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 25 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '23'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 23 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '24'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 24 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '22'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 22 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '21'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 21 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
