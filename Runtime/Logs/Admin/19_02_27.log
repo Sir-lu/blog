@@ -1,0 +1,411 @@
+[ 2019-02-27T17:51:52+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2019-02-27T17:51:54+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2019-02-27T17:51:56+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2019-02-27T17:53:56+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0036s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('29','深入理解vue','鹿晓鹏','vue','深入理解vue','1','0','1','&lt;h1 id=&quot;autoid-0-0-0&quot;&gt;一 　理解vue的核心理念&lt;/h1&gt;&lt;p&gt;使用vue会让人感到身心愉悦,它同时具备angular和react的优点,轻量级,api简单,文档齐全,简单强大,麻雀虽小五脏俱全.&lt;/p&gt;&lt;p&gt;倘若用一句话来概括vue,那么我首先想到的便是官方文档中的一句话:&lt;/p&gt;&lt;pre&gt;Vue.js（读音&amp;nbsp;/vjuː/，类似于&amp;nbsp;view）&amp;nbsp;是一套构建用户界面的渐进式框架。&lt;/pre&gt;&lt;p&gt;这句话可能大家并不陌生,但是真正理解这句话的可能并不多,其实,读懂了这句话,也就明白了vue的核心理念.&lt;/p&gt;&lt;p&gt;那么,怎样理解什么是渐进式框架?在这之前,我们首先要理解什么是框架.在最初的前端开发中,为了完成某个功能,我们需要通过js在HTML页面中获得dom节点,随后获得dom节点中的文本内容或者在dom节点上添加事件,进行一系列的程序操作,但是,如果任务量很大的情况下,代码会随着业务的增加而变得臃肿和混乱,在现实的开发中,负责的逻辑和巨大的开发量,是原生js无法完成的.&lt;/p&gt;&lt;p&gt;这个时候,开发人员将js代码分为了三个板块,数据(Model),逻辑控制(*),视图(View),数据板块只负责数据部分,视图板块负责更改样式,逻辑控制负责联系视图板块和数据板块,这样子有很大的好处,当需求发生变动时,只需要修改对应的板块就好&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://images2017.cnblogs.com/blog/1201942/201802/1201942-20180206192057810-2139932683.png&quot; alt=&quot;鹿晓鹏博客&quot; width=&quot;655&quot; height=&quot;364&quot;/&gt;&lt;/p&gt;&lt;p&gt;这种开发模式,就是所谓的MV*结构,我们现在了解的MVC,MVP,ＭＶＶＭ都是MV*的衍生物，对比这几种框架模式，我们会总结出来一个本质的特点，那就是这些开发模式都是让视图和数据间不会发生直接联系．对比用原生JS获得dom的操作，你会发现原生dom流其实是将dom作为数据，从dom中获得Ｍｏｄｅｌ，随后又更改dom来实现更新视图，视图和模型其实混在一起，所以代码自然混乱，不易维护．&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;在具有响应式系统的Vue实例中，DOM状态只是数据状态的一个映射 即 UI=VM(State) ，当等式右边State改变了，页面展示部分UI就会发生相应改变。很多人初次上手Vue时，觉得很好用，原因就是这个．不过，Vue的核心定位并不是一个框架，设计上也没有完全遵循MVVM模式，可以看到在图中只有State和View两部分， Vue的核心功能强调的是状态到界面的映射，对于代码的结构组织并不重视， 所以单纯只使用其核心功能时，它并不是一个框架，而更像一个视图模板引擎，这也是为什么Vue开发者把其命名成读音类似于view的原因。&lt;/p&gt;&lt;p&gt;上文提到，Vue的核心的功能，是一个视图模板引擎，但这不是说Vue就不能成为一个框架。如下图所示，这里包含了Vue的所有部件，在声明式渲染（视图模板引擎）的基础上，我们可以通过添加组件系统、客户端路由、大规模状态管理来构建一个完整的框架。更重要的是，这些功能相互独立，你可以在核心功能的基础上任意选用其他的部件，不一定要全部整合在一起。可以看到，所说的“渐进式”，其实就是Vue的使用方式，同时也体现了Vue的设计的理念．&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://images2017.cnblogs.com/blog/1201942/201802/1201942-20180206192837982-1983432333.png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h1 id=&quot;autoid-1-0-0&quot;&gt;二　探讨vue的双向绑定原理及实现&lt;/h1&gt;&lt;p&gt;　　成果图&lt;/p&gt;&lt;p&gt;　　　　&lt;img src=&quot;https://images2018.cnblogs.com/blog/1201942/201802/1201942-20180224112825977-1594305927.png&quot; alt=&quot;鹿晓鹏博客&quot; width=&quot;440&quot; height=&quot;210&quot;/&gt;&lt;img src=&quot;https://images2018.cnblogs.com/blog/1201942/201802/1201942-20180224112929845-2039555961.gif&quot; alt=&quot;鹿晓鹏博客&quot; width=&quot;400&quot; height=&quot;210&quot;/&gt;&lt;/p&gt;&lt;p&gt;下面介绍两个内容&lt;/p&gt;&lt;p&gt;　　１．vue双向绑定的原理&lt;/p&gt;&lt;p&gt;　　２．实现简易版vue的过程，包括声明式数据渲染及一些简单的指令&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;vue双向绑定原理&lt;/p&gt;&lt;p&gt;vue的双向绑定是由数据劫持结合发布者－订阅者模式实现的，那么什么是数据劫持？vue是如何进行数据劫持的？说白了就是通过Object.defineProperty()来劫持对象属性的setter和getter操作，在数据变动时做你想要做的事情．我们可以看一下通过控制台梳齿一个定义在vue初始化数据上的对象是什么．&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;var&amp;nbsp;vm&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Vue({
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;data:&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;test&amp;nbsp;:&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;a:&amp;nbsp;1
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;created:&amp;nbsp;function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(this.test);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+});&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;打印结果：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224114219152?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;在打印结果中我们可以看到属性a有两个方法：get和set.为什么会有这两个方法呢，这正是vue通过Object.defineProperty()进行数据劫持的．&lt;/p&gt;&lt;p&gt;Object.defineProperty()这个方法是做什么的呢？文档上是这样说的&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224115108843?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;简单的说，他可以控制一个对象属性的一些特有操作，比如读写权，是否可枚举，这里我们主要研究它的get和set方法，如果想清楚更多用法，可以参考：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty&lt;/p&gt;&lt;p&gt;我们可以很轻松的打印出一个对象的属性数据：&lt;/p&gt;&lt;pre&gt;var&amp;nbsp;Book&amp;nbsp;=&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;name:&amp;nbsp;&amp;#39;人性的弱点&amp;#39;};
+console.log(Book.name);&amp;nbsp;&amp;nbsp;//&amp;nbsp;人性的弱点&lt;/pre&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;但是如果在执行console.log(Book.name)的同时，给书的书名增加一个书名号呢，这个时候应该怎么做，这时候我们就需要用到Object.defineProperty( )了：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;//在console.log(book.name)同时,直接给书加一个书号var&amp;nbsp;Book&amp;nbsp;=&amp;nbsp;{};var&amp;nbsp;name&amp;nbsp;=&amp;nbsp;&amp;#39;&amp;#39;;
+Object.defineProperty(Book,&amp;#39;name&amp;#39;,{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;set:function(value)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;name&amp;nbsp;=&amp;nbsp;value;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(&amp;#39;你取了一个书名叫:&amp;#39;+value);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get:function()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(&amp;#39;get方法被监听到&amp;#39;);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;&amp;#39;&amp;lt;&amp;#39;+name+&amp;#39;&amp;gt;&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+});
+Book.name&amp;nbsp;=&amp;nbsp;&amp;#39;人性的弱点&amp;#39;;&amp;nbsp;&amp;nbsp;//你取了一个书名叫:人性的弱点console.log(Book.name);　//&amp;lt;人性的弱点&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;通过Object.defineProperty( )这个方法设置了Book对象的name属性，对其get和set方法进行重写操作，get方法在获得name属性时被调用，set方法在设置name属性时被触发．所以在执行Book.name=&amp;#39;人性的弱点&amp;#39;　这个语句时调用set方法，输出你取了一个书名叫：人性的弱点．当调用console.log(Book.name)时触发get方法，输出＜人性的弱点＞，如果在代码中加入这句话时，会打印出什么呢？&lt;/p&gt;&lt;pre&gt;console.log(Book)&lt;/pre&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;结果如下：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/2018022414270628?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;与上面vue打印数据进行对比非常类似，说明vue确实是通过这种方式进行数据劫持的．那么什么是发布者－订阅者模式呢？？&lt;/p&gt;&lt;p&gt;订阅者和发布者模式，通常用于消息队列中．一般有两种形式来实现消息队列，一是使用生产者和消费者来实现，二是使用订阅者－发布者模式来实现，其中订阅者和发布者实现消息队列的方式，就会用订阅者模式．&lt;/p&gt;&lt;p&gt;打个比方，所谓的订阅者，就像我们在日常生活中订阅报纸一样，在订阅报纸的时候，通常都得需要在报社或者一些中介机构进行注册，当有新版的报纸发刊的时候，邮递员就需要向订阅该报纸的人，依次发放报纸．&lt;/p&gt;&lt;p&gt;所谓的订阅者，就像我们在日常生活中，订阅报纸一样。我们订阅报纸的时候，通常都得需要在报社或者一些中介机构进行注册。当有新版的报纸发刊的时候，邮递员就需要向订阅该报纸的人，依次发放报纸。&lt;/p&gt;&lt;p&gt;所有如果用代码实现该模式，需要进行两个步骤：&lt;/p&gt;&lt;pre class=&quot;html&quot;&gt;1、初始化发布者、订阅者。
+2、订阅者需要注册到发布者，发布者发布消息时，依次向订阅者发布消息。&lt;/pre&gt;&lt;p&gt;订阅者注册&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224143819833?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;发布者发布消息&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224143832479?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;那么接下来我们将通过vue原理实现一个简单的mvvm双向绑定的demo&lt;/p&gt;&lt;p&gt;思路分析&lt;/p&gt;&lt;p&gt;要想实现mvvm，主要包含两个方面，视图变化更新数据，数据变化更新视图．&lt;/p&gt;&lt;p&gt;view变化更新data其实可以通过事件监听实现，比如input标签监听input事件，所有我们着重分析data变化更新view.&lt;/p&gt;&lt;p&gt;data变化更新view的重点是如何知道view什么时候变化了，只要知道什么时候view变化了，那么接下来的就好处理了．这个时候我们上文提到的Object.defineProperty( )就起作用了．通过Object.defineProperty( )对属性设置一个set函数，当属性变化时就会触发这个函数，所以我们只需要将一些更新的方法放在set函数中就可以实现data变化更新view了．&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224144720654?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;实现过程&lt;/p&gt;&lt;p&gt;我们已经知道如何实现数据的双向绑定了，　那么首先要对数据进行劫持监听，所以我们首先要设置一个监听器Observer,用来监听所有的属性，当属性变化时，就需要通知订阅者Watcher,看是否需要更新．因为属性可能是多个，所以会有多个订阅者，故我们需要一个消息订阅器Dep来专门收集这些订阅者，并在监听器Observer和订阅者Watcher之间进行统一的管理．以为在节点元素上可能存在一些指令，所以我们还需要有一个指令解析器Compile，对每个节点元素进行扫描和解析，将相关指令初始化成一个订阅者Watcher，并替换模板数据并绑定相应的函数，这时候当订阅者Watcher接受到相应属性的变化，就会执行相对应的更新函数，从而更新视图．&lt;/p&gt;&lt;p&gt;整理上面的思路，我们需要实现三个步骤，来完成双向绑定：&lt;/p&gt;&lt;pre class=&quot;html&quot;&gt;1.实现一个监听器Observer，用来劫持并监听所有属性，如果有变动的，就通知订阅者。
+
+2.实现一个订阅者Watcher，可以收到属性的变化通知并执行相应的函数，从而更新视图。
+
+3.实现一个解析器Compile，可以扫描和解析每个节点的相关指令，并根据初始化模板数据以及初始化相应的订阅器。&lt;/pre&gt;&lt;p&gt;流程图如下：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224145638410?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;1.实现一个监听器Observer&lt;/p&gt;&lt;p&gt;数据监听器的核心方法就是Object.defineProperty( )，通过遍历循环对所有属性值进行监听，并对其进行Object.defineProperty( )处理，那么代码可以这样写：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;//对所有属性都要蒋婷,递归遍历所有属性function&amp;nbsp;defineReactive(data,key,val)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(val);&amp;nbsp;&amp;nbsp;//递归遍历所有的属性&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.defineProperty(data,key,{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;enumerable:true,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//当且仅当该属性的&amp;nbsp;configurable&amp;nbsp;为&amp;nbsp;true&amp;nbsp;时，该属性描述符才能够被改变，同时该属性也能从对应的对象上被删除。
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;configurable:true,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//当且仅当该属性的enumerable为true时，该属性才能够出现在对象的枚举属性中&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get:function()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;val;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;set:function(newVal)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;val&amp;nbsp;=&amp;nbsp;newVal;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(&amp;#39;属性&amp;#39;+key+&amp;#39;已经被监听,现在值为:&amp;quot;&amp;#39;+newVal.toString()+&amp;#39;&amp;quot;&amp;#39;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;})
+}
+
+function&amp;nbsp;observe(data)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(!data&amp;nbsp;||&amp;nbsp;typeof&amp;nbsp;data&amp;nbsp;!==&amp;nbsp;&amp;#39;object&amp;#39;)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.keys(data).forEach(function(key){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;defineReactive(data,key,data[key]);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+}var&amp;nbsp;library&amp;nbsp;=&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;book1:&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;name:&amp;nbsp;&amp;#39;&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;book2:&amp;nbsp;&amp;#39;&amp;#39;};
+observe(library);
+library.book1.name&amp;nbsp;=&amp;nbsp;&amp;#39;vue权威指南&amp;#39;;&amp;nbsp;//&amp;nbsp;属性name已经被监听了，现在值为：“vue权威指南”library.book2&amp;nbsp;=&amp;nbsp;&amp;#39;没有此书籍&amp;#39;;&amp;nbsp;&amp;nbsp;//&amp;nbsp;属性book2已经被监听了，现在值为：“没有此书籍”&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;通过observe()方法进行遍历向下找到所有的属性，并通过defineReactive()方法进行数据劫持监听．&lt;/p&gt;&lt;p&gt;在上面的思路中，我们需要一个可以容纳消息订阅者的消息订阅器Dep，订阅器主要收集消息订阅者，然后在属性变化时执行相应订阅者的更新函数，那么消息订阅器Dep需要有一个容器，用来存放消息订阅者．我们将上面的监听器Observer稍微修改一下：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;function&amp;nbsp;defineReactive(data,key,val)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(val);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;dep&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Dep();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.defineProperty(data,&amp;nbsp;key,&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;enumerable:&amp;nbsp;true,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;configurable:&amp;nbsp;true,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get:&amp;nbsp;function()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(是否需要添加订阅者)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//Watcher初始化触发
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dep.addSub(watcher);&amp;nbsp;//&amp;nbsp;在这里添加一个订阅者&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;val;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;set:&amp;nbsp;function(newVal)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(val&amp;nbsp;===&amp;nbsp;newVal)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;val&amp;nbsp;=&amp;nbsp;newVal;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(&amp;#39;属性&amp;#39;&amp;nbsp;+&amp;nbsp;key&amp;nbsp;+&amp;nbsp;&amp;#39;已经被监听了，现在值为：“&amp;#39;&amp;nbsp;+&amp;nbsp;newVal.toString()&amp;nbsp;+&amp;nbsp;&amp;#39;”&amp;#39;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dep.notify();&amp;nbsp;//&amp;nbsp;如果数据变化，通知所有订阅者&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+}
+
+function&amp;nbsp;observe(data)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(!data&amp;nbsp;||&amp;nbsp;typeof&amp;nbsp;data&amp;nbsp;!==&amp;nbsp;&amp;#39;object&amp;#39;)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.keys(data).forEach(function(key){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;defineReactive(data,key,data[key]);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+}
+
+function&amp;nbsp;Dep()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.subs&amp;nbsp;=&amp;nbsp;[];
+}//prototype&amp;nbsp;属性使您有能力向对象添加属性和方法//prototype这个属性只有函数对象才有，具体的说就是构造函数具有.只要你声明定义了一个函数对象，这个prototype就会存在//对象实例是没有这个属性Dep.prototype&amp;nbsp;=&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;addSub:function(sub)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.subs.push(sub);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;notify:function()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.subs.forEach(function(sub)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;sub.update();&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//通知每个订阅者检查更新&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;})
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+}
+Dep.target&amp;nbsp;=&amp;nbsp;null;&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;在代码中，我们将订阅器Dep添加一个订阅者设计在get里面，这是为了让Watcher在初始化时触发，因此判断是否需要需要添加订阅者，至于具体实现的方法，我们在下文中深究．在set方法中，如果函数变化，就会通知所有的订阅者，订阅者们将会执行相对应的更新函数，到目前为止，一个比较完善的Observer已经成型了，下面我们要写订阅者Watcher.&lt;/p&gt;&lt;p&gt;２．实现订阅者Watcher&lt;/p&gt;&lt;p&gt;根据我们的思路，订阅者Wahcher在初始化时要将自己添加到订阅器Dep中，那么如何进行添加呢？&lt;/p&gt;&lt;p&gt;我们已经知道监听器Observer是在get函数中执行了添加订阅者的操作的，所以我们只需要在订阅者Watcher在初始化时触发相对应的get函数来执行添加订阅者的操作即可．那么怎么触发对应的get函数呢？我们只需要获取对应的属性值，就可以通过Object.defineProperty( )触发对应的get了．&lt;/p&gt;&lt;p&gt;在这里需要注意一个细节，我们只需要在订阅者初始化时才执行添加订阅者，所以我们需要一个判断，在Dep.target上缓存一下订阅者，添加成功后去除就行了，代码如下：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;function&amp;nbsp;Watcher(vm,exp,cb)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.vm&amp;nbsp;=&amp;nbsp;vm;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//指向SelfVue的作用域&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.exp&amp;nbsp;=&amp;nbsp;exp;&amp;nbsp;&amp;nbsp;//绑定属性的key值&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.cb&amp;nbsp;=&amp;nbsp;cb;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//闭包&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.value&amp;nbsp;=&amp;nbsp;this.get();
+}
+
+Watcher.prototype&amp;nbsp;=&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;update:function()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.run();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;run:function()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;value&amp;nbsp;=&amp;nbsp;this.vm.data[this.exp];&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;oldVal&amp;nbsp;=&amp;nbsp;this.value;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(value&amp;nbsp;!==&amp;nbsp;oldVal)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.value&amp;nbsp;=&amp;nbsp;value;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.cb.call(this.vm,value,oldVal);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get:function()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Dep.target&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;缓存自己&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;value&amp;nbsp;=&amp;nbsp;this.vm.data[this.exp];&amp;nbsp;&amp;nbsp;//&amp;nbsp;强制执行监听器里的get函数
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Dep.target&amp;nbsp;=&amp;nbsp;null;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;释放自己&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;value;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;这个时候我们需要对监听器Observer中的defineReactive()做稍微的调整：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;function&amp;nbsp;defineReactive(data,key,val)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(val);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;dep&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Dep();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.defineProperty(data,&amp;nbsp;key,&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;enumerable:&amp;nbsp;true,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;configurable:&amp;nbsp;true,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get:&amp;nbsp;function()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(Dep.target)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;//判断是否需要添加订阅者&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dep.addSub(Dep.target);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;val;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;set:&amp;nbsp;function(newVal)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(val&amp;nbsp;===&amp;nbsp;newVal)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;val&amp;nbsp;=&amp;nbsp;newVal;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(&amp;#39;属性&amp;#39;&amp;nbsp;+&amp;nbsp;key&amp;nbsp;+&amp;nbsp;&amp;#39;已经被监听了，现在值为：“&amp;#39;&amp;nbsp;+&amp;nbsp;newVal.toString()&amp;nbsp;+&amp;nbsp;&amp;#39;”&amp;#39;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dep.notify();&amp;nbsp;//&amp;nbsp;如果数据变化，通知所有订阅者&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;到目前为止，一个简易版的Watcher已经成型了，我们只需要将订阅者Watcher和监听器Observer关联起来，就可以实现一个简单的双向绑定．因为这里还没有设计指令解析器，所以对于模板数据我们都进行写死处理，假设模板上有一个节点元素，且id为＇name＇,并且双向绑定的绑定变量也是&amp;#39;name&amp;#39;，且是通过两个大双括号包起来（暂时没有什么用处），模板代码如下：&lt;/p&gt;&lt;pre&gt;&amp;lt;body&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h1&amp;nbsp;id=&amp;quot;name&amp;quot;&amp;gt;{{name}}&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/pre&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;我们需要定义一个SelfVue类，来实现observer和watcher的关联，代码如下：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;//将Observer和Watcher关联起来function&amp;nbsp;SelfVue(data,el,exp)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.data&amp;nbsp;=&amp;nbsp;data;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(data);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;el.innerHTML&amp;nbsp;=&amp;nbsp;this.data[exp];&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new&amp;nbsp;Watcher(this,exp,function(value)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;el.innerHTML&amp;nbsp;=&amp;nbsp;value;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;this;
+}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;然后在页面上new一个SelfVue，就可以实现双向绑定了：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;&amp;lt;body&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h1&amp;nbsp;id=&amp;quot;name&amp;quot;{{name}}&amp;gt;&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/observer.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/Watcher.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/SelfVue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;ele&amp;nbsp;=&amp;nbsp;document.querySelector(&amp;#39;#name&amp;#39;);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;selfVue&amp;nbsp;=&amp;nbsp;new&amp;nbsp;SelfVue({
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;name:&amp;#39;hello&amp;nbsp;world&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},ele,&amp;#39;name&amp;#39;);
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;window.setTimeout(function()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(&amp;#39;name值改变了&amp;#39;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;selfVue.name&amp;nbsp;=&amp;nbsp;&amp;#39;byebye&amp;nbsp;world&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},2000);&amp;lt;/script&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;这时我们打开页面，显示的是&amp;#39;hello world&amp;#39;,２s后变成了&amp;#39;byebye world&amp;#39;,一个简单的双向绑定实现了．&lt;/p&gt;&lt;p&gt;对比vue,我们发现了有一个问题，我们在为属性赋值的时候形式是：&amp;nbsp;&amp;#39; &amp;nbsp;selfVue.data.name = &amp;#39;byebye world&amp;#39; &amp;nbsp;&amp;#39;,而我们理想的形式是：&amp;#39; &amp;nbsp;selfVue.name = &amp;#39;byebye world&amp;#39; &amp;nbsp;&amp;#39;，那么怎么实现这种形式呢，只需要在new SelfVue时做一个代理处理，让访问SelfVue的属性代理为访问selfVue.data的属性，原理还是使用Object.defineProperty( )对属性在包装一层．代码如下：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;function&amp;nbsp;SelfVue(data,el,exp)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.data&amp;nbsp;=&amp;nbsp;data;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//Object.keys()&amp;nbsp;方法会返回一个由一个给定对象的自身可枚举属性组成的数组&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.keys(data).forEach(function(key)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.proxyKeys(key);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//绑定代理属性&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(data);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;el.innerHTML&amp;nbsp;=&amp;nbsp;this.data[exp];&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;初始化模板数据的值&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new&amp;nbsp;Watcher(this,exp,function(value)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;el.innerHTML&amp;nbsp;=&amp;nbsp;value;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;this;
+}
+
+SelfVue.prototype&amp;nbsp;=&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;proxyKeys:function(key)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.defineProperty(this,key,{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;enumerable:false,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;configurable:true,&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get:function&amp;nbsp;proxyGetter()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;self.data[key];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;set:function&amp;nbsp;proxySetter(newVal)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.data[key]&amp;nbsp;=&amp;nbsp;newVal;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;这样我们就可以用理想的形式改变模板数据了．&lt;/p&gt;&lt;p&gt;３．实现指令解析器Compile&lt;/p&gt;&lt;p&gt;再上面的双向绑定demo中，我们发现整个过程都没有解析dom节点，而是固定某个节点进行替换数据，所以接下来我们要实现一个解析器Compile来解析和绑定工作，分析解析器的作用，实现步骤如下：&lt;/p&gt;&lt;pre class=&quot;html&quot;&gt;1.解析模板指令，并替换模板数据，初始化视图
+
+2.将模板指令对应的节点绑定对应的更新函数，初始化相应的订阅器&lt;/pre&gt;&lt;p&gt;为了解析模板，首先要获得dom元素，然后对含有dom元素上含有指令的节点进行处理，这个过程对dom元素的操作比较繁琐，所以我们可以先建一个fragment片段，将需要解析的dom元素存到fragment片段中在做处理：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;nodeToFragment:function(el)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;fragment&amp;nbsp;=&amp;nbsp;document.createDocumentFragment();&amp;nbsp;&amp;nbsp;&amp;nbsp;//createdocumentfragment()方法创建了一虚拟的节点对象，节点对象包含所有属性和方法。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;child&amp;nbsp;=&amp;nbsp;el.firstChild;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;while(child)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;将Dom元素移入fragment中&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fragment.appendChild(child);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;child&amp;nbsp;=&amp;nbsp;el.firstChild;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;fragment;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;接下来需要遍历所有节点，对含有指令的节点进行特殊的处理，这里我们先处理最简单的情况，只对带有 &amp;#39;{{变量}}&amp;#39; 这种形式的指令进行处理，代码如下：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;//遍历各个节点,对含有相关指定的节点进行特殊处理&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;compileElement:function(el)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;childNodes&amp;nbsp;=&amp;nbsp;el.childNodes;&amp;nbsp;&amp;nbsp;&amp;nbsp;//childNodes属性返回节点的子节点集合，以&amp;nbsp;NodeList&amp;nbsp;对象。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//slice()&amp;nbsp;方法可从已有的数组中返回选定的元素。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[].slice.call(childNodes).forEach(function(node)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;reg&amp;nbsp;=&amp;nbsp;/\\{\\{(.*)\\}\\}/;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;text&amp;nbsp;=&amp;nbsp;node.textContent;&amp;nbsp;&amp;nbsp;//textContent&amp;nbsp;属性设置或返回指定节点的文本内容&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(self.isTextNode(node)&amp;nbsp;&amp;amp;&amp;amp;&amp;nbsp;reg.test(text))&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//判断是否符合{{}}的指令&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//exec()&amp;nbsp;方法用于检索字符串中的正则表达式的匹配。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为&amp;nbsp;null。
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.compileText(node,reg.exec(text)[1]);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(node.childNodes&amp;nbsp;&amp;amp;&amp;amp;&amp;nbsp;node.childNodes.length)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.compileElement(node);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//继续递归遍历子节点&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;compileText:function(node,exp)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;initText&amp;nbsp;=&amp;nbsp;this.vm[exp];&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.updateText(node,initText);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;将初始化的数据初始化到视图中&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new&amp;nbsp;Watcher(this.vm,exp,function(value)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.updateText(node,value);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;updateText:function(node,value)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;node.textContent&amp;nbsp;=&amp;nbsp;typeof&amp;nbsp;value&amp;nbsp;==&amp;nbsp;&amp;#39;undefined&amp;#39;&amp;nbsp;?&amp;nbsp;&amp;#39;&amp;#39;:&amp;nbsp;value;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;获取到最外层节点后，调用compileElement函数，对所有子节点进行判断，如果节点是文本节点且匹配{{}}这种形式指令的节点就开始进行编译处理，编译处理首先需要初始化视图数据，对应上面所说的步骤1，接下去需要生成一个并绑定更新函数的订阅器，对应上面所说的步骤2。这样就完成指令的解析、初始化、编译三个过程，一个解析器Compile也就可以正常的工作了。&lt;/p&gt;&lt;p&gt;为了将解析器Compile与监听器Observer和订阅者Watcher关联起来，我们需要再修改一下类SelfVue函数：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;function&amp;nbsp;SelfVue(options)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.vm&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.data&amp;nbsp;=&amp;nbsp;options.data;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.keys(this.data).forEach(function(key)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.proxyKeys(key);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//绑定代理属性&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(options.data);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new&amp;nbsp;Compile(options.el,this.vm);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;this;
+}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;更改后，我们就不要像之前通过传入固定的元素值进行双向绑定了，可以随便命名各种变量进行双向绑定了：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;&amp;lt;body&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;id=&amp;quot;app&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h2&amp;gt;{{name}}&amp;lt;/h2&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h3&amp;gt;{{content}}&amp;lt;/h3&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/observer2.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/Watcher1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/compile1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/index3.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+
+&amp;lt;script&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;selfVue&amp;nbsp;=&amp;nbsp;new&amp;nbsp;SelfVue({
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;el:&amp;#39;#app&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;data:{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;title:&amp;#39;aaa&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;name:&amp;#39;bbb&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;content:&amp;#39;ccc&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;window.setTimeout(function()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;selfVue.title&amp;nbsp;=&amp;nbsp;&amp;#39;ddd&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;selfVue.name&amp;nbsp;=&amp;nbsp;&amp;#39;eee&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;selfVue.content&amp;nbsp;=&amp;nbsp;&amp;#39;fff&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},2000);&amp;lt;/script&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;pre class=&quot;html&quot;&gt;到这里，一个数据双向绑定功能已经基本完成了，接下去就是需要完善更多指令的解析编译，在哪里进行更多指令的处理呢？答案很明显，只要在上文说的compileElement函数加上对其他指令节点进行判断，然后遍历其所有属性，看是否有匹配的指令的属性，如果有的话，就对其进行解析编译。这里我们再添加一个v-model指令和事件指令的解析编译，对于这些节点我们使用函数compile进行解析处理：&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;compile:function(node)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;nodeAttrs&amp;nbsp;=&amp;nbsp;node.attributes;&amp;nbsp;&amp;nbsp;&amp;nbsp;//attributes&amp;nbsp;属性返回指定节点的属性集合，即&amp;nbsp;NamedNodeMap。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//Array.prototype属性表示Array构造函数的原型，并允许为所有Array对象添加新的属性和方法。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//Array.prototype本身就是一个Array&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Array.prototype.forEach.call(nodeAttrs,function(attr)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;attrName&amp;nbsp;=&amp;nbsp;attr.name;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//添加事件的方法名和前缀:v-on:click=&amp;quot;onClick&amp;quot;&amp;nbsp;,则attrName&amp;nbsp;=&amp;nbsp;&amp;#39;v-on:click&amp;#39;&amp;nbsp;id=&amp;quot;app&amp;quot;&amp;nbsp;attrname=&amp;nbsp;&amp;#39;id&amp;#39;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(self.isDirective(attrName))&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;exp&amp;nbsp;=&amp;nbsp;attr.value;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//添加事件的方法名和前缀:v-on:click=&amp;quot;onClick&amp;quot;&amp;nbsp;,exp&amp;nbsp;=&amp;nbsp;&amp;#39;onClick&amp;#39;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//substring()&amp;nbsp;方法用于提取字符串中介于两个指定下标之间的字符。返回值为一个新的字符串&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//dir&amp;nbsp;=&amp;nbsp;&amp;#39;on:click&amp;#39;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;dir&amp;nbsp;=&amp;nbsp;attrName.substring(2);&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(self.isEventDirective(dir))&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;//事件指令&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.compileEvent(node,self.vm,exp,dir);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}else&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//v-model指令&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.compileModel(node,self.vm,exp,dir);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;node.removeAttribute(attrName);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;上面的compile函数是挂载Compile原型上的，它首先遍历所有节点属性，然后再判断属性是否是指令属性，如果是的话再区分是哪种指令，再进行相应的处理.&lt;/p&gt;&lt;p&gt;最后我们再次改造一下SelfVue，是它的格式看上去更像vue:&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;function&amp;nbsp;SelfVue(options)&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;self&amp;nbsp;=&amp;nbsp;this;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.data&amp;nbsp;=&amp;nbsp;options.data;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.methods&amp;nbsp;=&amp;nbsp;options.methods;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Object.keys(this.data).forEach(function(key)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.proxyKeys(key);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;observe(options.data);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new&amp;nbsp;Compile(options.el,this);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;options.mounted.call(this);
+}&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;测试一下：&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;&amp;lt;body&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;id=&amp;quot;app&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h2&amp;gt;{{title}}&amp;lt;/h2&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;input&amp;nbsp;v-model=&amp;quot;name&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;h1&amp;gt;{{name}}&amp;lt;/h1&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;button&amp;nbsp;v-on:click=&amp;quot;clickMe&amp;quot;&amp;gt;click&amp;nbsp;me!&amp;lt;/button&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/observer3.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/Watcher1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/compile2.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;../js/index4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new&amp;nbsp;SelfVue({
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;el:&amp;nbsp;&amp;#39;#app&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;data:&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;title:&amp;nbsp;&amp;#39;hello&amp;nbsp;world&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;name:&amp;nbsp;&amp;#39;canfoo&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;methods:&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;clickMe:&amp;nbsp;function&amp;nbsp;()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.title&amp;nbsp;=&amp;nbsp;&amp;#39;hello&amp;nbsp;world&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;mounted:&amp;nbsp;function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;window.setTimeout(()&amp;nbsp;=&amp;gt;&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;this.title&amp;nbsp;=&amp;nbsp;&amp;#39;你好&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;},&amp;nbsp;1000);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});&amp;lt;/script&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;copyCnblogsCode(this)&quot; title=&quot;鹿晓鹏博客&quot;&gt;&lt;img src=&quot;//common.cnblogs.com/images/copycode.gif&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;效果如下：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180224161622204?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGlzaGFubGVpbGl4aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;到目前为止，我们简易版的demo已经成功了，通过上面这个例子，我们可以更加深刻的理解vue的一些机制，比如双向绑定，声明式渲染等．&lt;/p&gt;&lt;p&gt;写在后面&lt;/p&gt;&lt;p&gt;因为代码量比较多，所以对于一些不重要的没有一一展示，我把代码放在我的github上了，github Clone with HTTPS:&lt;/p&gt;&lt;pre&gt;https://github.com/2686685661/SelfVue.git&lt;/pre&gt;&lt;p&gt;参考博客：https://www.cnblogs.com/libin-1/p/6893712.html&lt;/p&gt;&lt;script type=&quot;text/javascript&quot;&gt;var allowComments=true,cb_blogId=367956,cb_entryId=8423407,cb_blogApp=currentBlogApp,cb_blogUserGuid=\'fb343567-e5a8-4a54-2a04-08d49c352df3\',cb_entryCreatedDate=\'2018/2/24 17:03:00\';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;&lt;/script&gt;','0','0','1551261236') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0009s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('49','21') [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0009s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('49','/Upload/image/ueditor/vue.jpeg') [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0019s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2019-02-27T17:53:57+08:00 ] 223.223.195.134 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0005s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '45'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 45 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '44'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 44 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '43'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 43 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '41'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 41 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '40'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 40 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '39'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 39 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '38'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 38 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '42'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 42 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '37'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 37 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '36'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 36 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '35'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 35 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
