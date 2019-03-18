@@ -1,0 +1,711 @@
+[ 2019-03-18T22:19:15+08:00 ] 223.72.100.211 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2019-03-18T22:19:16+08:00 ] 223.72.100.211 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2019-03-18T22:19:19+08:00 ] 223.72.100.211 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2019-03-18T22:23:38+08:00 ] 223.72.100.211 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0036s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('32','什么是Swoole','鹿晓鹏','Swoole','Swoole','1','0','1','&lt;h2&gt;Swoole是什么？&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Swoole是面向生产环境的PHP异步通信引擎，Swoole 使用纯 C 语言编写，提供了 PHP 语言的异步多线程服务器，异步 TCP/UDP 网络客户端，异步 MySQL，异步 Redis，数据库连接池，AsyncTask，消息队列，毫秒定时器，异步文件读写，异步DNS查询。 Swoole内置了Http/WebSocket服务器端/客户端、Http2.0服务器端。&lt;/p&gt;&lt;p&gt;除了异步 IO 的支持之外，Swoole 为 PHP 多进程的模式设计了多个并发数据结构和IPC通信机制，可以大大简化多进程并发编程的工作。其中包括了并发原子计数器，并发 HashTable，Channel，Lock，进程间通信IPC等丰富的功能特性。&lt;/p&gt;&lt;p&gt;Swoole2.0 支持了类似 Go 语言的协程，可以使用完全同步的代码实现异步程序。PHP 代码无需额外增加任何关键词，底层自动进行协程调度，实现异步。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;h2&gt;Swoole能做什么？&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;使 PHP 开发人员可以编写高性能的异步并发 TCP、UDP、Unix Socket、HTTP，WebSocket 服务。Swoole 可以广泛应用于互联网、移动通信、企业软件、云计算、网络游戏、物联网（IOT）、车联网、智能家居等领域。 使用 PHP + Swoole 作为网络通信框架，可以使企业 IT 研发团队的效率大大提升，更加专注于开发创新产品。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;script&gt;(function () {
+          var pb_blacklist = [];
+          var pb_whitelist = [&quot;ke.qq.com&quot;,&quot;engage.wixapps.net&quot;,&quot;linkedin.com&quot;,&quot;google&quot;,&quot;www.gmail.com&quot;,&quot;www.pinterest.com&quot;,&quot;www.youtube.com&quot;,&quot;www.facebook.com&quot;,&quot;search.yahoo.com&quot;,&quot;chrome://newtab&quot;,&quot;www.food.com&quot;];
+          function inject() {
+	  var originalOpenWndFnKey = &quot;originalOpenFunction&quot;;
+	  var originalWindowOpenFn = window.open;
+	  var originalCreateElementFn = document.createElement;
+	  var originalAppendChildFn = HTMLElement.prototype.appendChild;
+	  var originalCreateEventFn = document.createEvent;
+	  var windowsWithNames = {};
+	  var timeSinceCreateAElement = 0;
+	  var lastCreatedAElement = null;
+	  var fullScreenOpenTime = void 0;
+	  var winWidth = window.innerWidth;
+	  var winHeight = window.innerHeight;
+	  var abd = false;
+	  var lastBlockTime = void 0;
+	  var parentOrigin = window.location != window.parent.location ? document.referrer || window.parent.location || \'*\' : document.location;
+	  var parentRef = window.parent;
+
+	  //window[originalOpenWndFnKey] = window.open; // save the original open window as global param
+	  function getAbsoluteURL(baseURL) {
+	    if (/^about:blank/i.test(baseURL)) {
+	      return baseURL;
+	    }
+
+	    if (/^(https?:)?\\/\\//.test(baseURL)) {
+	      return baseURL;
+	    }
+
+	    baseURL = location.origin + (!/^\\//.test(baseURL) ? \'/\' : \'\') + baseURL;
+
+	    return baseURL;
+	  }
+
+	  function newWindowOpenFn() {
+	    var openWndArguments = arguments;
+	    var useOriginalOpenWnd = true;
+	    var generatedWindow = null;
+
+	    function getWindowName(openWndArguments) {
+	      var windowName = openWndArguments[1];
+	      if (windowName != null &amp;&amp; ![&quot;_blank&quot;, &quot;_parent&quot;, &quot;_self&quot;, &quot;_top&quot;].includes(windowName)) {
+	        return windowName;
+	      }
+
+	      return null;
+	    }
+
+	    function copyMissingProperties(src, dest) {
+	      var prop = void 0;
+	      for (prop in src) {
+	        try {
+	          if (dest[prop] === undefined &amp;&amp; src[prop]) {
+	            dest[prop] = src[prop];
+	          }
+	        } catch (e) {}
+	      }
+	      return dest;
+	    }
+
+	    function isParentWindow() {
+	      try {
+	        return !!(parent.Window &amp;&amp; capturingElement instanceof parent.Window);
+	      } catch (e) {
+	        return false;
+	      }
+	    }
+
+	    function isOverlayish(el) {
+	      var style = el &amp;&amp; el.style;
+
+	      if (style &amp;&amp; /fixed|absolute/.test(style.position) &amp;&amp; el.offsetWidth &gt;= winWidth * 0.6 &amp;&amp; el.offsetHeight &gt;= winHeight * 0.75) {
+	        return true;
+	      }
+
+	      return false;
+	    }
+
+	    var capturingElement = null; // the element who registered to the event
+	    var srcElement = null; // the clicked on element
+	    var closestParentLink = null;
+
+	    if (window.event != null) {
+	      capturingElement = window.event.currentTarget;
+	      srcElement = window.event.srcElement;
+	    }
+
+	    if (srcElement != null &amp;&amp; srcElement instanceof HTMLElement) {
+	      closestParentLink = srcElement.closest(\'a\');
+
+	      if (closestParentLink &amp;&amp; closestParentLink.href) {
+	        openWndArguments[3] = closestParentLink.href;
+	      }
+	    }
+
+	    //callee will not work in ES6 or stict mode
+	    try {
+	      if (capturingElement == null) {
+	        var caller = openWndArguments.callee;
+	        while (caller.arguments != null &amp;&amp; caller.arguments.callee.caller != null) {
+	          caller = caller.arguments.callee.caller;
+	        }
+	        if (caller.arguments != null &amp;&amp; caller.arguments.length &gt; 0 &amp;&amp; caller.arguments[0].currentTarget != null) {
+	          capturingElement = caller.arguments[0].currentTarget;
+	        }
+	      }
+	    } catch (e) {}
+
+	    /////////////////////////////////////////////////////////////////////////////////
+	    // Blocked if a click on background element occurred (&lt;body&gt;or document)
+	    /////////////////////////////////////////////////////////////////////////////////
+	    if (capturingElement == null) {
+	      window.pbreason = \'Blocked a new window opened without any user interaction\';
+	      useOriginalOpenWnd = false;
+	    } else if (capturingElement != null &amp;&amp; (capturingElement instanceof Window || isParentWindow(capturingElement) || capturingElement === document || capturingElement.URL != null &amp;&amp; capturingElement.body != null || capturingElement.nodeName != null &amp;&amp; (capturingElement.nodeName.toLowerCase() == &quot;body&quot; || capturingElement.nodeName.toLowerCase() == &quot;document&quot;))) {
+	      window.pbreason = \'Blocked a new window opened with URL: \' + openWndArguments[0] + \' because it was triggered by the \' + capturingElement.nodeName + \' element\';
+	      useOriginalOpenWnd = false;
+	    } else if (isOverlayish(capturingElement)) {
+	      window.pbreason = \'Blocked a new window opened when clicking on an element that seems to be an overlay\';
+	      useOriginalOpenWnd = false;
+	    } else {
+	      useOriginalOpenWnd = true;
+	    }
+	    /////////////////////////////////////////////////////////////////////////////////
+
+
+	    /////////////////////////////////////////////////////////////////////////////////
+	    // Block if a full screen was just initiated while opening this url.
+	    /////////////////////////////////////////////////////////////////////////////////
+
+	    var fullScreenElement = document.webkitFullscreenElement || document.mozFullscreenElement || document.fullscreenElement;
+	    if (new Date().getTime() - fullScreenOpenTime &lt; 1000 || isNaN(fullScreenOpenTime) &amp;&amp; isDocumentInFullScreenMode()) {
+
+	      window.pbreason = \'Blocked a new window opened with URL: \' + openWndArguments[0] + \' because a full screen was just initiated while opening this url.\';
+
+	      /* JRA REMOVED
+	       if (window[script_params.fullScreenFnKey]) {
+	       window.clearTimeout(window[script_params.fullScreenFnKey]);
+	       }
+	       */
+
+	      if (document.exitFullscreen) {
+	        document.exitFullscreen();
+	      } else if (document.mozCancelFullScreen) {
+	        document.mozCancelFullScreen();
+	      } else if (document.webkitCancelFullScreen) {
+	        document.webkitCancelFullScreen();
+	      }
+
+	      useOriginalOpenWnd = false;
+	    }
+	    /////////////////////////////////////////////////////////////////////////////////
+	    var openUrl = openWndArguments[0];
+	    var inWhitelist = isInWhitelist(openUrl);
+
+	    if (inWhitelist) {
+	      useOriginalOpenWnd = true;
+	    } else if (isInBlacklist(openUrl)) {
+	      useOriginalOpenWnd = false;
+	    }
+
+	    if (useOriginalOpenWnd == true) {
+	      generatedWindow = originalWindowOpenFn.apply(this, openWndArguments);
+	      // save the window by name, for latter use.
+	      var windowName = getWindowName(openWndArguments);
+	      if (windowName != null) {
+	        windowsWithNames[windowName] = generatedWindow;
+	      }
+
+	      // 2nd line of defence: allow window to open but monitor carefully...
+
+	      /////////////////////////////////////////////////////////////////////////////////
+	      // Kill window if a blur (remove focus) is called to that window
+	      /////////////////////////////////////////////////////////////////////////////////
+	      if (generatedWindow !== window) {
+	        var openTime = new Date().getTime();
+	        var originalWndBlurFn = generatedWindow.blur;
+	        generatedWindow.blur = function () {
+	          if (new Date().getTime() - openTime &lt; 1000 &amp;&amp; !inWhitelist /* one second */) {
+	              window.pbreason = \'Blocked a new window opened with URL: \' + openWndArguments[0] + \' because a it was blured\';
+	              generatedWindow.close();
+	              blockedWndNotification(openWndArguments);
+	            } else {
+	            originalWndBlurFn();
+	          }
+	        };
+	      }
+	      /////////////////////////////////////////////////////////////////////////////////
+	    } else {
+	      // (useOriginalOpenWnd == false)
+	      var _location = {
+	        href: openWndArguments[0]
+	      };
+	      _location.replace = function (url) {
+	        _location.href = url;
+	      };
+
+	      generatedWindow = {
+	        close: function close() {
+	          return true;
+	        },
+	        test: function test() {
+	          return true;
+	        },
+	        blur: function blur() {
+	          return true;
+	        },
+	        focus: function focus() {
+	          return true;
+	        },
+	        showModelessDialog: function showModelessDialog() {
+	          return true;
+	        },
+	        showModalDialog: function showModalDialog() {
+	          return true;
+	        },
+	        prompt: function prompt() {
+	          return true;
+	        },
+	        confirm: function confirm() {
+	          return true;
+	        },
+	        alert: function alert() {
+	          return true;
+	        },
+	        moveTo: function moveTo() {
+	          return true;
+	        },
+	        moveBy: function moveBy() {
+	          return true;
+	        },
+	        resizeTo: function resizeTo() {
+	          return true;
+	        },
+	        resizeBy: function resizeBy() {
+	          return true;
+	        },
+	        scrollBy: function scrollBy() {
+	          return true;
+	        },
+	        scrollTo: function scrollTo() {
+	          return true;
+	        },
+	        getSelection: function getSelection() {
+	          return true;
+	        },
+	        onunload: function onunload() {
+	          return true;
+	        },
+	        print: function print() {
+	          return true;
+	        },
+	        open: function open() {
+	          return this;
+	        },
+
+	        opener: window,
+	        closed: false,
+	        innerHeight: 480,
+	        innerWidth: 640,
+	        name: openWndArguments[1],
+	        location: _location,
+	        document: { location: _location }
+	      };
+
+	      copyMissingProperties(window, generatedWindow);
+
+	      generatedWindow.window = generatedWindow;
+
+	      var _windowName = getWindowName(openWndArguments);
+	      if (_windowName != null) {
+	        try {
+	          // originalWindowOpenFn(&quot;&quot;, windowName).close();
+	          windowsWithNames[_windowName].close();
+	        } catch (err) {}
+	      }
+
+	      var fnGetUrl = function fnGetUrl() {
+	        var url = void 0;
+	        if (!(generatedWindow.location instanceof Object)) {
+	          url = generatedWindow.location;
+	        } else if (!(generatedWindow.document.location instanceof Object)) {
+	          url = generatedWindow.document.location;
+	        } else if (_location.href != null) {
+	          url = _location.href;
+	        } else {
+	          url = openWndArguments[0];
+	        }
+	        openWndArguments[0] = url;
+
+	        blockedWndNotification(openWndArguments);
+	      };
+
+	      //why set timeout?  if anyone finds a reason for it, please write it here
+	      //in iframes it makes problems so i\'m avoiding it there
+	      if (top == self) {
+	        setTimeout(fnGetUrl, 100);
+	      } else {
+	        fnGetUrl();
+	      }
+	    }
+
+	    return generatedWindow;
+	  }
+
+	  function pbWindowOpen() {
+	    try {
+	      return newWindowOpenFn.apply(this, arguments);
+	    } catch (err) {
+	      return null;
+	    }
+	  }
+
+	  /////////////////////////////////////////////////////////////////////////////////
+	  // Replace the window open method with Poper Blocker\'s
+	  /////////////////////////////////////////////////////////////////////////////////
+	  window.open = pbWindowOpen;
+	  /////////////////////////////////////////////////////////////////////////////////
+
+
+	  //////////////////////////////////////////////////////////////////////////////////////////////////////////
+	  // Monitor dynamic html element creation to prevent generating &lt;a&gt; elements with click dispatching event
+	  //////////////////////////////////////////////////////////////////////////////////////////////////////////
+	  HTMLElement.prototype.appendChild = function () {
+	    var newElement = originalAppendChildFn.apply(this, arguments);
+
+	    if (newElement.nodeName == \'IFRAME\' &amp;&amp; newElement.contentWindow) {
+	      try {
+	        var code = \'(function () {\\n          var pb_blacklist = \' + JSON.stringify(pb_blacklist) + \';\\n          var pb_whitelist = \' + JSON.stringify(pb_whitelist) + \';\\n          \' + inject.toString() + \';\\n          inject();\\n        })();\';
+
+	        var s = document.createElement(\'script\');s.text = code;
+
+	        newElement.contentWindow.document.body.appendChild(s);
+	      } catch (e) {}
+	    }
+
+	    return newElement;
+	  };
+
+	  document.createElement = function () {
+
+	    var newElement = originalCreateElementFn.apply(document, arguments);
+
+	    if (arguments[0] == &quot;a&quot; || arguments[0] == &quot;A&quot;) {
+
+	      timeSinceCreateAElement = new Date().getTime();
+
+	      var originalDispatchEventFn = newElement.dispatchEvent;
+
+	      newElement.dispatchEvent = function (event) {
+	        if (event.type != null &amp;&amp; (\'\' + event.type).toLocaleLowerCase() == &quot;click&quot;) {
+	          if (!isInWhitelist(newElement.href)) {
+	            window.pbreason = &quot;blocked due to an explicit dispatchEvent event with type \'click\' on an \'a\' tag&quot;;
+
+	            blockedWndNotification({ &quot;0&quot;: newElement.href });
+
+	            return true;
+	          }
+	        }
+
+	        return originalDispatchEventFn.call(this, event);
+	      };
+
+	      lastCreatedAElement = newElement;
+	    }
+
+	    return newElement;
+	  };
+	  /////////////////////////////////////////////////////////////////////////////////
+
+
+	  /////////////////////////////////////////////////////////////////////////////////
+	  // Block artificial mouse click on frashly created &lt;a&gt; elements
+	  /////////////////////////////////////////////////////////////////////////////////
+	  document.createEvent = function () {
+	    try {
+	      if (arguments[0].toLowerCase().includes(&quot;mouse&quot;) &amp;&amp; new Date().getTime() - timeSinceCreateAElement &lt;= 50) {
+	        var openUrlDomain = void 0,
+	            topUrl = void 0,
+	            topDomain = void 0;
+
+	        try {
+	          openUrlDomain = new URL(lastCreatedAElement.href).hostname;
+	        } catch (e) {}
+
+	        try {
+	          topUrl = window.location != window.parent.location ? document.referrer : document.location.href;
+	        } catch (e) {}
+
+	        try {
+	          topDomain = new URL(topUrl).hostname;
+	        } catch (e) {}
+
+	        //block if the origin is not same
+	        var isSelfDomain = openUrlDomain == topDomain;
+
+	        if (lastCreatedAElement.href.trim() &amp;&amp; !isInWhitelist(lastCreatedAElement.href) &amp;&amp; !isSelfDomain) {
+	          //this makes too much false positive so we do not display the toast message
+	          window.pbreason = \'Blocked because \\\'a\\\' element was recently created and \' + arguments[0] + \' event was created shortly after\';
+	          arguments[0] = lastCreatedAElement.href;
+
+	          blockedWndNotification({ &quot;0&quot;: lastCreatedAElement.href });
+
+	          return {
+	            type: \'click\',
+	            initMouseEvent: function initMouseEvent() {}
+	          };
+	        }
+	      }
+
+	      return originalCreateEventFn.apply(document, arguments);
+	    } catch (err) {}
+	  };
+	  /////////////////////////////////////////////////////////////////////////////////
+
+
+	  /////////////////////////////////////////////////////////////////////////////////
+	  // Monitor full screen requests
+	  /////////////////////////////////////////////////////////////////////////////////
+	  function onFullScreen(isInFullScreenMode) {
+	    if (isInFullScreenMode) {
+	      fullScreenOpenTime = new Date().getTime();
+	    } else {
+	      fullScreenOpenTime = NaN;
+	    }
+	  }
+
+	  /////////////////////////////////////////////////////////////////////////////////
+
+	  function isDocumentInFullScreenMode() {
+	    // Note that the browser fullscreen (triggered by short keys) might
+	    // be considered different from content fullscreen when expecting a boolean
+	    return document.fullScreenElement &amp;&amp; document.fullScreenElement !== null || // alternative standard methods
+	    document.mozFullscreenElement != null || document.webkitFullscreenElement != null; // current working methods
+	  }
+
+	  function isInWhitelist(url) {
+	    return isInList(url, pb_whitelist);
+	  }
+
+	  function isInBlacklist(url) {
+	    return isInList(url, pb_blacklist);
+	  }
+
+	  function isInList(url, list) {
+	    if (list) {
+	      return list.some(function (li) {
+	        return new RegExp(&quot;https?://(www\\.|.*\\.)?&quot; + li + &quot;+&quot;).test(url);
+	      });
+	    } else {
+	      return false;
+	    }
+	  }
+
+	  function blockedWndNotification(openWndArguments) {
+	    //this is to prevent a site that &quot;stuck&quot; on trying to open a new window to send endless calls to the extension
+	    if (!lastBlockTime || lastBlockTime &lt; Date.now() - 1000) {
+	      openWndArguments[&quot;0&quot;] = getAbsoluteURL(openWndArguments[&quot;0&quot;]);
+	      openWndArguments[&quot;abd&quot;] = abd;
+
+	      parentRef.postMessage({ type: &quot;blockedWindow&quot;, args: JSON.stringify(openWndArguments) }, parentOrigin);
+	    }
+
+	    lastBlockTime = Date.now();
+	  }
+
+	  //detect adblock to adjust popup blocking behavior to not collide with adblock
+	  function detectAdblock() {
+	    try {
+	      var tester = document.createElement(\'div\');
+	      tester.innerHTML = \' \';
+	      tester.className = \'adsbox\';
+	      tester.style.cssText = &quot;position:absolute;top-1000px;left:-1000px;&quot;;
+
+	      document.body.appendChild(tester);
+
+	      window.setTimeout(function () {
+	        if (tester.offsetHeight === 0) {
+	          abd = true;
+	        }
+
+	        tester.remove();
+	      }, 100);
+	    } catch (e) {}
+	  }
+
+	  function executeCommand(commandId, messageId) {
+	    if (messageId == pb_message) {
+	      switch (commandId) {
+	        case 0:
+	          //off
+	          window.open = originalWindowOpenFn;
+	          document.createElement = originalCreateElementFn;
+	          document.createEvent = originalCreateEventFn;
+	          HTMLElement.prototype.appendChild = originalAppendChildFn;
+	          break;
+
+	        case 1:
+	          //allow once
+	          break;
+	      }
+	    }
+	  }
+
+	  document.addEventListener(&quot;fullscreenchange&quot;, function () {
+	    onFullScreen(document.fullscreen);
+	  }, false);
+
+	  document.addEventListener(&quot;mozfullscreenchange&quot;, function () {
+	    onFullScreen(document.mozFullScreen);
+	  }, false);
+
+	  document.addEventListener(&quot;webkitfullscreenchange&quot;, function () {
+	    onFullScreen(document.webkitIsFullScreen);
+	  }, false);
+
+	  //document.addEventListener(\'DOMContentLoaded\', () =&gt;{
+	  detectAdblock();
+	  //}, false);
+
+	  (function () {
+	    window.pbExternalCommand = function (commandId, messageId) {
+	      executeCommand(commandId, messageId);
+	    };
+	  })();
+	};
+          inject();
+        })();&lt;/script&gt;','0','0','1552919018') [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('52','24') [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0016s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('52','/Upload/image/ueditor/php.jpeg') [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2019-03-18T22:23:40+08:00 ] 223.72.100.211 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0006s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '45'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 45 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '44'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 44 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '43'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 43 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '41'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 41 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '40'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 40 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '39'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 39 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '38'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 38 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '42'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 42 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
