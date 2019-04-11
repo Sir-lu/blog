@@ -1,0 +1,961 @@
+[ 2019-04-11T15:06:41+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001885s ]
+
+[ 2019-04-11T15:06:42+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2019-04-11T15:06:47+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2019-04-11T16:48:37+08:00 ] 45.62.117.169 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0051s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('33','python协程之asyncio；在Django中使用ib_insync开发ibapi 营投证券','鹿晓鹏','python协程之asyncio；在Django中使用ib_insync开发ibapi 营投证券','python协程之asyncio；在Django中使用ib_insync开发ibapi 营投证券','1','0','1','&lt;h4&gt;项目背景：&lt;br/&gt;&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;公司项目需要开发股票接口，准备接入&lt;a data-click=&quot;{
+			&amp;#39;F&amp;#39;:&amp;#39;738317EA&amp;#39;,
+			&amp;#39;F1&amp;#39;:&amp;#39;9D73F1E4&amp;#39;,
+			&amp;#39;F2&amp;#39;:&amp;#39;6CA6DD6B&amp;#39;,
+			&amp;#39;F3&amp;#39;:&amp;#39;54E5243F&amp;#39;,
+			&amp;#39;T&amp;#39;:&amp;#39;1554971821&amp;#39;,
+						&amp;#39;y&amp;#39;:&amp;#39;7EE8FAB7&amp;#39;
+			 
+									}&quot; href=&quot;http://www.baidu.com/link?url=uCzDbRz4X-mEPcp5Rozp41Td2YRbKOj196svTI3-Wke0GjVpBBkeApXzcQ7wPE5l&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-family: arial; font-size: medium;&quot;&gt;Interactive Brokers&lt;/a&gt;（&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);&quot;&gt;盈透证券简称ib&lt;/span&gt;）的接口，使用的是ib_insync第三方封装好的包&lt;/p&gt;&lt;h4&gt;开发流程：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;接入ib接口首先需要下载一个ib的TWS软件，通讯模式为：本地服务器请求TWS，TWS请求ib服务器，本地不能直接和ib服务器进行通讯&lt;br/&gt;&lt;/p&gt;&lt;h4&gt;问题：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;之前为了测试ib_insync是否能跑通，单独写的py文件进行测试，测试结果没问题，准备放到框架中使用，框架选用的是Django，然后问题来了，当Django启动web服务的时候，会建立一个进程，然后连接ib的时候也需要建立一个进程，如果请求方法会报如下错：&lt;br/&gt;&lt;/p&gt;&lt;pre class=&quot;brush:python;toolbar:false&quot;&gt;RuntimeError:&amp;nbsp;There&amp;nbsp;is&amp;nbsp;no&amp;nbsp;current&amp;nbsp;event&amp;nbsp;loop&amp;nbsp;in&amp;nbsp;thread&amp;nbsp;&amp;#39;Thread-1&amp;#39;.&lt;/pre&gt;&lt;p&gt;造成问题的原因是Django中的进程和ib_insync进程发生冲突导致.&lt;/p&gt;&lt;h4&gt;解决方法：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;使用asyncio将进程异步处理，如已经连接则返回实例，没有连接则连接返回&lt;/p&gt;&lt;pre style=&quot;background-color:#404040;color:#9bc28e;font-family:&amp;#39;Meslo LG M for Powerline&amp;#39;;font-size:12.0pt;&quot;&gt;ib_insync&amp;nbsp;django.http&amp;nbsp;HttpResponse
+asyncio
+
+CLIENT&amp;nbsp;LOOP&amp;nbsp;LIVE_PORT&amp;nbsp;idid.LOOP.LOOP&amp;nbsp;asyncio.new_event_loopasyncio.set_event_loop.LOOP.CLIENT.CLIENT&amp;nbsp;IB.CLIENT.isConnected.CLIENT.connect.LIVE_PORTid.CLIENT
+
+requestrequest.postib&amp;nbsp;ApiIBClient.homecontract&amp;nbsp;Stockib.qualifyContractscontractorder&amp;nbsp;MarketOrdertrade&amp;nbsp;ib.placeOrdercontractordertradeib.sleeptrade.loglimitOrder&amp;nbsp;LimitOrderlimitTrade&amp;nbsp;ib.placeOrdercontractlimitOrderlimitTradeib.cancelOrderlimitOrderHttpResponselimitTrade&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1554972516') [ RunTime:0.1844s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0011s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('55','25') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('55','/Upload/image/ueditor/python.jpg') [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001837s ]
+
+[ 2019-04-11T16:48:39+08:00 ] 45.62.117.169 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0111s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0017s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0791s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '45'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 45 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '44'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 44 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '43'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 43 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '41'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 41 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '40'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 40 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.191716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2019-04-11T17:19:55+08:00 ] 45.62.117.169 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.178812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.178879s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2019-04-11T17:19:56+08:00 ] 45.62.117.169 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0787s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.179423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.179496s ]
+
+[ 2019-04-11T17:19:59+08:00 ] 45.62.117.169 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0793s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0008s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0054s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0026s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0782s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '45'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 45 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '44'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 44 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '43'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 43 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '41'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 41 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '40'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 40 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2019-04-11T17:20:02+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 55 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 55  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0813s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2019-04-11T17:20:31+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0032s ]
+SQL: UPDATE `lxp_article` SET `aid`='55',`cid`='33',`title`='python协程之asyncio；在Django中使用ib_insync开发ibapi 盈透证券',`author`='鹿晓鹏',`keywords`='python协程之asyncio；在Django中使用ib_insync开发ibapi 盈透证券',`description`='python协程之asyncio；在Django中使用ib_insync开发ibapi 盈透证券',`is_original`='1',`is_top`='0',`is_show`='1',`content`='&lt;h4&gt;项目背景：&lt;br/&gt;&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;公司项目需要开发股票接口，准备接入&lt;a data-click=&quot;{
+			&amp;#39;F&amp;#39;:&amp;#39;738317EA&amp;#39;,
+			&amp;#39;F1&amp;#39;:&amp;#39;9D73F1E4&amp;#39;,
+			&amp;#39;F2&amp;#39;:&amp;#39;6CA6DD6B&amp;#39;,
+			&amp;#39;F3&amp;#39;:&amp;#39;54E5243F&amp;#39;,
+			&amp;#39;T&amp;#39;:&amp;#39;1554971821&amp;#39;,
+						&amp;#39;y&amp;#39;:&amp;#39;7EE8FAB7&amp;#39;
+			 
+									}&quot; href=&quot;http://www.baidu.com/link?url=uCzDbRz4X-mEPcp5Rozp41Td2YRbKOj196svTI3-Wke0GjVpBBkeApXzcQ7wPE5l&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-family: arial; font-size: medium;&quot;&gt;Interactive Brokers&lt;/a&gt;（&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);&quot;&gt;盈透证券简称ib&lt;/span&gt;）的接口，使用的是ib_insync第三方封装好的包&lt;/p&gt;&lt;h4&gt;开发流程：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;接入ib接口首先需要下载一个ib的TWS软件，通讯模式为：本地服务器请求TWS，TWS请求ib服务器，本地不能直接和ib服务器进行通讯&lt;br/&gt;&lt;/p&gt;&lt;h4&gt;问题：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;之前为了测试ib_insync是否能跑通，单独写的py文件进行测试，测试结果没问题，准备放到框架中使用，框架选用的是Django，然后问题来了，当Django启动web服务的时候，会建立一个进程，然后连接ib的时候也需要建立一个进程，如果请求方法会报如下错：&lt;br/&gt;&lt;/p&gt;&lt;pre class=&quot;brush:python;toolbar:false&quot;&gt;RuntimeError:&amp;nbsp;There&amp;nbsp;is&amp;nbsp;no&amp;nbsp;current&amp;nbsp;event&amp;nbsp;loop&amp;nbsp;in&amp;nbsp;thread&amp;nbsp;&amp;#39;Thread-1&amp;#39;.&lt;/pre&gt;&lt;p&gt;造成问题的原因是Django中的进程和ib_insync进程发生冲突导致.&lt;/p&gt;&lt;h4&gt;解决方法：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;使用asyncio将进程异步处理，如已经连接则返回实例，没有连接则连接返回&lt;/p&gt;&lt;pre style=&quot;background-color:#404040;color:#9bc28e;font-family:&amp;#39;Meslo LG M for Powerline&amp;#39;;font-size:12.0pt;&quot;&gt;ib_insync&amp;nbsp;django.http&amp;nbsp;HttpResponse
+asyncio
+
+CLIENT&amp;nbsp;LOOP&amp;nbsp;LIVE_PORT&amp;nbsp;idid.LOOP.LOOP&amp;nbsp;asyncio.new_event_loopasyncio.set_event_loop.LOOP.CLIENT.CLIENT&amp;nbsp;IB.CLIENT.isConnected.CLIENT.connect.LIVE_PORTid.CLIENT
+
+requestrequest.postib&amp;nbsp;ApiIBClient.homecontract&amp;nbsp;Stockib.qualifyContractscontractorder&amp;nbsp;MarketOrdertrade&amp;nbsp;ib.placeOrdercontractordertradeib.sleeptrade.loglimitOrder&amp;nbsp;LimitOrderlimitTrade&amp;nbsp;ib.placeOrdercontractlimitOrderlimitTradeib.cancelOrderlimitOrderHttpResponselimitTrade&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;' WHERE `aid` = 55 [ RunTime:0.0895s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lxp_article_tag` WHERE `aid` = 55 [ RunTime:0.0037s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('55','25') [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0881s ]
+SQL: DELETE FROM `lxp_article_pic` WHERE `aid` = 55 [ RunTime:0.0030s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('55','/Upload/image/ueditor/python.jpg') [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.183810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.183874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2019-04-11T17:20:33+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 55 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0011s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 55  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0855s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2019-04-11T17:21:52+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: UPDATE `lxp_article` SET `aid`='55',`cid`='33',`title`='python协程之asyncio；在Django中使用ib_insync开发ibapi 盈透证券',`author`='鹿晓鹏',`keywords`='python协程之asyncio；在Django中使用ib_insync开发ibapi 盈透证券',`description`='python协程之asyncio；在Django中使用ib_insync开发ibapi 盈透证券',`is_original`='1',`is_top`='0',`is_show`='1',`content`='&lt;h4&gt;项目背景：&lt;br/&gt;&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;公司项目需要开发股票接口，准备接入&lt;a data-click=&quot;{
+			&amp;#39;F&amp;#39;:&amp;#39;738317EA&amp;#39;,
+			&amp;#39;F1&amp;#39;:&amp;#39;9D73F1E4&amp;#39;,
+			&amp;#39;F2&amp;#39;:&amp;#39;6CA6DD6B&amp;#39;,
+			&amp;#39;F3&amp;#39;:&amp;#39;54E5243F&amp;#39;,
+			&amp;#39;T&amp;#39;:&amp;#39;1554971821&amp;#39;,
+						&amp;#39;y&amp;#39;:&amp;#39;7EE8FAB7&amp;#39;
+			 
+									}&quot; href=&quot;http://www.baidu.com/link?url=uCzDbRz4X-mEPcp5Rozp41Td2YRbKOj196svTI3-Wke0GjVpBBkeApXzcQ7wPE5l&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-family: arial; font-size: medium;&quot;&gt;Interactive Brokers&lt;/a&gt;（&lt;span style=&quot;color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);&quot;&gt;盈透证券简称ib&lt;/span&gt;）的接口，使用的是ib_insync第三方封装好的包&lt;/p&gt;&lt;h4&gt;开发流程：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;接入ib接口首先需要下载一个ib的TWS软件，通讯模式为：本地服务器请求TWS，TWS请求ib服务器，本地不能直接和ib服务器进行通讯&lt;br/&gt;&lt;/p&gt;&lt;h4&gt;问题：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;之前为了测试ib_insync是否能跑通，单独写的py文件进行测试，测试结果没问题，准备放到框架中使用，框架选用的是Django，然后问题来了，当Django启动web服务的时候，会建立一个进程，然后连接ib的时候也需要建立一个进程，如果请求方法会报如下错：&lt;br/&gt;&lt;/p&gt;&lt;pre class=&quot;brush:python;toolbar:false&quot;&gt;RuntimeError:&amp;nbsp;There&amp;nbsp;is&amp;nbsp;no&amp;nbsp;current&amp;nbsp;event&amp;nbsp;loop&amp;nbsp;in&amp;nbsp;thread&amp;nbsp;&amp;#39;Thread-1&amp;#39;.&lt;/pre&gt;&lt;p&gt;造成问题的原因是Django中的进程和ib_insync进程发生冲突导致.&lt;/p&gt;&lt;h4&gt;解决方法：&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;使用asyncio将进程异步处理，如已经连接则返回实例，没有连接则连接返回&lt;/p&gt;&lt;pre style=&quot;background-color:#404040;color:#9bc28e;font-family:&amp;#39;Meslo LG M for Powerline&amp;#39;;font-size:12.0pt;&quot;&gt;ib_insync&amp;nbsp;django.http&amp;nbsp;HttpResponse
+asyncio
+
+CLIENT&amp;nbsp;LOOP&amp;nbsp;LIVE_PORT&amp;nbsp;idid.LOOP.LOOP&amp;nbsp;asyncio.new_event_loopasyncio.set_event_loop.LOOP.CLIENT.CLIENT&amp;nbsp;IB.CLIENT.isConnected.CLIENT.connect.LIVE_PORTid.CLIENT
+
+requestrequest.postib&amp;nbsp;ApiIBClient.homecontract&amp;nbsp;Stockib.qualifyContractscontractorder&amp;nbsp;MarketOrdertrade&amp;nbsp;ib.placeOrdercontractordertradeib.sleeptrade.loglimitOrder&amp;nbsp;LimitOrderlimitTrade&amp;nbsp;ib.placeOrdercontractlimitOrderlimitTradeib.cancelOrderlimitOrderHttpResponselimitTrade&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;' WHERE `aid` = 55 [ RunTime:0.0852s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: DELETE FROM `lxp_article_tag` WHERE `aid` = 55 [ RunTime:0.0051s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('55','25') [ RunTime:0.0903s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0008s ]
+SQL: DELETE FROM `lxp_article_pic` WHERE `aid` = 55 [ RunTime:0.0026s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('55','/Upload/image/ueditor/python.jpg') [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001902s ]
+
+[ 2019-04-11T17:29:03+08:00 ] 45.62.117.169 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2019-04-11T17:29:04+08:00 ] 45.62.117.169 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2019-04-11T17:31:13+08:00 ] 45.62.117.169 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2019-04-11T17:42:15+08:00 ] 45.62.117.169 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002088s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0044s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('33','Python框架Django快速入门','鹿晓鹏','Python,Django','原文地址：https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html前言今天我将开始一个关于 Django 基础知识的全新系列教程，这是一个开始学习 Django 的完整入门指南，教程材料一共会被分为七个部分。我们将从安装、开发环境的准备，模型，视图','1','0','1','&lt;article class=&quot;baidu_pl&quot;&gt;&lt;blockquote style=&quot;border-left:4px solid rgb(221,221,221);color:rgb(119,119,119);&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;原文地址：https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;span style=&quot;font-weight:bold;font-size:16px;&quot;&gt;前言&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;img class=&quot;img_loadederror&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gvE8zSj7KN7FplgtOgMFf6eZLGPVBava45wc7ibGLuSAJr5uDutUcUvQ/640?wx_fmt=jpeg&quot; style=&quot;visibility:visible !important;&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;今天我将开始一个关于 Django 基础知识的全新系列教程，这是一个开始学习 Django 的完整入门指南，教程材料一共会被分为七个部分。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;我们将从安装、开发环境的准备，模型，视图，模板，URL到更高级的主题（如迁移，测试和部署）中详细探讨所有基本概念。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我想做一些不一样的事情，这是一个容易学习，内容丰富且不失趣味的教程。我的想法是在文章中穿插一些漫画的方式来演示说明相应的概念和场景。我希望大家能够享受这种阅读！&lt;/p&gt;&lt;p&gt;但是在我们开始之前…&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;当年我在一所大学担任代课教授时，我曾经在计算机科学专业给新来的学生讲授网络开发学科。那时我总是会用下面这个孔夫子的名言开始新的课程：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gwicmVnTcIlgF6eVAIhaCVicugJE1YVJ0yUthEXGCib5g7VTicP1bbR1SYA/640?wx_fmt=jpeg&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;em&gt;(译者注：不确定是孔子讲的，但这句话早在中国古代就有所提到，出自荀子《儒效篇》“不闻不若闻之，闻之不若见之，见之不若知之，知之不若行之；学至于行之而止矣”)&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;color:rgb(255,76,0);&quot;&gt;所以，请动起手来！不要只是阅读教程。我们一起来练习！通过实践和练习你会收获的更多。&lt;/span&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t0&quot;&gt;&lt;/a&gt;&lt;strong&gt;为什么要学习Django?&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;Django是一个用 Python 编写的 Web 框架。Web 框架是一种软件，基于web框架可以开发动态网站，各种应用程序以及服务。它提供了一系列工具和功能，可以解决许多与Web开发相关的常见问题，比如：安全功能，数据库访问，会话，模板处理，URL路由，国际化，本地化，等等。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;使用诸如 Django 之类的网络框架，使我们能够以标准化的方式快速开发安全可靠的Web应用程序，而无需重新发明轮子。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;那么，Django有什么特别之处呢？对于初学者来说，它是一个Python Web框架，这意味着你可以受益于各种各样的开源库包。python软件包资料库（pypi）拥有超过11.6万个软件包（2017年9月6日的数据）。如果当你想要解决一个特定的问题的时候，可能有人已经为它实现了一个库来供你使用。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;Django是用python编写的最流行的web框架之一。它绝对是最完整的，提供了各种各样的开箱即用的功能，比如用于开发和测试的独立Web服务器，缓存，中间件系统，ORM，模板引擎，表单处理，基于Python单元测试的工具接口。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;Django还自带&lt;em&gt;内部电池&lt;/em&gt;，提供内置应用程序，比如一个认证系统，一个可用于 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;CRUD&lt;/code&gt;(增删改查) 操作并且自动生成页面的后台管理界面，生成订阅文档（RSS/Atom）,站点地图等。甚至在django中内建了一个地理信息系统（GIS）框架。&lt;/p&gt;&lt;p&gt;Django的开发得到了Django软件基金会的支持，并且由jetbrains和instagram等公司赞助。&lt;/p&gt;&lt;p&gt;Django现在已经存在了相当长的一段时间了。到现在为止，活跃的项目开发时间已经超过12年，这也证明了它是一个成熟，可靠和安全的网络框架。&lt;/p&gt;&lt;h3 style=&quot;font-weight:bold;font-size:1.1em;&quot;&gt;&lt;a name=&quot;t1&quot;&gt;&lt;/a&gt;谁在使用Django?&lt;/h3&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;知道谁在使用Django是很好的，同时也想一想你可以用它来做些什么。在使用Django的大型网站有：Instagram，Disqus，Mozilla，Bitbucket，Last.fm，国家地理。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;想知道更多的示例，你可以到Django Sites数据库中查看，它提供超过五千个Django驱动的网站列表。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;顺便说一下，去年在Django 2016年发布会上，Django核心开发人员，Instagram员工 carl meyer，就Instagram如何大规模使用Django以及它如何支持他们的用户增长做过一次分享。这是个一小时的演讲，如果你有兴趣学习了解更多的话，这是一次很有趣的演讲。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t2&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们需要做的第一件事是在我们的电脑上安装一些程序，以便能够开始使用django。基本的设置包括安装&lt;strong&gt;Python&lt;/strong&gt;，&lt;strong&gt;Virtualenv&lt;/strong&gt;和&lt;strong&gt;Django&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5glUAcG1tKljmjUicjo5NCnPWwibA5TLEk3SfagokkqFXWqRJibuEzZqX1g/640?wx_fmt=jpeg&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;使用虚拟环境不是强制性的，但是我还是强烈建议大家这样做。如果你是一个初学者，那么最好形成一个良好的开端。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;当你在用 Django 开发一个网站或者一个Web项目的时候，不得不安装外部库以支持开发是非常常见的事情。使用虚拟环境，你开发的每个项目都会有其独立的环境。这样的话，包之间的依赖关系不会发生冲突。同时也使得你能在不同Django版本上运行的本地机器的项目。&lt;/p&gt;&lt;p&gt;在后面你会看到使用它是非常简单的！&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t3&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装 Python 3.6.2&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们想要做的第一件事是安装最新版的Python，那就是&lt;strong&gt;Python 3.6.2&lt;/strong&gt;。至少是在我写这篇教程的时候。如果有更新的版本，请使用新版。接下来的步骤也应该保持大致相同的做法。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们将使用Python 3，因为大部分主要的Python库已经被移植到python 3，并且下一个主要的django版本（2.x）也将不再支持python 2。所以Python 3是正确的选择。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;最好的方法是通过&lt;strong&gt;Homebrew&lt;/strong&gt;安装。 如果你的Mac还没有安装Homebrew的话，在终端中执行下面的命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;/usr/bin/ruby&amp;nbsp;-e&amp;nbsp;&amp;quot;$(curl&amp;nbsp;-fsSL&amp;nbsp;https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你没有安装命令行工具（&lt;strong&gt;Command Line Tools&lt;/strong&gt;），Homebrew的安装可能需要稍长一点的时间。但它会帮助你处理好一切，所以不用担心。只需要坐下来等到安装完成即可。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;当你看到以下消息时，就代表安装完成了：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;==&amp;gt; Installation successful!&lt;br/&gt;&lt;br/&gt;==&amp;gt; Homebrew has enabled anonymous aggregate user behaviour analytics.&lt;br/&gt;Read the analytics documentation (and how to opt-out) here:&lt;br/&gt; &amp;nbsp;https://docs.brew.sh/Analytics.html&lt;br/&gt;&lt;br/&gt;==&amp;gt; Next steps:&lt;br/&gt;- Run `brew &lt;span class=&quot;hljs-built_in&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;help&lt;/span&gt;&lt;/span&gt;` to get started&lt;br/&gt;- Further documentation:&lt;br/&gt; &amp;nbsp; &amp;nbsp;https://docs.brew.sh&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行下面的命令来安装Python 3:&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;brew&amp;nbsp;install&amp;nbsp;python3&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;由于macOS原本已经安装了python 2，所以在安装python 3之后，你将可以同时使用这两个版本。&lt;/p&gt;&lt;p&gt;需要运行Python 2的话，在终端中通过命令 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python&lt;/code&gt; 启动。如果想运行Python 3，则使用&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python3&lt;/code&gt; 来启动。&lt;/p&gt;&lt;p&gt;我们可以在终端中测试一下：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;python3 --version&lt;br/&gt;Python &lt;span class=&quot;hljs-number&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;3.6&lt;/span&gt;.&lt;span class=&quot;hljs-number&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gYh6mKOu6tibPOg5U8Zo1pyj3H38KQoMEbQEH8UibtxiclaAnDNRUaHlsQ/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;很棒，python已经启动并正在运行。下一步：虚拟环境！&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t4&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装 Virtualenv&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;接下来这一步，我们将通过&lt;strong&gt;pip&lt;/strong&gt;(&lt;em&gt;一个管理和安装Python包的工具&lt;/em&gt;)来安装&lt;strong&gt;Virtualenv&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;请注意，Homebrew已经为你安装好了&lt;strong&gt;pip&lt;/strong&gt;，在python 3.6.2下的名称为 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;pip3&lt;/code&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;在终端中，执行下面的命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;sudo&amp;nbsp;pip3&amp;nbsp;install&amp;nbsp;virtualenv&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gib7Qdias401dw82J6unxbTicsxClfVNiaynpakhpBxBOheaug8ouZ2ibS3w/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;到目前为止，我们执行的安装都是在操作系统环境下运行的。从现在开始，我们安装的所有东西，包括django本身，都将安装在虚拟环境中。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这样想一下：对于你开始的每个Django项目，你首先会为它创建一个虚拟环境。这就像每个Django项目都有一个沙盒。所以你随意运行，安装软件包，卸载软件包而不会破坏任何东西。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我习惯在电脑上创建一个名为&lt;strong&gt;Development&lt;/strong&gt;的文件夹。然后，我用它来组织我所有的项目和网站。但你也可以按照接下来的步骤创建适合你自己的目录。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;通常，我首先在&lt;strong&gt;Development&lt;/strong&gt;文件夹中创建一个项目名称的新文件夹。既然这将是我们第一个项目，我们没必要挑选一个独特的名字。现在，我们可以称之为&lt;strong&gt;myproject&lt;/strong&gt;。&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;mkdir myproject&lt;br/&gt;&lt;span class=&quot;hljs-built_in&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;cd&lt;/span&gt; myproject&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gX4y7jspO4rU9TEibbbrEJrx4RiaXzCMPmD3b7jGj7qCzsfiaxMXjeEVxw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这个文件夹是级别较高的目录，将存储与我们的Django项目相关的所有文件和东西，包括它的虚拟环境。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;所以让我们开始创建我们的第一个虚拟环境并安装django。&lt;/p&gt;&lt;p&gt;在&lt;strong&gt;myproject&lt;/strong&gt;文件夹中：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;virtualenv&amp;nbsp;venv&amp;nbsp;-p&amp;nbsp;python3&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gV4j28MmM5LNmnXLJw4FE4a7XFGWyk4Bsn0RIMAkkiaKibiaCeocmzRppQ/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这样我们的虚拟环境就创建好了。在开始使用它之前，我们需要先激活一下环境：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;source&amp;nbsp;venv/bin/activate&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你在命令行前面看到 &lt;strong&gt;(venv)&lt;/strong&gt;，就代表激活成功了，就像这样：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gicgSlLqQgYX6MaR2eQTZz1g0yb7OR6nxRqVVp2lBIXugjztNyU5snSw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;让我们试着了解一下这里发生了什么。我们创建了一个名为&lt;strong&gt;venv&lt;/strong&gt;的特殊文件夹。该文件夹内包含了一个python的副本。在我们激活了&lt;strong&gt;venv&lt;/strong&gt;环境之后，当我们运行&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;Python&lt;/code&gt;命令时，它将使用我们存储在venv里面的本地副本，而不是我们之前在操作系统中安装的那个。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;另一个重要的事情是，&lt;strong&gt;pip&lt;/strong&gt;程序也已经安装好了，当我们使用它来安装Python的软件包（比如Django）时，它将被安装在&lt;strong&gt;venv&lt;/strong&gt;环境中。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;请注意，当我们启用venv时，我们将使用命令&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python&lt;/code&gt;（而不是&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python3&lt;/code&gt;）来调用Python 3.6.2，并且仅使用&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;pip&lt;/code&gt;（而不是&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;pip3&lt;/code&gt;）来安装软件包。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;顺便说一句，要想退出&lt;strong&gt;venv&lt;/strong&gt;环境，运行下面的命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;deactivate&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;但是，我们现在先保持激活状态来进行下一步。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t5&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装 Django 1.11.4&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;很简单，现在我们已经启动了&lt;strong&gt;venv&lt;/strong&gt;，运行以下命令来安装django：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;pip&amp;nbsp;install&amp;nbsp;django&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gsjknDrUDUHLMibVARgIGRfgbwgM2OmvkTmTXgD46ia3194XSwhdVfbPw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;现在一切就绪！&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gMdmHK3GcqRSnlL0Nq12sYbM9o7TCtVpXicymKzT5Mcf8Vr7gybics4tw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t6&quot;&gt;&lt;/a&gt;启动一个新项目，执行下面的命令来创建一个新的 Django 项目：&lt;/h2&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;django-admin&amp;nbsp;startproject&amp;nbsp;myproject&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;命令行工具&lt;strong&gt;django-admin&lt;/strong&gt;会在安装Django的时候一起自动安装好。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;执行了上面的命令以后，系统会为Django项目生成基础文件夹结构。&lt;/p&gt;&lt;p&gt;现在，我们的&lt;strong&gt;myproject&lt;/strong&gt;目录结构如下所示：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;myproject/ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;-- 高级别的文件夹&lt;br/&gt; |-- myproject/ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;-- Django项目文件夹&lt;br/&gt; | &amp;nbsp; &amp;nbsp;|-- myproject/&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- __init__.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- settings.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- urls.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- wsgi.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;+-- manage.py&lt;br/&gt; +-- venv/ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;-- 虚拟环境文件夹&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们最初的项目结构由五个文件组成：&lt;/p&gt;&lt;ul style=&quot;margin-left:0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;manage.py&lt;/strong&gt;：使用&lt;strong&gt;django-admin&lt;/strong&gt;命令行工具的快捷方式。它用于运行与我们项目相关的管理命令。我们将使用它来运行开发服务器，运行测试，创建迁移等等。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;__init.py&lt;/strong&gt;：这个空文件告诉python这个文件夹是一个python包。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;settings.py&lt;/strong&gt;：这个文件包含了所有的项目配置。将来我们会一直提到这个文件！&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;urls.py&lt;/strong&gt;：这个文件负责映射我们项目中的路由和路径。例如，如果你想在访问URL &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;/ about/&lt;/code&gt; 时显示某些内容，则必须先在这里做映射关系。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;wsgi.py&lt;/strong&gt;：该文件是用于部署的简单网关接口。你可以暂且先不用关心她的内容，就先让他在那里就好了。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;django自带了一个简单的网络服务器。在开发过程中非常方便，所以我们无需安装任何其他软件即可在本地运行项目。我们可以通过执行命令来测试一下它：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;python&amp;nbsp;manage.py&amp;nbsp;runserver&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在，你可以忽略终端中出现的迁移错误;我们将在稍后讨论。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在在Web浏览器中打开URL：&lt;strong&gt;http://127.0.0.1:8000&lt;/strong&gt;，你应该看到下面的页面：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gLG8LibAa8G6DSiab84UgmDA1r3ISQxdmrHjkCVKuSsRt8kIbVASBib8cQ/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;使用组合键 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;Control + C&lt;/code&gt;来终止开发服务器。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t7&quot;&gt;&lt;/a&gt;&lt;strong&gt;Django 应用&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在Django的哲学中，我们有两个重要的概念：&lt;/p&gt;&lt;ul style=&quot;margin-left:0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;app&lt;/strong&gt;：是一个可以做完成某件事情的Web应用程序。一个应用程序通常由一组&lt;strong&gt;models(数据库表)&lt;/strong&gt;，&lt;strong&gt;views(视图)&lt;/strong&gt;，&lt;strong&gt;templates(模板)&lt;/strong&gt;，&lt;strong&gt;tests(测试)&lt;/strong&gt; 组成。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;project&lt;/strong&gt;：是配置和应用程序的集合。一个项目可以由多个应用程序或一个应用程序组成。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;请注意，如果没有一个&lt;strong&gt;project&lt;/strong&gt;，你就无法运行Django应用程序。像博客这样的简单网站可以完全在单个应用程序中编写，例如可以将其命名为&lt;strong&gt;blog&lt;/strong&gt;或&lt;strong&gt;weblog&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gCiaxHL9lf6vLVpPdKn27n3R4iaZu1Hee1feN99MiaMNVGgzXL1FWYujwA/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这是组织源代码的一种方式。现在刚开始，判断什么是或不是应用程序这些还不太重要。包括如何组织代码等。现在不用担心那些问题！首先让我们对Django的API和基础知识进行梳理一遍。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;好的！那么，为了方便说明，我们来创建一个简单的&lt;em&gt;网络论坛&lt;/em&gt;或&lt;em&gt;讨论区&lt;/em&gt;。要创建我们的第一个应用程序，请跳转到&lt;strong&gt;manage.py&lt;/strong&gt;文件所在的目录并执行以下命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;django-admin&amp;nbsp;startapp&amp;nbsp;boards&lt;/pre&gt;&lt;p&gt;注意!我们这次使用的命令是&lt;strong&gt;startapp&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;通过这条指令，系统会给我们创建以下目录结构：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;myproject/|--&amp;nbsp;myproject/&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;boards/&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;--&amp;nbsp;我们新的Django应用（app）!&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;migrations/|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;+--&amp;nbsp;__init__.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;__init__.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;admin.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;apps.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;models.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;tests.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;+--&amp;nbsp;views.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;myproject/|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;__init__.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;settings.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;urls.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;wsgi.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;+--&amp;nbsp;manage.py&amp;nbsp;+--&amp;nbsp;venv/&lt;/pre&gt;&lt;p&gt;下面，我们来探讨每个文件的作用：&lt;/p&gt;&lt;ul style=&quot;margin-left:0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;migrations/&lt;/strong&gt;：在这个文件夹里，Django会存储一些文件以跟踪你在&lt;strong&gt;models.py&lt;/strong&gt;文件中创建的变更，用来保持数据库和&lt;strong&gt;models.py&lt;/strong&gt;的同步。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;admin.py&lt;/strong&gt;：这个文件为一个django内置的应用程序&lt;strong&gt;Django Admin&lt;/strong&gt;的配置文件。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;apps.py&lt;/strong&gt;：这是应用程序本身的配置文件。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;models.py&lt;/strong&gt;：这里是我们定义Web应用程序数据实例的地方。models会由Django自动转换为数据库表。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;tests.py&lt;/strong&gt;：这个文件用来写当前应用程序的单元测试。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;views.py&lt;/strong&gt;：这是我们处理Web应用程序请求(request)/响应(resopnse)周期的文件。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在我们创建了我们的第一个应用程序，让我们来配置一下项目以便启用这个应用程序。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;要做到这一点，打开&lt;strong&gt;settings.py&lt;/strong&gt;并尝试找到&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;INSTALLED_APPS&lt;/code&gt;变量：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;settings.py&lt;/strong&gt;&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;INSTALLED_APPS = [&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.admin&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.auth&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.contenttypes&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.sessions&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.messages&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.staticfiles&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如你所见，Django默认已经安装了6个内置应用程序。它们提供大多数Web应用程序所需的常用功能，如身份验证，会话，静态文件管理（图像，JavaScript，CSS等）等。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们将会在本系列教程中探索这些应用程序。但现在，先不管它们，只需将我们的应用程序&lt;strong&gt;boards&lt;/strong&gt;添加到&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;INSTALLED_APPS&lt;/code&gt;列表即可：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;INSTALLED_APPS = [&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.admin&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.auth&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.contenttypes&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.sessions&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.messages&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.staticfiles&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt;&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;boards&amp;#39;&lt;/span&gt;&lt;/span&gt;, &amp;nbsp;&lt;span class=&quot;hljs-comment&quot; style=&quot;color:rgb(150,152,150);&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# 译者注：建议和作者一样空一行来区别内置app和自定义的app&lt;/span&gt;&lt;/span&gt;&lt;br/&gt;&lt;span class=&quot;hljs-comment&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;使用前面漫画正方形和圆圈的比喻，黄色的圆圈就是我们的&lt;strong&gt;boards&lt;/strong&gt;应用程序，&lt;strong&gt;django.contrib.admin, django.contrib.auth&lt;/strong&gt;等就是红色的圆圈。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t8&quot;&gt;&lt;/a&gt;&lt;strong&gt;Hello, World!&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在来写我们的第一个&lt;strong&gt;视图(view)&lt;/strong&gt;。我们将在下一篇教程中详细探讨它。但现在，让我们试试看看如何用Django创建一个新页面。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;打开&lt;strong&gt;boards&lt;/strong&gt;应用程序中的&lt;strong&gt;views.py&lt;/strong&gt;文件，并添加以下代码：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;views.py&lt;/strong&gt;&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; django.http &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; HttpResponse&lt;br/&gt;&lt;br/&gt;&lt;span class=&quot;hljs-function&quot; style=&quot;color:rgb(129,162,190);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;hljs-title&quot; style=&quot;color:rgb(150,152,150);&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;hljs-params&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;(request)&lt;/span&gt;:&lt;/span&gt;&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt;&lt;/span&gt; HttpResponse(&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;Hello, World!&amp;#39;&lt;/span&gt;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;视图是接收&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;httprequest&lt;/code&gt;对象并返回一个&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;httpresponse&lt;/code&gt;对象的Python函数。接收 &lt;em&gt;request&lt;/em&gt; 作为参数并返回 &lt;em&gt;response&lt;/em&gt; 作为结果。这个流程你必须记住！&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们在这里定义了一个简单的视图，命名为&lt;strong&gt;home&lt;/strong&gt;，它只是简单地返回一个信息，一个字符串&lt;strong&gt;hello，world!&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在我们必须告诉Django什么时候会调用这个view。这需要在urls.py文件中完成：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;urls.py&lt;/strong&gt;&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; django.conf.urls &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; url&lt;br/&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;from&lt;/span&gt; django.contrib &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; admin&lt;br/&gt;&lt;br/&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;from&lt;/span&gt; boards &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; views&lt;br/&gt;&lt;br/&gt;urlpatterns = [&lt;br/&gt; &amp;nbsp; &amp;nbsp;url(&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;r&amp;#39;^$&amp;#39;&lt;/span&gt;&lt;/span&gt;, views.home, name=&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;&lt;/span&gt;),&lt;br/&gt; &amp;nbsp; &amp;nbsp;url(&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;r&amp;#39;^admin/&amp;#39;&lt;/span&gt;&lt;/span&gt;, admin.site.urls),&lt;br/&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你将上面的代码片段与你的&lt;strong&gt;urls.py&lt;/strong&gt;文件进行比较，你会注意到我添加了以下新代码：&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;url（r&amp;#39;^ $&amp;#39;，views.home，name =&amp;#39;home&amp;#39;）&lt;/code&gt;并从我们的应用程序&lt;strong&gt;boards&lt;/strong&gt;中导入了&lt;strong&gt;views&lt;/strong&gt;模块通过&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;from boards import views&lt;/code&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;和我之前提到的一样，我们将在稍后详细探讨这些概念。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在，Django使用&lt;strong&gt;正则表达式&lt;/strong&gt;来匹配请求的URL。对于我们的&lt;strong&gt;home&lt;/strong&gt;视图，我使用&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;^$&lt;/code&gt; 正则，它将匹配一个空路径，也就是主页（这个URL：http://127.0.0.1:8000 ）。如果我想匹配的URL是 &lt;strong&gt;http://127.0.0.1:8000/homepage/&lt;/strong&gt; ，那么我的URL正则表达式就会是：&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;url(r&amp;#39;^homepage/$&amp;#39;, views.home, name=&amp;#39;home&amp;#39;)&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;我们来看看会发生什么：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;python&amp;nbsp;manage.py&amp;nbsp;runserver&lt;/pre&gt;&lt;p&gt;在一个Web浏览器中，打开 &lt;strong&gt;http://127.0.0.1:8000&lt;/strong&gt; 这个链接：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gXuicBqkmxiaa4bmcebnz3J1RXKibRQ3fuxD1alNXfYd46n2icKWmYSg9Dg/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;就是这样！你刚刚创建成功了你的第一个视图&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t9&quot;&gt;&lt;/a&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这是本系列教程的第一部分。在本教程中，我们学习了如何安装最新的Python版本以及如何设置开发环境。我们还介绍了虚拟环境，开始了我们的第一个django项目，并已经创建了我们的初始应用程序。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我希望你会喜欢第一部分！第二部分将涉及模型，视图，模板和URLs。我们将一起探索Django所有的基础知识！&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;为了让我们能够保持学习过程中页面同步，我在Github上提供了源代码。这个项目的当前状态可以在&lt;strong&gt;release tag v0.1-lw&lt;/strong&gt;下找到。下面是直达链接：&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;https://github.com/sibtc/django-beginners-guide/tree/v0.1-lw&lt;/p&gt;&lt;hr/&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;感谢你能读到这里，昨天在公众号推了一张来自知识星球的图片，还有同学没看明白，再简单介绍一遍。这是我们圈内的一个实践项目，零基础基于 Django 做一个完整的Web项目---论坛系统，规则是这样的，发微信红包10元报名费给我，拉你进入项目实战群，开始进入实战，坚持每天在星球打卡，项目做完成了除了返回报名费之外，额外奖励10元给你，另设了最快完成项目奖，最佳贡献奖 100 元等。&lt;/p&gt;&lt;blockquote&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;color:rgb(178,178,178);font-size:14px;&quot;&gt;寒舍君：活动很棒 让我们这些小白能够渐渐接触英文文档和学习资料，毕竟自己很难独立去翻译整理一份原文项目，有集体合作，和活动促使自己坚持一下，效果会好很多。我作为新加入的小白，先把前两章中英对照理解一下。后续应该会认领一章试试翻译&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;一个人做事缺乏动力，喜欢拖拉，如果把大家拉到一块，每天刺激你，你就会逼迫自己去学习。这也是我建立这个知识星球的目的。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你实在不想加入知识星球，但是又非常想和大家一起实践项目，怎么办？ 我想到这样的办法，就是进群后在群里发个红包，红包的金额不少于群里的人数，比如目前群里有30人，那么至少要发个30元以上的红包。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMmP1j2uNX3rEU0X1cicCicf9OBPtpY867UdRT0tib3A1PNL4Z7KDR6TdiaHyz8CAT1Ax5GRCbocPPIWWQ/640?wx_fmt=jpeg&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;/article&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-f57960eb32.css&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-f57960eb32.css&quot;/&gt;','0','0','1554975734') [ RunTime:0.5824s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0009s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('56','25') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('56','/Upload/image/ueditor/python.jpg') [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2019-04-11T17:42:44+08:00 ] 45.62.117.169 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2019-04-11T17:42:45+08:00 ] 45.62.117.169 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2019-04-11T17:42:47+08:00 ] 45.62.117.169 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0012s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0009s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0038s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0785s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '45'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 45 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '44'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 44 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '43'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 43 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '41'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 41 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.078354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.078406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2019-04-11T17:42:49+08:00 ] 45.62.117.169 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2019-04-11T17:42:53+08:00 ] 45.62.117.169 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.1800s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0034s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0007s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '45'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 45 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '44'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 44 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '43'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 43 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '41'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 41 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.079769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.079837s ]
+
+[ 2019-04-11T17:42:56+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 56 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0096s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 56  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0059s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.1796s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.179817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.179871s ]
+
+[ 2019-04-11T17:43:30+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0898s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 56 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0039s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 56  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0021s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2019-04-11T17:44:25+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.086062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.086145s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0024s ]
+SQL: UPDATE `lxp_article` SET `aid`='56',`cid`='33',`title`='Python框架Django快速入门',`author`='鹿晓鹏',`keywords`='Python,Django',`description`='原文地址：https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html前言今天我将开始一个关于 Django 基础知识的全新系列教程，这是一个开始学习 Django 的完整入门指南，教程材料一共会被分为七个部分。我们将从安装、开发环境的准备，模型，视图',`is_original`='1',`is_top`='0',`is_show`='1',`content`='&lt;article class=&quot;baidu_pl&quot;&gt;&lt;blockquote style=&quot;border-left:4px solid rgb(221,221,221);color:rgb(119,119,119);&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;原文地址：https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;span style=&quot;font-weight:bold;font-size:16px;&quot;&gt;前言&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;img class=&quot;img_loadederror&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gvE8zSj7KN7FplgtOgMFf6eZLGPVBava45wc7ibGLuSAJr5uDutUcUvQ/640?wx_fmt=jpeg&quot; style=&quot;visibility:visible !important;&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;今天我将开始一个关于 Django 基础知识的全新系列教程，这是一个开始学习 Django 的完整入门指南，教程材料一共会被分为七个部分。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;我们将从安装、开发环境的准备，模型，视图，模板，URL到更高级的主题（如迁移，测试和部署）中详细探讨所有基本概念。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我想做一些不一样的事情，这是一个容易学习，内容丰富且不失趣味的教程。我的想法是在文章中穿插一些漫画的方式来演示说明相应的概念和场景。我希望大家能够享受这种阅读！&lt;/p&gt;&lt;p&gt;但是在我们开始之前…&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;当年我在一所大学担任代课教授时，我曾经在计算机科学专业给新来的学生讲授网络开发学科。那时我总是会用下面这个孔夫子的名言开始新的课程：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gwicmVnTcIlgF6eVAIhaCVicugJE1YVJ0yUthEXGCib5g7VTicP1bbR1SYA/640?wx_fmt=jpeg&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;em&gt;(译者注：不确定是孔子讲的，但这句话早在中国古代就有所提到，出自荀子《儒效篇》“不闻不若闻之，闻之不若见之，见之不若知之，知之不若行之；学至于行之而止矣”)&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;span style=&quot;color:rgb(255,76,0);&quot;&gt;所以，请动起手来！不要只是阅读教程。我们一起来练习！通过实践和练习你会收获的更多。&lt;/span&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t0&quot;&gt;&lt;/a&gt;&lt;strong&gt;为什么要学习Django?&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;Django是一个用 Python 编写的 Web 框架。Web 框架是一种软件，基于web框架可以开发动态网站，各种应用程序以及服务。它提供了一系列工具和功能，可以解决许多与Web开发相关的常见问题，比如：安全功能，数据库访问，会话，模板处理，URL路由，国际化，本地化，等等。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;使用诸如 Django 之类的网络框架，使我们能够以标准化的方式快速开发安全可靠的Web应用程序，而无需重新发明轮子。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;那么，Django有什么特别之处呢？对于初学者来说，它是一个Python Web框架，这意味着你可以受益于各种各样的开源库包。python软件包资料库（pypi）拥有超过11.6万个软件包（2017年9月6日的数据）。如果当你想要解决一个特定的问题的时候，可能有人已经为它实现了一个库来供你使用。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;Django是用python编写的最流行的web框架之一。它绝对是最完整的，提供了各种各样的开箱即用的功能，比如用于开发和测试的独立Web服务器，缓存，中间件系统，ORM，模板引擎，表单处理，基于Python单元测试的工具接口。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;Django还自带&lt;em&gt;内部电池&lt;/em&gt;，提供内置应用程序，比如一个认证系统，一个可用于 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;CRUD&lt;/code&gt;(增删改查) 操作并且自动生成页面的后台管理界面，生成订阅文档（RSS/Atom）,站点地图等。甚至在django中内建了一个地理信息系统（GIS）框架。&lt;/p&gt;&lt;p&gt;Django的开发得到了Django软件基金会的支持，并且由jetbrains和instagram等公司赞助。&lt;/p&gt;&lt;p&gt;Django现在已经存在了相当长的一段时间了。到现在为止，活跃的项目开发时间已经超过12年，这也证明了它是一个成熟，可靠和安全的网络框架。&lt;/p&gt;&lt;h3 style=&quot;font-weight:bold;font-size:1.1em;&quot;&gt;&lt;a name=&quot;t1&quot;&gt;&lt;/a&gt;谁在使用Django?&lt;/h3&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;知道谁在使用Django是很好的，同时也想一想你可以用它来做些什么。在使用Django的大型网站有：Instagram，Disqus，Mozilla，Bitbucket，Last.fm，国家地理。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;想知道更多的示例，你可以到Django Sites数据库中查看，它提供超过五千个Django驱动的网站列表。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;顺便说一下，去年在Django 2016年发布会上，Django核心开发人员，Instagram员工 carl meyer，就Instagram如何大规模使用Django以及它如何支持他们的用户增长做过一次分享。这是个一小时的演讲，如果你有兴趣学习了解更多的话，这是一次很有趣的演讲。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t2&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们需要做的第一件事是在我们的电脑上安装一些程序，以便能够开始使用django。基本的设置包括安装&lt;strong&gt;Python&lt;/strong&gt;，&lt;strong&gt;Virtualenv&lt;/strong&gt;和&lt;strong&gt;Django&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5glUAcG1tKljmjUicjo5NCnPWwibA5TLEk3SfagokkqFXWqRJibuEzZqX1g/640?wx_fmt=jpeg&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;使用虚拟环境不是强制性的，但是我还是强烈建议大家这样做。如果你是一个初学者，那么最好形成一个良好的开端。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;当你在用 Django 开发一个网站或者一个Web项目的时候，不得不安装外部库以支持开发是非常常见的事情。使用虚拟环境，你开发的每个项目都会有其独立的环境。这样的话，包之间的依赖关系不会发生冲突。同时也使得你能在不同Django版本上运行的本地机器的项目。&lt;/p&gt;&lt;p&gt;在后面你会看到使用它是非常简单的！&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t3&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装 Python 3.6.2&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们想要做的第一件事是安装最新版的Python，那就是&lt;strong&gt;Python 3.6.2&lt;/strong&gt;。至少是在我写这篇教程的时候。如果有更新的版本，请使用新版。接下来的步骤也应该保持大致相同的做法。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们将使用Python 3，因为大部分主要的Python库已经被移植到python 3，并且下一个主要的django版本（2.x）也将不再支持python 2。所以Python 3是正确的选择。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;最好的方法是通过&lt;strong&gt;Homebrew&lt;/strong&gt;安装。 如果你的Mac还没有安装Homebrew的话，在终端中执行下面的命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;/usr/bin/ruby&amp;nbsp;-e&amp;nbsp;&amp;quot;$(curl&amp;nbsp;-fsSL&amp;nbsp;https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你没有安装命令行工具（&lt;strong&gt;Command Line Tools&lt;/strong&gt;），Homebrew的安装可能需要稍长一点的时间。但它会帮助你处理好一切，所以不用担心。只需要坐下来等到安装完成即可。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;当你看到以下消息时，就代表安装完成了：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;==&amp;gt; Installation successful!&lt;br/&gt;&lt;br/&gt;==&amp;gt; Homebrew has enabled anonymous aggregate user behaviour analytics.&lt;br/&gt;Read the analytics documentation (and how to opt-out) here:&lt;br/&gt; &amp;nbsp;https://docs.brew.sh/Analytics.html&lt;br/&gt;&lt;br/&gt;==&amp;gt; Next steps:&lt;br/&gt;- Run `brew &lt;span class=&quot;hljs-built_in&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;help&lt;/span&gt;&lt;/span&gt;` to get started&lt;br/&gt;- Further documentation:&lt;br/&gt; &amp;nbsp; &amp;nbsp;https://docs.brew.sh&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行下面的命令来安装Python 3:&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;brew&amp;nbsp;install&amp;nbsp;python3&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;由于macOS原本已经安装了python 2，所以在安装python 3之后，你将可以同时使用这两个版本。&lt;/p&gt;&lt;p&gt;需要运行Python 2的话，在终端中通过命令 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python&lt;/code&gt; 启动。如果想运行Python 3，则使用&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python3&lt;/code&gt; 来启动。&lt;/p&gt;&lt;p&gt;我们可以在终端中测试一下：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;python3 --version&lt;br/&gt;Python &lt;span class=&quot;hljs-number&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;3.6&lt;/span&gt;.&lt;span class=&quot;hljs-number&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gYh6mKOu6tibPOg5U8Zo1pyj3H38KQoMEbQEH8UibtxiclaAnDNRUaHlsQ/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;很棒，python已经启动并正在运行。下一步：虚拟环境！&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t4&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装 Virtualenv&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;接下来这一步，我们将通过&lt;strong&gt;pip&lt;/strong&gt;(&lt;em&gt;一个管理和安装Python包的工具&lt;/em&gt;)来安装&lt;strong&gt;Virtualenv&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;请注意，Homebrew已经为你安装好了&lt;strong&gt;pip&lt;/strong&gt;，在python 3.6.2下的名称为 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;pip3&lt;/code&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;在终端中，执行下面的命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;sudo&amp;nbsp;pip3&amp;nbsp;install&amp;nbsp;virtualenv&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gib7Qdias401dw82J6unxbTicsxClfVNiaynpakhpBxBOheaug8ouZ2ibS3w/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;到目前为止，我们执行的安装都是在操作系统环境下运行的。从现在开始，我们安装的所有东西，包括django本身，都将安装在虚拟环境中。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这样想一下：对于你开始的每个Django项目，你首先会为它创建一个虚拟环境。这就像每个Django项目都有一个沙盒。所以你随意运行，安装软件包，卸载软件包而不会破坏任何东西。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我习惯在电脑上创建一个名为&lt;strong&gt;Development&lt;/strong&gt;的文件夹。然后，我用它来组织我所有的项目和网站。但你也可以按照接下来的步骤创建适合你自己的目录。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;通常，我首先在&lt;strong&gt;Development&lt;/strong&gt;文件夹中创建一个项目名称的新文件夹。既然这将是我们第一个项目，我们没必要挑选一个独特的名字。现在，我们可以称之为&lt;strong&gt;myproject&lt;/strong&gt;。&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;mkdir myproject&lt;br/&gt;&lt;span class=&quot;hljs-built_in&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;cd&lt;/span&gt; myproject&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gX4y7jspO4rU9TEibbbrEJrx4RiaXzCMPmD3b7jGj7qCzsfiaxMXjeEVxw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这个文件夹是级别较高的目录，将存储与我们的Django项目相关的所有文件和东西，包括它的虚拟环境。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;所以让我们开始创建我们的第一个虚拟环境并安装django。&lt;/p&gt;&lt;p&gt;在&lt;strong&gt;myproject&lt;/strong&gt;文件夹中：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;virtualenv&amp;nbsp;venv&amp;nbsp;-p&amp;nbsp;python3&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gV4j28MmM5LNmnXLJw4FE4a7XFGWyk4Bsn0RIMAkkiaKibiaCeocmzRppQ/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这样我们的虚拟环境就创建好了。在开始使用它之前，我们需要先激活一下环境：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;source&amp;nbsp;venv/bin/activate&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你在命令行前面看到 &lt;strong&gt;(venv)&lt;/strong&gt;，就代表激活成功了，就像这样：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gicgSlLqQgYX6MaR2eQTZz1g0yb7OR6nxRqVVp2lBIXugjztNyU5snSw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;让我们试着了解一下这里发生了什么。我们创建了一个名为&lt;strong&gt;venv&lt;/strong&gt;的特殊文件夹。该文件夹内包含了一个python的副本。在我们激活了&lt;strong&gt;venv&lt;/strong&gt;环境之后，当我们运行&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;Python&lt;/code&gt;命令时，它将使用我们存储在venv里面的本地副本，而不是我们之前在操作系统中安装的那个。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;另一个重要的事情是，&lt;strong&gt;pip&lt;/strong&gt;程序也已经安装好了，当我们使用它来安装Python的软件包（比如Django）时，它将被安装在&lt;strong&gt;venv&lt;/strong&gt;环境中。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;请注意，当我们启用venv时，我们将使用命令&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python&lt;/code&gt;（而不是&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;python3&lt;/code&gt;）来调用Python 3.6.2，并且仅使用&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;pip&lt;/code&gt;（而不是&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;pip3&lt;/code&gt;）来安装软件包。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;顺便说一句，要想退出&lt;strong&gt;venv&lt;/strong&gt;环境，运行下面的命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;deactivate&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;但是，我们现在先保持激活状态来进行下一步。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t5&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装 Django 1.11.4&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;很简单，现在我们已经启动了&lt;strong&gt;venv&lt;/strong&gt;，运行以下命令来安装django：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;pip&amp;nbsp;install&amp;nbsp;django&lt;/pre&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gsjknDrUDUHLMibVARgIGRfgbwgM2OmvkTmTXgD46ia3194XSwhdVfbPw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;现在一切就绪！&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gMdmHK3GcqRSnlL0Nq12sYbM9o7TCtVpXicymKzT5Mcf8Vr7gybics4tw/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t6&quot;&gt;&lt;/a&gt;启动一个新项目，执行下面的命令来创建一个新的 Django 项目：&lt;/h2&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;django-admin&amp;nbsp;startproject&amp;nbsp;myproject&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;命令行工具&lt;strong&gt;django-admin&lt;/strong&gt;会在安装Django的时候一起自动安装好。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;执行了上面的命令以后，系统会为Django项目生成基础文件夹结构。&lt;/p&gt;&lt;p&gt;现在，我们的&lt;strong&gt;myproject&lt;/strong&gt;目录结构如下所示：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-bash&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;myproject/ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;-- 高级别的文件夹&lt;br/&gt; |-- myproject/ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;-- Django项目文件夹&lt;br/&gt; | &amp;nbsp; &amp;nbsp;|-- myproject/&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- __init__.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- settings.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- urls.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;| &amp;nbsp; &amp;nbsp;|-- wsgi.py&lt;br/&gt; | &amp;nbsp; &amp;nbsp;+-- manage.py&lt;br/&gt; +-- venv/ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;-- 虚拟环境文件夹&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们最初的项目结构由五个文件组成：&lt;/p&gt;&lt;ul style=&quot;margin-left:0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;manage.py&lt;/strong&gt;：使用&lt;strong&gt;django-admin&lt;/strong&gt;命令行工具的快捷方式。它用于运行与我们项目相关的管理命令。我们将使用它来运行开发服务器，运行测试，创建迁移等等。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;__init.py&lt;/strong&gt;：这个空文件告诉python这个文件夹是一个python包。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;settings.py&lt;/strong&gt;：这个文件包含了所有的项目配置。将来我们会一直提到这个文件！&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;urls.py&lt;/strong&gt;：这个文件负责映射我们项目中的路由和路径。例如，如果你想在访问URL &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;/ about/&lt;/code&gt; 时显示某些内容，则必须先在这里做映射关系。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;wsgi.py&lt;/strong&gt;：该文件是用于部署的简单网关接口。你可以暂且先不用关心她的内容，就先让他在那里就好了。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;django自带了一个简单的网络服务器。在开发过程中非常方便，所以我们无需安装任何其他软件即可在本地运行项目。我们可以通过执行命令来测试一下它：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;python&amp;nbsp;manage.py&amp;nbsp;runserver&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在，你可以忽略终端中出现的迁移错误;我们将在稍后讨论。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在在Web浏览器中打开URL：&lt;strong&gt;http://127.0.0.1:8000&lt;/strong&gt;，你应该看到下面的页面：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gLG8LibAa8G6DSiab84UgmDA1r3ISQxdmrHjkCVKuSsRt8kIbVASBib8cQ/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;使用组合键 &lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;Control + C&lt;/code&gt;来终止开发服务器。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t7&quot;&gt;&lt;/a&gt;&lt;strong&gt;Django 应用&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在Django的哲学中，我们有两个重要的概念：&lt;/p&gt;&lt;ul style=&quot;margin-left:0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;app&lt;/strong&gt;：是一个可以做完成某件事情的Web应用程序。一个应用程序通常由一组&lt;strong&gt;models(数据库表)&lt;/strong&gt;，&lt;strong&gt;views(视图)&lt;/strong&gt;，&lt;strong&gt;templates(模板)&lt;/strong&gt;，&lt;strong&gt;tests(测试)&lt;/strong&gt; 组成。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;project&lt;/strong&gt;：是配置和应用程序的集合。一个项目可以由多个应用程序或一个应用程序组成。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;请注意，如果没有一个&lt;strong&gt;project&lt;/strong&gt;，你就无法运行Django应用程序。像博客这样的简单网站可以完全在单个应用程序中编写，例如可以将其命名为&lt;strong&gt;blog&lt;/strong&gt;或&lt;strong&gt;weblog&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gCiaxHL9lf6vLVpPdKn27n3R4iaZu1Hee1feN99MiaMNVGgzXL1FWYujwA/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;这是组织源代码的一种方式。现在刚开始，判断什么是或不是应用程序这些还不太重要。包括如何组织代码等。现在不用担心那些问题！首先让我们对Django的API和基础知识进行梳理一遍。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;好的！那么，为了方便说明，我们来创建一个简单的&lt;em&gt;网络论坛&lt;/em&gt;或&lt;em&gt;讨论区&lt;/em&gt;。要创建我们的第一个应用程序，请跳转到&lt;strong&gt;manage.py&lt;/strong&gt;文件所在的目录并执行以下命令：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;django-admin&amp;nbsp;startapp&amp;nbsp;boards&lt;/pre&gt;&lt;p&gt;注意!我们这次使用的命令是&lt;strong&gt;startapp&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;通过这条指令，系统会给我们创建以下目录结构：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;myproject/|--&amp;nbsp;myproject/&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;boards/&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;--&amp;nbsp;我们新的Django应用（app）!&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;migrations/|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;+--&amp;nbsp;__init__.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;__init__.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;admin.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;apps.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;models.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;tests.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;+--&amp;nbsp;views.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;myproject/|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;__init__.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;settings.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;urls.py&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|--&amp;nbsp;wsgi.py|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;+--&amp;nbsp;manage.py&amp;nbsp;+--&amp;nbsp;venv/&lt;/pre&gt;&lt;p&gt;下面，我们来探讨每个文件的作用：&lt;/p&gt;&lt;ul style=&quot;margin-left:0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;migrations/&lt;/strong&gt;：在这个文件夹里，Django会存储一些文件以跟踪你在&lt;strong&gt;models.py&lt;/strong&gt;文件中创建的变更，用来保持数据库和&lt;strong&gt;models.py&lt;/strong&gt;的同步。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;admin.py&lt;/strong&gt;：这个文件为一个django内置的应用程序&lt;strong&gt;Django Admin&lt;/strong&gt;的配置文件。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;apps.py&lt;/strong&gt;：这是应用程序本身的配置文件。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;models.py&lt;/strong&gt;：这里是我们定义Web应用程序数据实例的地方。models会由Django自动转换为数据库表。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;tests.py&lt;/strong&gt;：这个文件用来写当前应用程序的单元测试。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;views.py&lt;/strong&gt;：这是我们处理Web应用程序请求(request)/响应(resopnse)周期的文件。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在我们创建了我们的第一个应用程序，让我们来配置一下项目以便启用这个应用程序。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;要做到这一点，打开&lt;strong&gt;settings.py&lt;/strong&gt;并尝试找到&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;INSTALLED_APPS&lt;/code&gt;变量：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;settings.py&lt;/strong&gt;&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;INSTALLED_APPS = [&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.admin&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.auth&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.contenttypes&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.sessions&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.messages&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.staticfiles&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如你所见，Django默认已经安装了6个内置应用程序。它们提供大多数Web应用程序所需的常用功能，如身份验证，会话，静态文件管理（图像，JavaScript，CSS等）等。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们将会在本系列教程中探索这些应用程序。但现在，先不管它们，只需将我们的应用程序&lt;strong&gt;boards&lt;/strong&gt;添加到&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;INSTALLED_APPS&lt;/code&gt;列表即可：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;INSTALLED_APPS = [&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.admin&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.auth&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.contenttypes&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.sessions&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.messages&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;django.contrib.staticfiles&amp;#39;&lt;/span&gt;&lt;/span&gt;,&lt;br/&gt;&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;boards&amp;#39;&lt;/span&gt;&lt;/span&gt;, &amp;nbsp;&lt;span class=&quot;hljs-comment&quot; style=&quot;color:rgb(150,152,150);&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# 译者注：建议和作者一样空一行来区别内置app和自定义的app&lt;/span&gt;&lt;/span&gt;&lt;br/&gt;&lt;span class=&quot;hljs-comment&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;使用前面漫画正方形和圆圈的比喻，黄色的圆圈就是我们的&lt;strong&gt;boards&lt;/strong&gt;应用程序，&lt;strong&gt;django.contrib.admin, django.contrib.auth&lt;/strong&gt;等就是红色的圆圈。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;t8&quot;&gt;&lt;/a&gt;&lt;strong&gt;Hello, World!&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在来写我们的第一个&lt;strong&gt;视图(view)&lt;/strong&gt;。我们将在下一篇教程中详细探讨它。但现在，让我们试试看看如何用Django创建一个新页面。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;打开&lt;strong&gt;boards&lt;/strong&gt;应用程序中的&lt;strong&gt;views.py&lt;/strong&gt;文件，并添加以下代码：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;views.py&lt;/strong&gt;&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; django.http &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; HttpResponse&lt;br/&gt;&lt;br/&gt;&lt;span class=&quot;hljs-function&quot; style=&quot;color:rgb(129,162,190);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;hljs-title&quot; style=&quot;color:rgb(150,152,150);&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;hljs-params&quot; style=&quot;color:rgb(222,147,95);&quot;&gt;(request)&lt;/span&gt;:&lt;/span&gt;&lt;br/&gt; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt;&lt;/span&gt; HttpResponse(&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;Hello, World!&amp;#39;&lt;/span&gt;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;视图是接收&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;httprequest&lt;/code&gt;对象并返回一个&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;httpresponse&lt;/code&gt;对象的Python函数。接收 &lt;em&gt;request&lt;/em&gt; 作为参数并返回 &lt;em&gt;response&lt;/em&gt; 作为结果。这个流程你必须记住！&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;我们在这里定义了一个简单的视图，命名为&lt;strong&gt;home&lt;/strong&gt;，它只是简单地返回一个信息，一个字符串&lt;strong&gt;hello，world!&lt;/strong&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在我们必须告诉Django什么时候会调用这个view。这需要在urls.py文件中完成：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;urls.py&lt;/strong&gt;&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;&lt;code class=&quot;hljs language-python&quot; style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;overflow:auto;border-width:1px;border-style:solid;border-color:rgb(204,204,204);background:rgb(29,31,33);color:rgb(197,200,198);display:block !important;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; django.conf.urls &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; url&lt;br/&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;from&lt;/span&gt; django.contrib &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; admin&lt;br/&gt;&lt;br/&gt;&lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;from&lt;/span&gt; boards &lt;span class=&quot;hljs-keyword&quot; style=&quot;color:rgb(178,148,187);&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; views&lt;br/&gt;&lt;br/&gt;urlpatterns = [&lt;br/&gt; &amp;nbsp; &amp;nbsp;url(&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;r&amp;#39;^$&amp;#39;&lt;/span&gt;&lt;/span&gt;, views.home, name=&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;&lt;/span&gt;),&lt;br/&gt; &amp;nbsp; &amp;nbsp;url(&lt;span class=&quot;hljs-string&quot; style=&quot;color:rgb(181,189,104);&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;r&amp;#39;^admin/&amp;#39;&lt;/span&gt;&lt;/span&gt;, admin.site.urls),&lt;br/&gt;]&lt;/code&gt;&lt;/pre&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;如果你将上面的代码片段与你的&lt;strong&gt;urls.py&lt;/strong&gt;文件进行比较，你会注意到我添加了以下新代码：&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;url（r&amp;#39;^ $&amp;#39;，views.home，name =&amp;#39;home&amp;#39;）&lt;/code&gt;并从我们的应用程序&lt;strong&gt;boards&lt;/strong&gt;中导入了&lt;strong&gt;views&lt;/strong&gt;模块通过&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;from boards import views&lt;/code&gt;。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;和我之前提到的一样，我们将在稍后详细探讨这些概念。&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;现在，Django使用&lt;strong&gt;正则表达式&lt;/strong&gt;来匹配请求的URL。对于我们的&lt;strong&gt;home&lt;/strong&gt;视图，我使用&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;^$&lt;/code&gt; 正则，它将匹配一个空路径，也就是主页（这个URL：http://127.0.0.1:8000 ）。如果我想匹配的URL是 &lt;strong&gt;http://127.0.0.1:8000/homepage/&lt;/strong&gt; ，那么我的URL正则表达式就会是：&lt;code style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;border-width:1px;border-style:solid;border-color:rgb(234,234,234);display:inline;&quot;&gt;url(r&amp;#39;^homepage/$&amp;#39;, views.home, name=&amp;#39;home&amp;#39;)&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;我们来看看会发生什么：&lt;/p&gt;&lt;pre style=&quot;font-size:.85em;font-family:Consolas, Inconsolata, Courier, monospace;font-size:1em;line-height:1.2em;&quot; onclick=&quot;hljs.copyCode(event)&quot;&gt;python&amp;nbsp;manage.py&amp;nbsp;runserver&lt;/pre&gt;&lt;p&gt;在一个Web浏览器中，打开 &lt;strong&gt;http://127.0.0.1:8000&lt;/strong&gt; 这个链接：&lt;/p&gt;&lt;p&gt;&lt;img class=&quot;img_loading&quot; src=&quot;https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/rO1ibUkmNGMnHnKicJ7xqzqR6EmWml2b5gXuicBqkmxiaa4bmcebnz3J1RXKibRQ3fuxD1alNXfYd46n2icKWmYSg9Dg/640?wx_fmt=png&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:justify;&quot;&gt;就是这样！你刚刚创建成功了你的第一个视图&lt;/p&gt;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/article&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-f57960eb32.css&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-f57960eb32.css&quot;/&gt;' WHERE `aid` = 56 [ RunTime:0.4107s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: DELETE FROM `lxp_article_tag` WHERE `aid` = 56 [ RunTime:0.0815s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('56','25') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0009s ]
+SQL: DELETE FROM `lxp_article_pic` WHERE `aid` = 56 [ RunTime:0.0031s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('56','/Upload/image/ueditor/python.jpg') [ RunTime:0.0818s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.083802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.083865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2019-04-11T17:44:27+08:00 ] 45.62.117.169 /Admin/Article/edit/aid/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 56 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 56  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0120s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.195283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
