@@ -1,0 +1,24 @@
+[ 2019-04-13T02:19:39+08:00 ] 115.217.36.107 /index.php?m=formguide&c=index&a=show&formid=1&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Formguide
+
+[ 2019-04-13T13:46:36+08:00 ] 115.217.36.107 /index.php?m=formguide&c=index&a=show&formid=1&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+ERR: 无法加载模块:Formguide
+
+[ 2019-04-13T18:21:15+08:00 ] 115.217.36.107 /index.php?m=formguide&c=index&a=show&formid=1&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+ERR: 无法加载模块:Formguide
+
+[ 2019-04-13T19:25:31+08:00 ] 120.131.10.157 /index.php?g=Comment&m=Widget&a=fetch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载模块:Widget
+
