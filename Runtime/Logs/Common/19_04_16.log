@@ -1,0 +1,18 @@
+[ 2019-04-16T18:18:14+08:00 ] 125.35.24.86 //index.php?c=api&m=data2&auth=50ce0d2401ce4802751739552c8e4467&param=update_avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Data2
+
+[ 2019-04-16T18:18:30+08:00 ] 125.35.24.86 //index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载模块:Member
+
+[ 2019-04-16T21:59:32+08:00 ] 123.249.7.34 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+ERR: 无法加载模块:Member
+

@@ -1,0 +1,9 @@
+[ 2019-04-16T21:59:34+08:00 ] 123.249.7.34 /index.php/api/Uploadify/preview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+ERR: 无法加载控制器:Uploadify
+
