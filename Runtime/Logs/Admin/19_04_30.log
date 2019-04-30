@@ -1,0 +1,348 @@
+[ 2019-04-30T11:29:37+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_oauth_user` WHERE `is_admin` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-04-30T11:29:37+08:00 ] 223.223.195.134 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_oauth_user` WHERE `is_admin` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: ADMIN_PASSWORD /www/wwwroot/blog/Runtime/Cache/Admin/b891abcc3bb76636e2a96a245e9568d6.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2019-04-30T11:29:38+08:00 ] 223.223.195.134 /Admin/Login/showVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2019-04-30T11:29:43+08:00 ] 223.223.195.134 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_oauth_user` WHERE `is_admin` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_config` [ RunTime:0.0008s ]
+SQL: SELECT `value` FROM `lxp_config` WHERE `name` = 'ADMIN_PASSWORD' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2019-04-30T11:29:44+08:00 ] 223.223.195.134 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2019-04-30T11:29:45+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2019-04-30T11:29:46+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2019-04-30T11:53:26+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0031s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('33','Python Django 2.2 自定义中间件','鹿晓鹏','Python,Django,2.2,自定义中间件','简介：中间件是一个闭包，而且返回一个闭包。中间件为过滤进入应用的HTTP请求提供了一套便利的机制，可以分为前置中间件和后置中间件。常用于验证用户是否经过认证，添加响应头（跨域），记录请求日志等。中间件的作用：用于全局修改Django的输入或输出。中间件常见用途：1、用户登录认证&nbsp;2、缓存&nbsp;3、日志记录&nbsp;4、异常&nbsp;创建自定义中间件：1、在项目路径中创建midd','1','1','1','&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;h3 id=&quot;简介&quot; data-source-line=&quot;1&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.5em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;简介：&lt;/h3&gt;&lt;p data-source-line=&quot;2&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;中间件是一个闭包，而且返回一个闭包。中间件为过滤进入应用的HTTP请求提供了一套便利的机制，可以分为前置中间件和后置中间件。常用于验证用户是否经过认证，添加响应头（跨域），记录请求日志等。&lt;/p&gt;&lt;h3 id=&quot;中间件的作用&quot; data-source-line=&quot;4&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.5em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#中间件的作用&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;中间件的作用：&lt;/h3&gt;&lt;p data-source-line=&quot;5&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;用于全局修改Django的输入或输出。&lt;/p&gt;&lt;h3 id=&quot;中间件常见用途&quot; data-source-line=&quot;7&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.5em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#中间件常见用途&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;中间件常见用途：&lt;/h3&gt;&lt;p data-source-line=&quot;8&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;1、用户登录认证&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;2、缓存&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;3、日志记录&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;4、异常&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;&lt;/p&gt;&lt;h3 id=&quot;创建自定义中间件&quot; data-source-line=&quot;13&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.5em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#创建自定义中间件&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;创建自定义中间件：&lt;/h3&gt;&lt;p data-source-line=&quot;14&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;1、&lt;a href=&quot;http://xn--middleware-ut2pi19ahqq4zzc0bdu4onz1drwub.py&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;在项目路径中创建middleware.py&lt;/a&gt;&lt;/p&gt;&lt;pre data-source-line=&quot;16&quot; style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.9px; margin-top: 0px; margin-bottom: 16px; overflow-wrap: normal; padding: 16px; overflow: auto; line-height: 1.45; background-color: rgb(246, 248, 250); border-radius: 3px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); text-size-adjust: auto;&quot;&gt;#创建app/middleware.py并编辑from&amp;nbsp;django.http&amp;nbsp;import&amp;nbsp;JsonResponseclass&amp;nbsp;CustomMiddleware:
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;def&amp;nbsp;__init__(self,&amp;nbsp;get_response):
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;print(&amp;quot;程序启动时执行,&amp;nbsp;只执行一次&amp;quot;)
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;self.get_response&amp;nbsp;=&amp;nbsp;get_response&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;def&amp;nbsp;__call__(self,&amp;nbsp;request):
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;print(&amp;quot;中间件开始&amp;quot;)
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;response&amp;nbsp;=&amp;nbsp;self.get_response(request)
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;print(&amp;quot;中间件结束&amp;quot;)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;response&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;def&amp;nbsp;process_view(self,&amp;nbsp;request,&amp;nbsp;view_func,&amp;nbsp;view_args,&amp;nbsp;view_kwargs):
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;print(&amp;quot;请求实际函数前执行&amp;quot;)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;def&amp;nbsp;process_exception(self,&amp;nbsp;request,&amp;nbsp;exception):
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;print(&amp;quot;程序异常时执行&amp;quot;)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;JsonResponse({&amp;quot;msg&amp;quot;:&amp;nbsp;exception.args[0],&amp;nbsp;&amp;quot;code&amp;quot;:&amp;nbsp;-1})&lt;/pre&gt;&lt;p data-source-line=&quot;39&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;2、在setting.py中添加配置信息&lt;/p&gt;&lt;pre data-source-line=&quot;41&quot; style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.9px; margin-top: 0px; margin-bottom: 16px; overflow-wrap: normal; padding: 16px; overflow: auto; line-height: 1.45; background-color: rgb(246, 248, 250); border-radius: 3px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); text-size-adjust: auto;&quot;&gt;#我的项目名称叫app，所以路径是app.middleware
+MIDDLEWARE&amp;nbsp;=&amp;nbsp;[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;...&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;app.middleware.CustomMiddleware&amp;#39;]&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1556596406') [ RunTime:0.0184s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('60','25') [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0018s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('60','/Upload/image/ueditor/python.jpg') [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0017s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2019-04-30T11:53:27+08:00 ] 223.223.195.134 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '60'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0006s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 60 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0013s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '59'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 59 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '58'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 58 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '57'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 57 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '46'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 46 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 35  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2019-04-30T14:34:52+08:00 ] 124.232.156.117 //admin/FCKeditor/editor/filemanager/connectors/asp/connector.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+ERR: 无法加载控制器:FCKeditor
+
+[ 2019-04-30T14:34:52+08:00 ] 124.232.156.117 //admin/FCKeditor/editor/filemanager/connectors/aspx/connector.aspx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+ERR: 无法加载控制器:FCKeditor
+
+[ 2019-04-30T14:34:52+08:00 ] 124.232.156.117 //admin/FCKeditor/editor/filemanager/browser/default/connectors/asp/connector.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载控制器:FCKeditor
+
+[ 2019-04-30T14:34:52+08:00 ] 124.232.156.117 //admin/FCKeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载控制器:FCKeditor
+
+[ 2019-04-30T14:34:57+08:00 ] 124.232.156.117 //index.php?s=/admin/upload/uploadfile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载控制器:Upload
+
