@@ -1,0 +1,508 @@
+[ 2019-05-07T03:49:37+08:00 ] 118.24.24.40 /admin/Admin_Ta.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+ERR: 无法加载控制器:Admin_Ta
+
+[ 2019-05-07T03:49:37+08:00 ] 118.24.24.40 /admin/error.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载控制器:Error
+
+[ 2019-05-07T03:49:37+08:00 ] 118.24.24.40 /admin/images/Sql.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:Images
+
+[ 2019-05-07T03:49:37+08:00 ] 118.24.24.40 /admin/sdfg.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+ERR: 无法加载控制器:Sdfg
+
+[ 2019-05-07T09:12:41+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2019-05-07T09:12:42+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2019-05-07T09:12:53+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2019-05-07T09:42:42+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0035s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('34','MySql通过binlog恢复数据','鹿晓鹏','MySql通过binlog恢复数据','MySql通过binlog恢复数据','1','1','1','&lt;h1 label=&quot;标题居中&quot; style=&quot;font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: center; margin: 0px 0px 20px;&quot;&gt;MySQL数据误删除使用binlog恢复&lt;/h1&gt;&lt;h3 id=&quot;mysql数据误删除使用binlog恢复&quot; data-source-line=&quot;1&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.5em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;1.首先检查binlog是否已经开启，命令如下：&lt;br/&gt;&lt;/h3&gt;&lt;p data-source-line=&quot;4&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysql&amp;gt; show variables like &amp;#39;%log_bin%&amp;#39;;&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;4&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;6&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;结果如下：&lt;/p&gt;&lt;p data-source-line=&quot;8&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;log_bin：是否开启&lt;/p&gt;&lt;p data-source-line=&quot;10&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;log_bin_basename：bin文件路径及名前缀&lt;/p&gt;&lt;p data-source-line=&quot;12&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;log_bin_index：bin文件index&lt;/p&gt;&lt;p data-source-line=&quot;14&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; white-space: normal; box-sizing: border-box; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; text-size-adjust: auto;&quot;&gt;如果log_bin为ON代表开启，否则为关闭。如果log_bin没开启，恭喜你数据彻底无法恢复，如果开启请继续往下看&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Lantinghei SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, arial, 宋体, sans-serif, tahoma; background-color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Upload/image/ueditor/20190507/1557192020952217.png&quot; title=&quot;鹿晓鹏博客&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p data-source-line=&quot;14&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 1.25em;&quot;&gt;2.利用bin-log二进制日志文件恢复数据：&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p data-source-line=&quot;17&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;mysql二进制日志文件恢复数据有两种方式：使用事件时间的时间点恢复和使用事件位置的时间点恢复；&lt;/p&gt;&lt;h5 id=&quot;1使用事件时间的时间点恢复&quot; data-source-line=&quot;19&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1使用事件时间的时间点恢复&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;（1）使用事件时间的时间点恢复：&lt;/h5&gt;&lt;p data-source-line=&quot;21&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;要指明恢复的开始和结束时间，两个选项参数是： --start-datetime和 --stop-datetime；&lt;/p&gt;&lt;p data-source-line=&quot;23&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;语法格式：mysqlbinlog [参数] DATETIME&lt;/p&gt;&lt;p data-source-line=&quot;25&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;例如，假设在2019年5月7日上午10:00，执行了一个删除了一个大表的SQL语句。要还原表和数据，可以恢复前一天的备份，然后执行以下命令：&lt;/p&gt;&lt;p data-source-line=&quot;27&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --stop-datetime=&amp;quot;2019-05-06 23:59:59&amp;quot; /var/lib/mysql/mysql-bin.000001 | mysql -u root -p&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;29&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;如果您还需要恢复2019年5月7日上午10:00之后发生的活动。可以用命令：&lt;/p&gt;&lt;p data-source-line=&quot;31&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --start-datetime=&amp;quot;2019-05-07 10:01:00&amp;quot; /var/lib/mysql/mysql-bin.000001 | mysql -u root -p&lt;/code&gt;&lt;/p&gt;&lt;h5 id=&quot;2使用事件位置的时间点恢复&quot; data-source-line=&quot;33&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#2使用事件位置的时间点恢复&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;（2）使用事件位置的时间点恢复：&lt;/h5&gt;&lt;p data-source-line=&quot;35&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;而不是指定日期和时间， --start-position 和--stop-position选项 可用于指定日志位置。它们的工作方式与--start-datetime和 --stop-datetime选项相同，只是指定日志位置数字而不是日期。使用可能会使您更准确地了解日志的哪个部分进行恢复，特别是如果许多事务发生在与SQL语句相同的时间内。&lt;/p&gt;&lt;p data-source-line=&quot;37&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;要确定位置号码，请在执行不需要的事务的时间范围内运行 mysqlbinlog，但将结果重定向到文本文件进行检查。你可以这样做：&lt;/p&gt;&lt;p data-source-line=&quot;39&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --start-datetime=&amp;quot;2019-05-07 9:55:00&amp;quot; --stop-datetime=&amp;quot;2019-05-07 10:05:00&amp;quot; /var/lib/mysql/mysql-bin.000001 &amp;gt; /tmp/mysql_restore.sql&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;41&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;该命令/tmp在执行有害SQL语句的时间内在包含SQL语句的目录中创建一个小文本文件 。使用文本编辑器打开此文件，并查找您不想重复的语句。&lt;/p&gt;&lt;p data-source-line=&quot;43&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;确定二进制日志中的位置以停止并恢复恢复并记下它们。位置被标记为 log_pos后跟一个数字。恢复以前的备份文件后，使用位置号来处理二进制日志文件。例如，您将使用如下命令：&lt;/p&gt;&lt;pre data-source-line=&quot;45&quot; style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.9px; margin-top: 0px; margin-bottom: 16px; overflow-wrap: normal; padding: 16px; overflow: auto; line-height: 1.45; background-color: rgb(246, 248, 250); border-radius: 3px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); text-size-adjust: auto;&quot;&gt;mysqlbinlog&amp;nbsp;--stop-position=368312&amp;nbsp;&amp;nbsp;/var/lib/mysql/mysql-bin.000001&amp;nbsp;|&amp;nbsp;mysql&amp;nbsp;-u&amp;nbsp;root&amp;nbsp;-p&amp;nbsp;&amp;nbsp;mysqlbinlog&amp;nbsp;--start-position=368315&amp;nbsp;&amp;nbsp;/var/lib/mysql/mysql-bin.000001&amp;nbsp;|&amp;nbsp;mysql&amp;nbsp;-u&amp;nbsp;root&amp;nbsp;-p&lt;/pre&gt;&lt;p data-source-line=&quot;51&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;第一个命令恢复所有交易，直到给定的停止位置。&lt;/p&gt;&lt;p data-source-line=&quot;53&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;第二个命令从所给出的起始位置恢复所有事务，直到二进制日志结束。由于mysqlbinlog的输出 SET TIMESTAMP在每个SQL语句记录之前都包含语句，恢复的数据和相关的MySQL日志将反映执行事务的原始时间。&lt;/p&gt;&lt;h4 id=&quot;遇到的坑&quot; data-source-line=&quot;55&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.25em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#遇到的坑&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;遇到的坑：&lt;/h4&gt;&lt;p data-source-line=&quot;56&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;恢复的时候有可能会报字符集问题，出现这个问题的原因是因为当时设置binlog的时候没有在my.conf中设置字符集导致，解决方法如下：&lt;/p&gt;&lt;p data-source-line=&quot;58&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;在执行的sql语句中添加&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;--no-defaults&lt;/code&gt;，即可&lt;/p&gt;&lt;p data-source-line=&quot;60&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;如：&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --no-defaults --stop-datetime=&amp;quot;2019-05-06 23:59:59&amp;quot; /var/lib/mysql/mysql-bin.000001 | mysql -u root -p&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1557193361') [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0011s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('61','26') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0011s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('61','/Upload/image/ueditor/mysql.jpg') [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0016s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2019-05-07T09:42:43+08:00 ] 223.223.195.134 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '61'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0008s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 61 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '60'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 60 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '59'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 59 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '58'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 58 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '57'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 57 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '47'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 47 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2019-05-07T09:43:01+08:00 ] 223.223.195.134 /Admin/Article/edit/aid/61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 61 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 61  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '61'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0013s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2019-05-07T09:43:18+08:00 ] 223.223.195.134 /Admin/Article/edit/aid/61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0022s ]
+SQL: UPDATE `lxp_article` SET `aid`='61',`cid`='34',`title`='MySql通过binlog恢复数据',`author`='鹿晓鹏',`keywords`='MySql通过binlog恢复数据',`description`='MySql通过binlog恢复数据',`is_original`='1',`is_top`='1',`is_show`='1',`content`='&lt;h1 label=&quot;标题居中&quot; style=&quot;font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: center; margin: 0px 0px 20px;&quot;&gt;MySQL数据误删除使用binlog恢复&lt;/h1&gt;&lt;h3 id=&quot;mysql数据误删除使用binlog恢复&quot; data-source-line=&quot;1&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.5em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;1.首先检查binlog是否已经开启，命令如下：&lt;br/&gt;&lt;/h3&gt;&lt;p data-source-line=&quot;4&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysql&amp;gt; show variables like &amp;#39;%log_bin%&amp;#39;;&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;4&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif;&quot;&gt;结果如下：&lt;/span&gt;&lt;/p&gt;&lt;p data-source-line=&quot;8&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;log_bin：是否开启&lt;/p&gt;&lt;p data-source-line=&quot;10&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;log_bin_basename：bin文件路径及名前缀&lt;/p&gt;&lt;p data-source-line=&quot;12&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;log_bin_index：bin文件index&lt;/p&gt;&lt;p data-source-line=&quot;14&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; white-space: normal; box-sizing: border-box; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; text-size-adjust: auto;&quot;&gt;如果log_bin为ON代表开启，否则为关闭。如果log_bin没开启，恭喜你数据彻底无法恢复，如果开启请继续往下看&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Lantinghei SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, arial, 宋体, sans-serif, tahoma; background-color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Upload/image/ueditor/20190507/1557192020952217.png&quot; title=&quot;鹿晓鹏博客&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p data-source-line=&quot;14&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 1.25em;&quot;&gt;2.利用bin-log二进制日志文件恢复数据：&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p data-source-line=&quot;17&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;mysql二进制日志文件恢复数据有两种方式：使用事件时间的时间点恢复和使用事件位置的时间点恢复；&lt;/p&gt;&lt;h5 id=&quot;1使用事件时间的时间点恢复&quot; data-source-line=&quot;19&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1使用事件时间的时间点恢复&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;（1）使用事件时间的时间点恢复：&lt;/h5&gt;&lt;p data-source-line=&quot;21&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;要指明恢复的开始和结束时间，两个选项参数是： --start-datetime和 --stop-datetime；&lt;/p&gt;&lt;p data-source-line=&quot;23&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;语法格式：mysqlbinlog [参数] DATETIME&lt;/p&gt;&lt;p data-source-line=&quot;25&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;例如，假设在2019年5月7日上午10:00，执行了一个删除了一个大表的SQL语句。要还原表和数据，可以恢复前一天的备份，然后执行以下命令：&lt;/p&gt;&lt;p data-source-line=&quot;27&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --stop-datetime=&amp;quot;2019-05-06 23:59:59&amp;quot; /var/lib/mysql/mysql-bin.000001 | mysql -u root -p&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;29&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;如果您还需要恢复2019年5月7日上午10:00之后发生的活动。可以用命令：&lt;/p&gt;&lt;p data-source-line=&quot;31&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --start-datetime=&amp;quot;2019-05-07 10:01:00&amp;quot; /var/lib/mysql/mysql-bin.000001 | mysql -u root -p&lt;/code&gt;&lt;/p&gt;&lt;h5 id=&quot;2使用事件位置的时间点恢复&quot; data-source-line=&quot;33&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#2使用事件位置的时间点恢复&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;（2）使用事件位置的时间点恢复：&lt;/h5&gt;&lt;p data-source-line=&quot;35&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;而不是指定日期和时间， --start-position 和--stop-position选项 可用于指定日志位置。它们的工作方式与--start-datetime和 --stop-datetime选项相同，只是指定日志位置数字而不是日期。使用可能会使您更准确地了解日志的哪个部分进行恢复，特别是如果许多事务发生在与SQL语句相同的时间内。&lt;/p&gt;&lt;p data-source-line=&quot;37&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;要确定位置号码，请在执行不需要的事务的时间范围内运行 mysqlbinlog，但将结果重定向到文本文件进行检查。你可以这样做：&lt;/p&gt;&lt;p data-source-line=&quot;39&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --start-datetime=&amp;quot;2019-05-07 9:55:00&amp;quot; --stop-datetime=&amp;quot;2019-05-07 10:05:00&amp;quot; /var/lib/mysql/mysql-bin.000001 &amp;gt; /tmp/mysql_restore.sql&lt;/code&gt;&lt;/p&gt;&lt;p data-source-line=&quot;41&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;该命令/tmp在执行有害SQL语句的时间内在包含SQL语句的目录中创建一个小文本文件 。使用文本编辑器打开此文件，并查找您不想重复的语句。&lt;/p&gt;&lt;p data-source-line=&quot;43&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;确定二进制日志中的位置以停止并恢复恢复并记下它们。位置被标记为 log_pos后跟一个数字。恢复以前的备份文件后，使用位置号来处理二进制日志文件。例如，您将使用如下命令：&lt;/p&gt;&lt;pre data-source-line=&quot;45&quot; style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.9px; margin-top: 0px; margin-bottom: 16px; overflow-wrap: normal; padding: 16px; overflow: auto; line-height: 1.45; background-color: rgb(246, 248, 250); border-radius: 3px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); text-size-adjust: auto;&quot;&gt;mysqlbinlog&amp;nbsp;--stop-position=368312&amp;nbsp;&amp;nbsp;/var/lib/mysql/mysql-bin.000001&amp;nbsp;|&amp;nbsp;mysql&amp;nbsp;-u&amp;nbsp;root&amp;nbsp;-p&amp;nbsp;&amp;nbsp;mysqlbinlog&amp;nbsp;--start-position=368315&amp;nbsp;&amp;nbsp;/var/lib/mysql/mysql-bin.000001&amp;nbsp;|&amp;nbsp;mysql&amp;nbsp;-u&amp;nbsp;root&amp;nbsp;-p&lt;/pre&gt;&lt;p data-source-line=&quot;51&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;第一个命令恢复所有交易，直到给定的停止位置。&lt;/p&gt;&lt;p data-source-line=&quot;53&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;第二个命令从所给出的起始位置恢复所有事务，直到二进制日志结束。由于mysqlbinlog的输出 SET TIMESTAMP在每个SQL语句记录之前都包含语句，恢复的数据和相关的MySQL日志将反映执行事务的原始时间。&lt;/p&gt;&lt;h4 id=&quot;遇到的坑&quot; data-source-line=&quot;55&quot; style=&quot;box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 1.25em; line-height: 1.25; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; text-size-adjust: auto;&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#遇到的坑&quot; style=&quot;box-sizing: border-box; color: rgb(3, 102, 214); text-decoration-line: none;&quot;&gt;&lt;/a&gt;遇到的坑：&lt;/h4&gt;&lt;p data-source-line=&quot;56&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;恢复的时候有可能会报字符集问题，出现这个问题的原因是因为当时设置binlog的时候没有在my.conf中设置字符集导致，解决方法如下：&lt;/p&gt;&lt;p data-source-line=&quot;58&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;在执行的sql语句中添加&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;--no-defaults&lt;/code&gt;，即可&lt;/p&gt;&lt;p data-source-line=&quot;60&quot; style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; caret-color: rgb(36, 41, 46); color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, 微软雅黑, &amp;quot;PingFang SC&amp;quot;, Helvetica, Arial, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: auto;&quot;&gt;如：&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;box-sizing: border-box; font-family: SFMono-Regular, Consolas, &amp;quot;Liberation Mono&amp;quot;, Menlo, Courier, monospace; font-size: 11.899999618530273px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.0470588); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;&quot;&gt;mysqlbinlog --no-defaults --stop-datetime=&amp;quot;2019-05-06 23:59:59&amp;quot; /var/lib/mysql/mysql-bin.000001 | mysql -u root -p&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;' WHERE `aid` = 61 [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: DELETE FROM `lxp_article_tag` WHERE `aid` = 61 [ RunTime:0.0039s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('61','26') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0008s ]
+SQL: DELETE FROM `lxp_article_pic` WHERE `aid` = 61 [ RunTime:0.0040s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('61','/Upload/image/ueditor/mysql.jpg') [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2019-05-07T09:43:19+08:00 ] 223.223.195.134 /Admin/Article/edit/aid/61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 61 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 61  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '61'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2019-05-07T17:27:27+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2019-05-07T17:27:27+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2019-05-07T17:27:29+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2019-05-07T17:29:48+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0028s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('34','ubuntu定时任务备份MySQL数据库，生成文件是空的','鹿晓鹏','ubuntu定时任务备份MySQL数据库，生成文件是空的','ubuntu定时任务备份MySQL数据库，生成文件是空的','1','0','1','&lt;p&gt;1问题：写好了一个mysqldump备份脚本（如图）直接执行可以正常生成备份文件，但在用crontab运行时却生成内容为空&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/Upload/image/ueditor/20190507/1557221372656446.png&quot; title=&quot;鹿晓鹏博客&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2原因分析：由于mysqldump存在于全局环境变量mysql的bin下面，故在直接运行时可以识别到mysqldump命令，而在crontab里面无法识别到mysqldump命令。（ps：crontab运行失败问题基本都是环境变量引起的）&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;3解决方法：在备份脚本里面的mysqldump命令前加上绝对路径，如图&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/Upload/image/ueditor/20190507/1557221385271239.png&quot; title=&quot;鹿晓鹏博客&quot; alt=&quot;鹿晓鹏博客&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1557221388') [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('62','26') [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('62','/Upload/image/ueditor/mysql.jpg') [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0014s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2019-05-07T17:29:49+08:00 ] 223.223.195.134 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '62'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0007s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 62 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '61'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 61 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '60'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 60 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '59'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 59 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '58'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 58 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '57'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 57 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '48'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 48 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
