@@ -1,0 +1,296 @@
+[ 2019-05-18T16:18:55+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2019-05-18T16:18:55+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2019-05-18T16:18:57+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2019-05-18T16:19:06+08:00 ] 223.223.195.134 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2019-05-18T16:19:06+08:00 ] 223.223.195.134 /Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_chat` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_chat` WHERE `is_show` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_comment` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2019-05-18T16:19:07+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2019-05-18T16:19:43+08:00 ] 223.223.195.134 /Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0027s ]
+SQL: INSERT INTO `lxp_article` (`cid`,`title`,`author`,`keywords`,`description`,`is_original`,`is_top`,`is_show`,`content`,`click`,`is_delete`,`addtime`) VALUES ('32','科学上网','鹿晓鹏','科学上网','安装SSR复制以下代码到登陆成功的securecrtwget&nbsp;--no-check-certificate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
+chmod&nbsp;+x&nbsp;shadow','1','0','1','&lt;h1 id=&quot;安装SSR&quot; style=&quot;box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.25; font-size: 1.75rem; display: inline; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;安装SSR&lt;/h1&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;复制以下代码到登陆成功的securecrt&lt;/p&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; white-space: pre-wrap; overflow-wrap: break-word; font-family: Menlo, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;lucida console&amp;quot;, &amp;quot;Courier New&amp;quot;, monospace; font-size: 0.9em; background-color: rgb(39, 40, 34); margin-top: 10px; margin-bottom: 10px; padding: 5px 15px; color: rgb(101, 123, 131); line-height: 1.5; border: 1px solid rgb(204, 204, 204); text-shadow: rgb(68, 68, 68) 0px 1px;&quot;&gt;wget&amp;nbsp;--no-check-certificate&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
+chmod&amp;nbsp;+x&amp;nbsp;shadowsocksR.sh
+./shadowsocksR.sh&amp;nbsp;2&amp;gt;&amp;amp;1&amp;nbsp;|&amp;nbsp;tee&amp;nbsp;shadowsocksR.log&lt;/pre&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;输入设定初始密码，也可以直接回车。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;/Upload/image/ueditor/20190518/1558167552697063.png&quot; alt=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;输入初始端口，也直接回车&lt;/p&gt;&lt;p&gt;&lt;a id=&quot;more&quot; style=&quot;box-sizing: border-box; background: rgb(255, 255, 255); color: rgb(0, 136, 204); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal;&quot;&gt;&lt;/a&gt;&lt;span style=&quot;color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;/Upload/image/ueditor/20190518/1558167553909768.png&quot; alt=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;回车&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;/Upload/image/ueditor/20190518/1558167553263635.png&quot; alt=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;最后会提示 成功&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;/Upload/image/ueditor/20190518/1558167553680970.png&quot; alt=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%;&quot;/&gt;&lt;/p&gt;&lt;h1 id=&quot;shadowsocks-json配置文件&quot; style=&quot;box-sizing: border-box; margin: 30px 0px 1em; line-height: 1.25; font-size: 1.75rem; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://yichenbao.com/2017/09/05/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91SSR/#shadowsocks-json%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&quot; class=&quot;headerlink&quot; title=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; background: transparent; text-decoration-line: none; color: rgb(0, 136, 204);&quot;&gt;&lt;/a&gt;shadowsocks.json配置文件&lt;/h1&gt;&lt;ul style=&quot;list-style-type: none;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;shadowsocks.json文件中定义SSR的访问端口，加密方式等&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;默认在/root文件夹下，要进入/etc文件夹下找到shadowsocks.json&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1 id=&quot;编辑shadowsocks-json文件&quot; style=&quot;box-sizing: border-box; margin: 30px 0px 1em; line-height: 1.25; font-size: 1.75rem; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://yichenbao.com/2017/09/05/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91SSR/#%E7%BC%96%E8%BE%91shadowsocks-json%E6%96%87%E4%BB%B6&quot; class=&quot;headerlink&quot; title=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; background: transparent; text-decoration-line: none; color: rgb(0, 136, 204);&quot;&gt;&lt;/a&gt;编辑shadowsocks.json文件&lt;/h1&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; white-space: pre-wrap; overflow-wrap: break-word; font-family: Menlo, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;lucida console&amp;quot;, &amp;quot;Courier New&amp;quot;, monospace; font-size: 0.9em; background-color: rgb(39, 40, 34); margin-top: 10px; margin-bottom: 10px; padding: 5px 15px; color: rgb(101, 123, 131); line-height: 1.5; border: 1px solid rgb(204, 204, 204); text-shadow: rgb(68, 68, 68) 0px 1px;&quot;&gt;{
+&amp;nbsp;&amp;nbsp;&amp;quot;server&amp;quot;:&amp;quot;0.0.0.0&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;server_ipv6&amp;quot;:&amp;quot;::&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;local_address&amp;quot;:&amp;quot;127.0.0.1&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;local_port&amp;quot;:1080,
+&amp;nbsp;&amp;nbsp;&amp;quot;port_password&amp;quot;:{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;#纯&amp;nbsp;SS&amp;nbsp;不带混淆&amp;nbsp;端口25&amp;nbsp;密码为123456.
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;quot;25&amp;quot;:&amp;quot;123456&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;#端口443，密码123456&amp;nbsp;，protocol选择auth_chain_a。obfs选择tls1.2_ticket_auth，具体插件的介绍如下参考资料中
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;quot;443&amp;quot;:{&amp;quot;protocol&amp;quot;:&amp;quot;auth_chain_a&amp;quot;,&amp;nbsp;&amp;quot;password&amp;quot;:&amp;quot;123456&amp;quot;,&amp;nbsp;&amp;quot;obfs&amp;quot;:&amp;quot;tls1.2_ticket_auth&amp;quot;,&amp;nbsp;&amp;quot;obfs_param&amp;quot;:&amp;quot;&amp;quot;},
+&amp;nbsp;&amp;nbsp;#注意无论怎么变化，最后一个端口设置，不带逗号！
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;quot;3389&amp;quot;:{&amp;quot;protocol&amp;quot;:&amp;quot;auth_aes128_md5&amp;quot;,&amp;nbsp;&amp;quot;password&amp;quot;:&amp;quot;123456&amp;quot;,&amp;nbsp;&amp;quot;obfs&amp;quot;:&amp;quot;tls1.2_ticket_auth&amp;quot;,&amp;nbsp;&amp;quot;obfs_param&amp;quot;:&amp;quot;&amp;quot;}#此处没有逗号！
+&amp;nbsp;&amp;nbsp;},
+&amp;nbsp;&amp;nbsp;&amp;quot;timeout&amp;quot;:400,
+&amp;nbsp;&amp;nbsp;#默认全局的加密方式，即上边各个端口的默认加密方式。一般为aes-256-cfb，&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;此处，选择为chacha20，移动设备性能较好。
+&amp;nbsp;&amp;nbsp;&amp;quot;method&amp;quot;:&amp;quot;chacha20&amp;quot;,
+&amp;nbsp;&amp;nbsp;#protocol.协议定义插件的默认值，origin即使用原版SS协议，不混淆。即上面端口配置中，你没有设置&amp;nbsp;protocol&amp;nbsp;和&amp;nbsp;obfs&amp;nbsp;情况下，使用的默认值。
+&amp;nbsp;&amp;nbsp;&amp;quot;protocol&amp;quot;:&amp;nbsp;&amp;quot;origin&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;protocol_param&amp;quot;:&amp;nbsp;&amp;quot;&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;#protocol.协议定义插件的默认值，plain即使用原协议，不混淆。
+&amp;nbsp;&amp;nbsp;&amp;quot;obfs&amp;quot;:&amp;nbsp;&amp;quot;plain&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;obfs_param&amp;quot;:&amp;nbsp;&amp;quot;&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;redirect&amp;quot;:&amp;nbsp;&amp;quot;&amp;quot;,
+&amp;nbsp;&amp;nbsp;&amp;quot;dns_ipv6&amp;quot;:&amp;nbsp;true,
+&amp;nbsp;#TCP&amp;nbsp;FAST&amp;nbsp;OPEN&amp;nbsp;，打开
+&amp;nbsp;&amp;nbsp;&amp;quot;fast_open&amp;quot;:&amp;nbsp;true,
+&amp;nbsp;&amp;quot;workers&amp;quot;:&amp;nbsp;1
+}&lt;/pre&gt;&lt;h1 id=&quot;重启SSR&quot; style=&quot;box-sizing: border-box; margin: 30px 0px 1em; line-height: 1.25; font-size: 1.75rem; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://yichenbao.com/2017/09/05/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91SSR/#%E9%87%8D%E5%90%AFSSR&quot; class=&quot;headerlink&quot; title=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; background: transparent; text-decoration-line: none; color: rgb(0, 136, 204);&quot;&gt;&lt;/a&gt;重启SSR&lt;/h1&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; white-space: pre-wrap; overflow-wrap: break-word; font-family: Menlo, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;lucida console&amp;quot;, &amp;quot;Courier New&amp;quot;, monospace; font-size: 0.9em; background-color: rgb(39, 40, 34); margin-top: 10px; margin-bottom: 10px; padding: 5px 15px; color: rgb(101, 123, 131); line-height: 1.5; border: 1px solid rgb(204, 204, 204); text-shadow: rgb(68, 68, 68) 0px 1px;&quot;&gt;/etc/init.d/shadowsocks&amp;nbsp;restart&lt;/pre&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;会提示shadowsocksr重启成功&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;/Upload/image/ueditor/20190518/1558167553508729.png&quot; alt=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; border: 0px; vertical-align: middle; max-width: 100%;&quot;/&gt;&lt;/p&gt;&lt;h1 id=&quot;更新SSR&quot; style=&quot;box-sizing: border-box; margin: 30px 0px 1em; line-height: 1.25; font-size: 1.75rem; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://yichenbao.com/2017/09/05/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91SSR/#%E6%9B%B4%E6%96%B0SSR&quot; class=&quot;headerlink&quot; title=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; background: transparent; text-decoration-line: none; color: rgb(0, 136, 204);&quot;&gt;&lt;/a&gt;更新SSR&lt;/h1&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;vps端，需要先令存 shadowsocks.json文件。再执行卸载。 之后重新执行安装脚本即可&lt;/p&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; white-space: pre-wrap; overflow-wrap: break-word; font-family: Menlo, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;lucida console&amp;quot;, &amp;quot;Courier New&amp;quot;, monospace; font-size: 0.9em; background-color: rgb(39, 40, 34); margin-top: 10px; margin-bottom: 10px; padding: 5px 15px; color: rgb(101, 123, 131); line-height: 1.5; border: 1px solid rgb(204, 204, 204); text-shadow: rgb(68, 68, 68) 0px 1px;&quot;&gt;./shadowsocksR.sh&amp;nbsp;uninstall&lt;/pre&gt;&lt;h1 id=&quot;混淆插件简介&quot; style=&quot;box-sizing: border-box; margin: 30px 0px 1em; line-height: 1.25; font-size: 1.75rem; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://yichenbao.com/2017/09/05/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91SSR/#%E6%B7%B7%E6%B7%86%E6%8F%92%E4%BB%B6%E7%AE%80%E4%BB%8B&quot; class=&quot;headerlink&quot; title=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; background: transparent; text-decoration-line: none; color: rgb(0, 136, 204);&quot;&gt;&lt;/a&gt;混淆插件简介&lt;/h1&gt;&lt;ul style=&quot;list-style-type: none;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;ShadowsocksR目前支持的混淆插件（此类型的插件用于定义加密后的通信协议）：&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;plain ,http_simple ,http_post,random_head ,tls1.2_ticketauth 协议定义插件(用于定义加密前的协议): origin, auth_sha1, auth_sha1_v2, auth_sha1_v4, auth_aes128_md5/auth_aes128_sha1&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;auth_aes128_md5/auth_aes128_sha1 支持 单端口多用户，即一个端口 可以配置 几个不同的密码，稍后更新。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1 id=&quot;混淆插件选择&quot; style=&quot;box-sizing: border-box; margin: 30px 0px 1em; line-height: 1.25; font-size: 1.75rem; color: rgb(26, 26, 26); font-family: &amp;quot;lucida grande&amp;quot;, &amp;quot;lucida sans unicode&amp;quot;, lucida, helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;a href=&quot;http://yichenbao.com/2017/09/05/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91SSR/#%E6%B7%B7%E6%B7%86%E6%8F%92%E4%BB%B6%E9%80%89%E6%8B%A9&quot; class=&quot;headerlink&quot; title=&quot;鹿晓鹏博客&quot; style=&quot;box-sizing: border-box; background: transparent; text-decoration-line: none; color: rgb(0, 136, 204);&quot;&gt;&lt;/a&gt;混淆插件选择&lt;/h1&gt;&lt;ul style=&quot;list-style-type: none;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;推荐auth_chain_a+tls1.2_ticket_auth&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;这种组合目前混淆效果最好，有利于个人VPS的长时间使用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;auth_chain_a可不使用用加密，即加密方式None（SSR作者语），但是吧，性能差不多的情况下，加个密没毛病。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;auth_aes128_md5或auth_aes128_sha1+随意，即使使用rc4加密亦可（SSR作者语）&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 10px; margin-bottom: 1.75em;&quot;&gt;玩游戏，或对延迟有要求，不要使用tls1.2_ticket_auth&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','0','1558167583') [ RunTime:0.0268s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0016s ]
+SQL: INSERT INTO `lxp_article_tag` (`aid`,`tid`) VALUES ('63','23') [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `lxp_article_pic` (`aid`,`path`) VALUES ('63','/Upload/image/ueditor/php.jpeg') [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0012s ]
+SQL: SELECT `aid`,`addtime` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 ORDER BY aid desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2019-05-18T16:19:44+08:00 ] 223.223.195.134 /Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '63'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0009s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 63 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '62'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 62 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '61'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 61 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '60'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 60 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '59'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 59 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '58'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 58 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '57'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 57 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0077s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '53'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 53 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '52'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 52 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '51'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 51 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '50'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 50 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '49'  [ RunTime:0.0004s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 49 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
