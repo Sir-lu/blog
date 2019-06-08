@@ -14251,3 +14251,425 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
 ERR: 无法加载控制器:App
 
+[ 2019-06-07T23:15:52+08:00 ] 54.36.150.184 /article/43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0032s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0003s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /www/wwwroot/blog/Application/Home/Controller/IndexController.class.php 第 77 行.
+SQL: UPDATE `lxp_article` SET `click`=click+1 WHERE `aid` = 43 [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/blog/Application/Common/Model/ArticleModel.class.php 第 347 行.
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` > 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` < 43 ORDER BY aid desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 43 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 43  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = 43  [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT c.*,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.status = 1 AND c.aid = 43 AND c.pid = 0 AND c.is_delete = 0 ORDER BY date desc  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 7 行.
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2019-06-07T23:18:08+08:00 ] 46.229.168.145 /article/49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0029s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0002s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /www/wwwroot/blog/Application/Home/Controller/IndexController.class.php 第 77 行.
+SQL: UPDATE `lxp_article` SET `click`=click+1 WHERE `aid` = 49 [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/blog/Application/Common/Model/ArticleModel.class.php 第 347 行.
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` > 49 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` < 49 ORDER BY aid desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 49 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0010s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 49  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = 49  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 29  [ RunTime:0.0003s ]
+SQL: SELECT c.*,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.status = 1 AND c.aid = 49 AND c.pid = 0 AND c.is_delete = 0 ORDER BY date desc  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 7 行.
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2019-06-07T23:31:06+08:00 ] 66.249.65.213 /article/48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0045s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0003s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /www/wwwroot/blog/Application/Home/Controller/IndexController.class.php 第 77 行.
+SQL: UPDATE `lxp_article` SET `click`=click+1 WHERE `aid` = 48 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/blog/Application/Common/Model/ArticleModel.class.php 第 347 行.
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` > 48 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` < 48 ORDER BY aid desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 48 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 48  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = 48  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT c.*,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.status = 1 AND c.aid = 48 AND c.pid = 0 AND c.is_delete = 0 ORDER BY date desc  [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 7 行.
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2019-06-07T23:40:52+08:00 ] 66.249.73.207 /article/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0040s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0003s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /www/wwwroot/blog/Application/Home/Controller/IndexController.class.php 第 77 行.
+SQL: UPDATE `lxp_article` SET `click`=click+1 WHERE `aid` = 42 [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/blog/Application/Common/Model/ArticleModel.class.php 第 347 行.
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` > 42 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` < 42 ORDER BY aid desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 42 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0009s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 42  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = 42  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT c.*,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.status = 1 AND c.aid = 42 AND c.pid = 0 AND c.is_delete = 0 ORDER BY date desc  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 7 行.
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2019-06-07T23:41:19+08:00 ] 66.249.73.211 /article/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0002s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /www/wwwroot/blog/Application/Home/Controller/IndexController.class.php 第 77 行.
+SQL: UPDATE `lxp_article` SET `click`=click+1 WHERE `aid` = 42 [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/blog/Application/Common/Model/ArticleModel.class.php 第 347 行.
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` > 42 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` < 42 ORDER BY aid desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 42 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 42  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = 42  [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0003s ]
+SQL: SELECT c.*,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.status = 1 AND c.aid = 42 AND c.pid = 0 AND c.is_delete = 0 ORDER BY date desc  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 7 行.
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2019-06-07T23:43:12+08:00 ] 139.162.119.197 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0024s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0003s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article` WHERE `is_delete` = 0 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '63'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_article_pic` [ RunTime:0.0006s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 63 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 32  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '62'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 62 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '61'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 61 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 34  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '60'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 60 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '59'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 59 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '58'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 58 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '57'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 57 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '56'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 56 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '55'  [ RunTime:0.0003s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 55 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 33  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = '54'  [ RunTime:0.0002s ]
+SQL: SELECT `path` FROM `lxp_article_pic` WHERE `aid` = 54 ORDER BY ap_id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname` FROM `lxp_category` WHERE `cid` = 31  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant url - assumed 'url' /www/wwwroot/blog/Runtime/Cache/Home/08d30c77e78bd0ac29232fbc421b5dcd.php 第 6 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' /www/wwwroot/blog/Runtime/Cache/Home/08d30c77e78bd0ac29232fbc421b5dcd.php 第 6 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' /www/wwwroot/blog/Runtime/Cache/Home/08d30c77e78bd0ac29232fbc421b5dcd.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2019-06-07T23:59:07+08:00 ] 66.249.65.211 /article/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0029s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `is_show` = 1 AND `is_delete` = 0 AND `is_top` = 1 ORDER BY aid desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `lxp_comment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lxp_oauth_user` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `lxp_oauth_user` WHERE (  is_admin )  [ RunTime:0.0002s ]
+SQL: SELECT c.content,c.date,a.title,a.aid,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_article a ON c.aid=a.aid INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.is_delete = 0 ORDER BY c.date desc LIMIT 20   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `lxp_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lxp_category` ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxp_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_tag`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 21 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxp_article_tag` WHERE `tid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_link` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lxp_link` WHERE `is_delete` = 0 AND `is_show` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /www/wwwroot/blog/Application/Home/Controller/IndexController.class.php 第 77 行.
+SQL: UPDATE `lxp_article` SET `click`=click+1 WHERE `aid` = 19 [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `lxp_article` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/blog/Application/Common/Model/ArticleModel.class.php 第 347 行.
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` > 19 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `aid`,`title` FROM `lxp_article` WHERE `title` LIKE '%%' AND (  `is_show` = 1 ) AND (  `is_delete` = 0 ) AND `aid` < 19 ORDER BY aid desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxp_article` WHERE `aid` = 19 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT `tid` FROM `lxp_article_tag` WHERE `aid` = 19  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxp_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lxp_article_tag` INNER JOIN lxp_tag ON lxp_article_tag.tid=lxp_tag.tid  WHERE `aid` = 19  [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cid`,`cname`,`keywords` FROM `lxp_category` WHERE `cid` = 30  [ RunTime:0.0002s ]
+SQL: SELECT c.*,ou.nickname,ou.head_img FROM lxp_comment c INNER JOIN lxp_oauth_user ou ON c.ouid=ou.id  WHERE c.status = 1 AND c.aid = 19 AND c.pid = 0 AND c.is_delete = 0 ORDER BY date desc  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/blog/Application/Common/Model/CommentModel.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 7 行.
+NOTIC: [8] Undefined variable: user_email /www/wwwroot/blog/Runtime/Cache/Home/d4c1149384e4970b24973a696680cd70.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
