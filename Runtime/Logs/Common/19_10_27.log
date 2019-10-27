@@ -1,0 +1,12 @@
+[ 2019-10-27T01:43:08+08:00 ] 47.105.201.184 //?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+ERR: 无法加载模块:Checkcode
+
+[ 2019-10-27T14:03:10+08:00 ] 103.125.216.16 //?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+ERR: 无法加载模块:Checkcode
+
