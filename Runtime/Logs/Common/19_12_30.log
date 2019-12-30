@@ -1,0 +1,6 @@
+[ 2019-12-30T07:19:08+08:00 ] 113.250.250.68 /?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Checkcode
+
