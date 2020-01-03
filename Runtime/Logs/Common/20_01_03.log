@@ -1,0 +1,24 @@
+[ 2020-01-03T14:49:25+08:00 ] 47.108.57.214 /?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Checkcode
+
+[ 2020-01-03T19:04:24+08:00 ] 47.108.57.214 /public/?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+ERR: 无法加载模块:Checkcode
+
+[ 2020-01-03T19:36:12+08:00 ] 39.100.94.201 /public/?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Checkcode
+
+[ 2020-01-03T19:43:25+08:00 ] 47.105.201.184 /public/?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Checkcode
+
