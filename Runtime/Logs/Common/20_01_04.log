@@ -22,3 +22,15 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
 ERR: 无法加载模块:Checkcode
 
+[ 2020-01-04T23:34:38+08:00 ] 39.100.94.201 /?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Checkcode
+
+[ 2020-01-04T23:59:53+08:00 ] 47.105.201.184 /?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+ERR: 无法加载模块:Checkcode
+
