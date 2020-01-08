@@ -1,0 +1,12 @@
+[ 2020-01-08T00:01:14+08:00 ] 45.251.240.44 /public/?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Checkcode
+
+[ 2020-01-08T10:32:18+08:00 ] 45.77.29.152 /?g=api&m=checkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Checkcode
+
